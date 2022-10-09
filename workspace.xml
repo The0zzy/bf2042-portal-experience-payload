@@ -3849,15 +3849,13 @@
                                                                                       <block type="variableReferenceBlock">
                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="GS*LY1DpwUqT.{vfbv[4" variabletype="Global">map</field>
+                                                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="VALUE-1">
-                                                                                  <block type="Text">
-                                                                                    <field name="TEXT">null</field>
-                                                                                  </block>
+                                                                                  <block type="EmptyArray"></block>
                                                                                 </value>
                                                                               </block>
                                                                             </value>
@@ -3971,15 +3969,13 @@
                                                                                           <block type="variableReferenceBlock">
                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                            <field name="VAR" id="GS*LY1DpwUqT.{vfbv[4" variabletype="Global">map</field>
+                                                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
                                                                                           </block>
                                                                                         </value>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="VALUE-1">
-                                                                                      <block type="Text">
-                                                                                        <field name="TEXT">null</field>
-                                                                                      </block>
+                                                                                      <block type="EmptyArray"></block>
                                                                                     </value>
                                                                                   </block>
                                                                                 </value>
