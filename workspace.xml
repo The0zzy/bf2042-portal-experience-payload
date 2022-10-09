@@ -943,7 +943,7 @@
                                                                                                                                                                 </value>
                                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                    <field name="NUM">0.05</field>
+                                                                                                                                                                    <field name="NUM">0.02</field>
                                                                                                                                                                   </block>
                                                                                                                                                                 </value>
                                                                                                                                                                 <next>
@@ -3969,7 +3969,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13510">
+  <block type="subroutineBlock" deletable="false" x="0" y="13216">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -4926,7 +4926,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="15135">
+  <block type="subroutineBlock" deletable="false" x="0" y="14841">
     <field name="SUBROUTINE_NAME">initPayloadTrackOrbital</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -6054,7 +6054,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="17025">
+  <block type="subroutineBlock" deletable="false" x="0" y="16731">
     <field name="SUBROUTINE_NAME">initPayloadTrackKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -7272,7 +7272,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="19049">
+  <block type="subroutineBlock" deletable="false" x="0" y="18755">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -8085,7 +8085,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20470">
+  <block type="subroutineBlock" deletable="false" x="0" y="20176">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -8988,7 +8988,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22025">
+  <block type="subroutineBlock" deletable="false" x="0" y="21731">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -9801,7 +9801,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23446">
+  <block type="subroutineBlock" deletable="false" x="0" y="23152">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -10794,7 +10794,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25135">
+  <block type="subroutineBlock" deletable="false" x="0" y="24841">
     <field name="SUBROUTINE_NAME">controlPayload</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11153,7 +11153,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25888">
+  <block type="subroutineBlock" deletable="false" x="0" y="25594">
     <field name="SUBROUTINE_NAME">makePayloadInvincible</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11517,7 +11517,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26520">
+  <block type="subroutineBlock" deletable="false" x="0" y="26226">
     <field name="SUBROUTINE_NAME">calculatePayloadPos</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -12046,7 +12046,7 @@
                   <block type="If">
                     <mutation elseif="2"></mutation>
                     <value name="VALUE-0">
-                      <block type="And">
+                      <block type="And" inline="false">
                         <value name="VALUE-0">
                           <block type="GreaterThan">
                             <value name="VALUE-0">
@@ -15423,7 +15423,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32473">
+  <block type="subroutineBlock" deletable="false" x="0" y="32315">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -15972,7 +15972,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33442">
+  <block type="subroutineBlock" deletable="false" x="0" y="33284">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -16237,7 +16237,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34152">
+  <block type="subroutineBlock" deletable="false" x="0" y="33994">
     <field name="SUBROUTINE_NAME">displayDebugMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -16399,7 +16399,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34619">
+  <block type="subroutineBlock" deletable="false" x="0" y="34461">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -16824,7 +16824,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35696">
+  <block type="subroutineBlock" deletable="false" x="0" y="35538">
     <field name="SUBROUTINE_NAME">arctan</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -17616,7 +17616,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38196">
+  <block type="subroutineBlock" deletable="false" x="0" y="38038">
     <field name="SUBROUTINE_NAME">yawToObject</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
