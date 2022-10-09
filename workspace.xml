@@ -3839,33 +3839,6 @@
                                                                     <statement name="ACTIONS">
                                                                       <block type="subroutineInstanceBlock">
                                                                         <field name="SUBROUTINE_NAME">displayGameMessages</field>
-                                                                        <next>
-                                                                          <block type="If">
-                                                                            <value name="VALUE-0">
-                                                                              <block type="Equals">
-                                                                                <value name="VALUE-0">
-                                                                                  <block type="GetVariable">
-                                                                                    <value name="VALUE-0">
-                                                                                      <block type="variableReferenceBlock">
-                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <value name="VALUE-1">
-                                                                                  <block type="EmptyArray"></block>
-                                                                                </value>
-                                                                              </block>
-                                                                            </value>
-                                                                            <statement name="DO">
-                                                                              <block type="subroutineInstanceBlock">
-                                                                                <field name="SUBROUTINE_NAME">displayDebugMessages</field>
-                                                                              </block>
-                                                                            </statement>
-                                                                          </block>
-                                                                        </next>
                                                                       </block>
                                                                     </statement>
                                                                     <next>
@@ -3959,33 +3932,6 @@
                                                                         <statement name="ACTIONS">
                                                                           <block type="subroutineInstanceBlock">
                                                                             <field name="SUBROUTINE_NAME">displayGameMessages</field>
-                                                                            <next>
-                                                                              <block type="If">
-                                                                                <value name="VALUE-0">
-                                                                                  <block type="Equals">
-                                                                                    <value name="VALUE-0">
-                                                                                      <block type="GetVariable">
-                                                                                        <value name="VALUE-0">
-                                                                                          <block type="variableReferenceBlock">
-                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="VALUE-1">
-                                                                                      <block type="EmptyArray"></block>
-                                                                                    </value>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <statement name="DO">
-                                                                                  <block type="subroutineInstanceBlock">
-                                                                                    <field name="SUBROUTINE_NAME">displayDebugMessages</field>
-                                                                                  </block>
-                                                                                </statement>
-                                                                              </block>
-                                                                            </next>
                                                                           </block>
                                                                         </statement>
                                                                       </block>
