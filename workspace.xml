@@ -1,11 +1,5 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
-    <variable type="TeamId" id="!Z@S(d0hTDeIo/s8!-h2">pushingPlayers</variable>
-    <variable type="TeamId" id="Pg!!))wLofXny}Fyl?fP">payloadSpeedMultiplier</variable>
-    <variable type="TeamId" id="dFQ}z}vwF=/-})wvth7T">spawnDistance</variable>
-    <variable type="TeamId" id="aln0+lKE.pu;RI:]-+q-">payloadTrackIndex</variable>
-    <variable type="TeamId" id="eX@kSPz}?H0nj5~5-!}1">currentCheckpoint</variable>
-    <variable type="TeamId" id="9nFx`}vvSh{%v~=u)^pJ">payloadSpeedAddition</variable>
     <variable type="Player" id="huF:=e(rOslO_TpC@?z*">scoringCounter</variable>
     <variable type="Player" id="#3RV{9XaiB;VWFM/RCPk">isPayload</variable>
     <variable type="Player" id="J6`?DrE|dPq]+;d@I7*x">hasSwitchedTeam</variable>
@@ -31,6 +25,13 @@
     <variable type="Global" id="BL|@${S]i+bOlAT,7O5x">payloadYaw</variable>
     <variable type="Global" id="_?RiR|}Zck0ohVjj)q9A">tickArray</variable>
     <variable type="Global" id=")nl=-)}qWj/+)`mdr6f.">switchTeamTime</variable>
+    <variable type="TeamId" id="!Z@S(d0hTDeIo/s8!-h2">pushingPlayers</variable>
+    <variable type="TeamId" id="Pg!!))wLofXny}Fyl?fP">payloadSpeedMultiplier</variable>
+    <variable type="TeamId" id="dFQ}z}vwF=/-})wvth7T">spawnDistance</variable>
+    <variable type="TeamId" id="aln0+lKE.pu;RI:]-+q-">payloadTrackIndex</variable>
+    <variable type="TeamId" id="eX@kSPz}?H0nj5~5-!}1">currentCheckpoint</variable>
+    <variable type="TeamId" id="9nFx`}vvSh{%v~=u)^pJ">payloadSpeedAddition</variable>
+    <variable type="TeamId" id=",x4/Aa$P%,d{ZqW}5WtO">payloadSpeedAdditionMultiplier</variable>
   </variables>
   <block type="modBlock" deletable="false" x="0" y="0">
     <statement name="RULES">
@@ -896,68 +897,86 @@
                                                                                                                                           <block type="SetVariable">
                                                                                                                                             <value name="VALUE-0">
                                                                                                                                               <block type="variableReferenceBlock">
-                                                                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                <field name="VAR" id="yUlt:^2ytdtPrYq*5n=U" variabletype="Global">currentPayloadBots</field>
+                                                                                                                                                <mutation isObjectVar="true"></mutation>
+                                                                                                                                                <field name="OBJECTTYPE">TeamId</field>
+                                                                                                                                                <field name="VAR" id=",x4/Aa$P%,d{ZqW}5WtO" variabletype="TeamId">payloadSpeedAdditionMultiplier</field>
+                                                                                                                                                <value name="OBJECT">
+                                                                                                                                                  <block type="GetTeamId">
+                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                      <block type="Number">
+                                                                                                                                                        <field name="NUM">1</field>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                  </block>
+                                                                                                                                                </value>
                                                                                                                                               </block>
                                                                                                                                             </value>
                                                                                                                                             <value name="VALUE-1">
-                                                                                                                                              <block type="EmptyArray"></block>
+                                                                                                                                              <block type="Number">
+                                                                                                                                                <field name="NUM">0.01</field>
+                                                                                                                                              </block>
                                                                                                                                             </value>
                                                                                                                                             <next>
-                                                                                                                                              <block type="SetRoundTimeLimit">
+                                                                                                                                              <block type="SetVariable">
                                                                                                                                                 <value name="VALUE-0">
+                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                    <mutation isObjectVar="true"></mutation>
+                                                                                                                                                    <field name="OBJECTTYPE">TeamId</field>
+                                                                                                                                                    <field name="VAR" id=",x4/Aa$P%,d{ZqW}5WtO" variabletype="TeamId">payloadSpeedAdditionMultiplier</field>
+                                                                                                                                                    <value name="OBJECT">
+                                                                                                                                                      <block type="GetTeamId">
+                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                          <block type="Number">
+                                                                                                                                                            <field name="NUM">2</field>
+                                                                                                                                                          </block>
+                                                                                                                                                        </value>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                  </block>
+                                                                                                                                                </value>
+                                                                                                                                                <value name="VALUE-1">
                                                                                                                                                   <block type="Number">
-                                                                                                                                                    <field name="NUM">600</field>
+                                                                                                                                                    <field name="NUM">0.01</field>
                                                                                                                                                   </block>
                                                                                                                                                 </value>
                                                                                                                                                 <next>
-                                                                                                                                                  <block type="SetTargetScore">
+                                                                                                                                                  <block type="SetVariable">
                                                                                                                                                     <value name="VALUE-0">
-                                                                                                                                                      <block type="Number">
-                                                                                                                                                        <field name="NUM">1000000</field>
+                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                        <field name="VAR" id="yUlt:^2ytdtPrYq*5n=U" variabletype="Global">currentPayloadBots</field>
                                                                                                                                                       </block>
                                                                                                                                                     </value>
+                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                      <block type="EmptyArray"></block>
+                                                                                                                                                    </value>
                                                                                                                                                     <next>
-                                                                                                                                                      <block type="EnableDefaultScoring">
+                                                                                                                                                      <block type="SetRoundTimeLimit">
                                                                                                                                                         <value name="VALUE-0">
-                                                                                                                                                          <block type="Boolean">
-                                                                                                                                                            <field name="BOOL">TRUE</field>
+                                                                                                                                                          <block type="Number">
+                                                                                                                                                            <field name="NUM">600</field>
                                                                                                                                                           </block>
                                                                                                                                                         </value>
                                                                                                                                                         <next>
-                                                                                                                                                          <block type="EnableDefaultWinCondition">
+                                                                                                                                                          <block type="SetTargetScore">
                                                                                                                                                             <value name="VALUE-0">
-                                                                                                                                                              <block type="Boolean">
-                                                                                                                                                                <field name="BOOL">FALSE</field>
+                                                                                                                                                              <block type="Number">
+                                                                                                                                                                <field name="NUM">1000000</field>
                                                                                                                                                               </block>
                                                                                                                                                             </value>
                                                                                                                                                             <next>
-                                                                                                                                                              <block type="SetVariable">
+                                                                                                                                                              <block type="EnableDefaultScoring">
                                                                                                                                                                 <value name="VALUE-0">
-                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                    <field name="VAR" id="LCeYX}m7wi5c)3{*]7lC" variabletype="Global">gameRefreshValue</field>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
-                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                    <field name="NUM">0.02</field>
+                                                                                                                                                                  <block type="Boolean">
+                                                                                                                                                                    <field name="BOOL">TRUE</field>
                                                                                                                                                                   </block>
                                                                                                                                                                 </value>
                                                                                                                                                                 <next>
-                                                                                                                                                                  <block type="SetVariable">
+                                                                                                                                                                  <block type="EnableDefaultWinCondition">
                                                                                                                                                                     <value name="VALUE-0">
-                                                                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                        <field name="VAR" id="k~Q;Tu{D.**1;t6M2Rry" variabletype="Global">scoringInterval</field>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </value>
-                                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                        <field name="NUM">2</field>
+                                                                                                                                                                      <block type="Boolean">
+                                                                                                                                                                        <field name="BOOL">FALSE</field>
                                                                                                                                                                       </block>
                                                                                                                                                                     </value>
                                                                                                                                                                     <next>
@@ -966,241 +985,133 @@
                                                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                            <field name="VAR" id="O)U`TCkbafXq)Mt_]xi}" variabletype="Global">scoreValue</field>
+                                                                                                                                                                            <field name="VAR" id="LCeYX}m7wi5c)3{*]7lC" variabletype="Global">gameRefreshValue</field>
                                                                                                                                                                           </block>
                                                                                                                                                                         </value>
                                                                                                                                                                         <value name="VALUE-1">
                                                                                                                                                                           <block type="Number">
-                                                                                                                                                                            <field name="NUM">10</field>
+                                                                                                                                                                            <field name="NUM">0.02</field>
                                                                                                                                                                           </block>
                                                                                                                                                                         </value>
                                                                                                                                                                         <next>
-                                                                                                                                                                          <block type="SetVariableAtIndex">
+                                                                                                                                                                          <block type="SetVariable">
                                                                                                                                                                             <value name="VALUE-0">
                                                                                                                                                                               <block type="variableReferenceBlock">
                                                                                                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
+                                                                                                                                                                                <field name="VAR" id="k~Q;Tu{D.**1;t6M2Rry" variabletype="Global">scoringInterval</field>
                                                                                                                                                                               </block>
                                                                                                                                                                             </value>
                                                                                                                                                                             <value name="VALUE-1">
                                                                                                                                                                               <block type="Number">
-                                                                                                                                                                                <field name="NUM">0</field>
-                                                                                                                                                                              </block>
-                                                                                                                                                                            </value>
-                                                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                                                              <block type="Number">
-                                                                                                                                                                                <field name="NUM">0</field>
+                                                                                                                                                                                <field name="NUM">2</field>
                                                                                                                                                                               </block>
                                                                                                                                                                             </value>
                                                                                                                                                                             <next>
-                                                                                                                                                                              <block type="SetVariableAtIndex">
+                                                                                                                                                                              <block type="SetVariable">
                                                                                                                                                                                 <value name="VALUE-0">
                                                                                                                                                                                   <block type="variableReferenceBlock">
                                                                                                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                    <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
+                                                                                                                                                                                    <field name="VAR" id="O)U`TCkbafXq)Mt_]xi}" variabletype="Global">scoreValue</field>
                                                                                                                                                                                   </block>
                                                                                                                                                                                 </value>
                                                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                                    <field name="NUM">1</field>
-                                                                                                                                                                                  </block>
-                                                                                                                                                                                </value>
-                                                                                                                                                                                <value name="VALUE-2">
-                                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                                    <field name="NUM">0</field>
+                                                                                                                                                                                    <field name="NUM">10</field>
                                                                                                                                                                                   </block>
                                                                                                                                                                                 </value>
                                                                                                                                                                                 <next>
-                                                                                                                                                                                  <block type="SetVariable">
+                                                                                                                                                                                  <block type="SetVariableAtIndex">
                                                                                                                                                                                     <value name="VALUE-0">
                                                                                                                                                                                       <block type="variableReferenceBlock">
                                                                                                                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                        <field name="VAR" id="BL|@${S]i+bOlAT,7O5x" variabletype="Global">payloadYaw</field>
+                                                                                                                                                                                        <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
                                                                                                                                                                                       </block>
                                                                                                                                                                                     </value>
                                                                                                                                                                                     <value name="VALUE-1">
-                                                                                                                                                                                      <block type="EmptyArray"></block>
+                                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                                        <field name="NUM">0</field>
+                                                                                                                                                                                      </block>
+                                                                                                                                                                                    </value>
+                                                                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                                        <field name="NUM">0</field>
+                                                                                                                                                                                      </block>
                                                                                                                                                                                     </value>
                                                                                                                                                                                     <next>
-                                                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                                                        <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
+                                                                                                                                                                                      <block type="SetVariableAtIndex">
+                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                            <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
+                                                                                                                                                                                          </block>
+                                                                                                                                                                                        </value>
+                                                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                                            <field name="NUM">1</field>
+                                                                                                                                                                                          </block>
+                                                                                                                                                                                        </value>
+                                                                                                                                                                                        <value name="VALUE-2">
+                                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                                                          </block>
+                                                                                                                                                                                        </value>
                                                                                                                                                                                         <next>
-                                                                                                                                                                                          <block type="DisplayCustomNotificationMessage">
+                                                                                                                                                                                          <block type="SetVariable">
                                                                                                                                                                                             <value name="VALUE-0">
-                                                                                                                                                                                              <block type="Message">
-                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                  <block type="Text">
-                                                                                                                                                                                                    <field name="TEXT">Init Payload Track...</field>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
+                                                                                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                <field name="VAR" id="BL|@${S]i+bOlAT,7O5x" variabletype="Global">payloadYaw</field>
                                                                                                                                                                                               </block>
                                                                                                                                                                                             </value>
                                                                                                                                                                                             <value name="VALUE-1">
-                                                                                                                                                                                              <block type="CustomMessagesItem">
-                                                                                                                                                                                                <field name="VALUE-0">CustomMessages</field>
-                                                                                                                                                                                                <field name="VALUE-1">HeaderText</field>
-                                                                                                                                                                                              </block>
-                                                                                                                                                                                            </value>
-                                                                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                                                                              <block type="Number">
-                                                                                                                                                                                                <field name="NUM">10</field>
-                                                                                                                                                                                              </block>
+                                                                                                                                                                                              <block type="EmptyArray"></block>
                                                                                                                                                                                             </value>
                                                                                                                                                                                             <next>
-                                                                                                                                                                                              <block type="SetVariable">
-                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                                                    <mutation isObjectVar="true"></mutation>
-                                                                                                                                                                                                    <field name="OBJECTTYPE">Player</field>
-                                                                                                                                                                                                    <field name="VAR" id="#3RV{9XaiB;VWFM/RCPk" variabletype="Player">isPayload</field>
-                                                                                                                                                                                                    <value name="OBJECT">
-                                                                                                                                                                                                      <block type="FirstOf">
+                                                                                                                                                                                              <block type="subroutineInstanceBlock">
+                                                                                                                                                                                                <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
+                                                                                                                                                                                                <next>
+                                                                                                                                                                                                  <block type="DisplayCustomNotificationMessage">
+                                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                                      <block type="Message">
                                                                                                                                                                                                         <value name="VALUE-0">
-                                                                                                                                                                                                          <block type="FilteredArray">
-                                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                                              <block type="AllPlayers"></block>
-                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                                                                              <block type="And">
-                                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                                  <block type="GetSoldierState">
-                                                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                                                      <block type="CurrentArrayElement"></block>
-                                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                                                                                      <block type="SoldierStateBoolItem">
-                                                                                                                                                                                                                        <field name="VALUE-0">SoldierStateBool</field>
-                                                                                                                                                                                                                        <field name="VALUE-1">IsAlive</field>
-                                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                                                  <block type="Not">
-                                                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                                                      <block type="GetSoldierState">
-                                                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                                                          <block type="CurrentArrayElement"></block>
-                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                                                                                          <block type="SoldierStateBoolItem">
-                                                                                                                                                                                                                            <field name="VALUE-0">SoldierStateBool</field>
-                                                                                                                                                                                                                            <field name="VALUE-1">IsAISoldier</field>
-                                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                          <block type="Text">
+                                                                                                                                                                                                            <field name="TEXT">Init Payload Track...</field>
                                                                                                                                                                                                           </block>
                                                                                                                                                                                                         </value>
-                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                                  <block type="Boolean">
-                                                                                                                                                                                                    <field name="BOOL">TRUE</field>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                                <next>
-                                                                                                                                                                                                  <block type="WaitUntil">
-                                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                                                        <field name="NUM">999</field>
                                                                                                                                                                                                       </block>
                                                                                                                                                                                                     </value>
                                                                                                                                                                                                     <value name="VALUE-1">
-                                                                                                                                                                                                      <block type="Not">
-                                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                                          <block type="GetVariable">
-                                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                                                                <mutation isObjectVar="true"></mutation>
-                                                                                                                                                                                                                <field name="OBJECTTYPE">Player</field>
-                                                                                                                                                                                                                <field name="VAR" id="#3RV{9XaiB;VWFM/RCPk" variabletype="Player">isPayload</field>
-                                                                                                                                                                                                                <value name="OBJECT">
-                                                                                                                                                                                                                  <block type="FirstOf">
-                                                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                                                      <block type="FilteredArray">
-                                                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                                                          <block type="AllPlayers"></block>
-                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                                                                                          <block type="And">
-                                                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                                                              <block type="GetSoldierState">
-                                                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                                                  <block type="CurrentArrayElement"></block>
-                                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                                                                  <block type="SoldierStateBoolItem">
-                                                                                                                                                                                                                                    <field name="VALUE-0">SoldierStateBool</field>
-                                                                                                                                                                                                                                    <field name="VALUE-1">IsAlive</field>
-                                                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                                                                                              <block type="Not">
-                                                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                                                  <block type="GetSoldierState">
-                                                                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                                                                      <block type="CurrentArrayElement"></block>
-                                                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                                                                                                      <block type="SoldierStateBoolItem">
-                                                                                                                                                                                                                                        <field name="VALUE-0">SoldierStateBool</field>
-                                                                                                                                                                                                                                        <field name="VALUE-1">IsAISoldier</field>
-                                                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                      <block type="CustomMessagesItem">
+                                                                                                                                                                                                        <field name="VALUE-0">CustomMessages</field>
+                                                                                                                                                                                                        <field name="VALUE-1">HeaderText</field>
+                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                                                        <field name="NUM">10</field>
                                                                                                                                                                                                       </block>
                                                                                                                                                                                                     </value>
                                                                                                                                                                                                     <next>
-                                                                                                                                                                                                      <block type="EnableAllInputRestrictions">
+                                                                                                                                                                                                      <block type="SetVariable">
                                                                                                                                                                                                         <value name="VALUE-0">
-                                                                                                                                                                                                          <block type="FirstOf">
-                                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                                              <block type="FilteredArray">
+                                                                                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                                                                                            <mutation isObjectVar="true"></mutation>
+                                                                                                                                                                                                            <field name="OBJECTTYPE">Player</field>
+                                                                                                                                                                                                            <field name="VAR" id="#3RV{9XaiB;VWFM/RCPk" variabletype="Player">isPayload</field>
+                                                                                                                                                                                                            <value name="OBJECT">
+                                                                                                                                                                                                              <block type="FirstOf">
                                                                                                                                                                                                                 <value name="VALUE-0">
-                                                                                                                                                                                                                  <block type="AllPlayers"></block>
-                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                                                  <block type="And">
+                                                                                                                                                                                                                  <block type="FilteredArray">
                                                                                                                                                                                                                     <value name="VALUE-0">
-                                                                                                                                                                                                                      <block type="GetSoldierState">
-                                                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                                                          <block type="CurrentArrayElement"></block>
-                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                                                                                          <block type="SoldierStateBoolItem">
-                                                                                                                                                                                                                            <field name="VALUE-0">SoldierStateBool</field>
-                                                                                                                                                                                                                            <field name="VALUE-1">IsAlive</field>
-                                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                      <block type="AllPlayers"></block>
                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                     <value name="VALUE-1">
-                                                                                                                                                                                                                      <block type="Not">
+                                                                                                                                                                                                                      <block type="And">
                                                                                                                                                                                                                         <value name="VALUE-0">
                                                                                                                                                                                                                           <block type="GetSoldierState">
                                                                                                                                                                                                                             <value name="VALUE-0">
@@ -1209,7 +1120,24 @@
                                                                                                                                                                                                                             <value name="VALUE-1">
                                                                                                                                                                                                                               <block type="SoldierStateBoolItem">
                                                                                                                                                                                                                                 <field name="VALUE-0">SoldierStateBool</field>
-                                                                                                                                                                                                                                <field name="VALUE-1">IsAISoldier</field>
+                                                                                                                                                                                                                                <field name="VALUE-1">IsAlive</field>
+                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                                                                                          <block type="Not">
+                                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                                              <block type="GetSoldierState">
+                                                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                                                  <block type="CurrentArrayElement"></block>
+                                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                                                                                  <block type="SoldierStateBoolItem">
+                                                                                                                                                                                                                                    <field name="VALUE-0">SoldierStateBool</field>
+                                                                                                                                                                                                                                    <field name="VALUE-1">IsAISoldier</field>
+                                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                                </value>
                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                           </block>
@@ -1224,17 +1152,79 @@
                                                                                                                                                                                                         </value>
                                                                                                                                                                                                         <value name="VALUE-1">
                                                                                                                                                                                                           <block type="Boolean">
-                                                                                                                                                                                                            <field name="BOOL">FALSE</field>
+                                                                                                                                                                                                            <field name="BOOL">TRUE</field>
                                                                                                                                                                                                           </block>
                                                                                                                                                                                                         </value>
                                                                                                                                                                                                         <next>
-                                                                                                                                                                                                          <block type="SetVariable">
+                                                                                                                                                                                                          <block type="WaitUntil">
                                                                                                                                                                                                             <value name="VALUE-0">
-                                                                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                                                                <mutation isObjectVar="true"></mutation>
-                                                                                                                                                                                                                <field name="OBJECTTYPE">Player</field>
-                                                                                                                                                                                                                <field name="VAR" id="J6`?DrE|dPq]+;d@I7*x" variabletype="Player">hasSwitchedTeam</field>
-                                                                                                                                                                                                                <value name="OBJECT">
+                                                                                                                                                                                                              <block type="Number">
+                                                                                                                                                                                                                <field name="NUM">999</field>
+                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                                                              <block type="Not">
+                                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                                  <block type="GetVariable">
+                                                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                                                                                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                                                                                                                                                        <field name="VAR" id="#3RV{9XaiB;VWFM/RCPk" variabletype="Player">isPayload</field>
+                                                                                                                                                                                                                        <value name="OBJECT">
+                                                                                                                                                                                                                          <block type="FirstOf">
+                                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                                              <block type="FilteredArray">
+                                                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                                                  <block type="AllPlayers"></block>
+                                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                                                                                  <block type="And">
+                                                                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                                                                      <block type="GetSoldierState">
+                                                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                                                          <block type="CurrentArrayElement"></block>
+                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                                                                                                          <block type="SoldierStateBoolItem">
+                                                                                                                                                                                                                                            <field name="VALUE-0">SoldierStateBool</field>
+                                                                                                                                                                                                                                            <field name="VALUE-1">IsAlive</field>
+                                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                                                                                                      <block type="Not">
+                                                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                                                          <block type="GetSoldierState">
+                                                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                                                              <block type="CurrentArrayElement"></block>
+                                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                                                                                              <block type="SoldierStateBoolItem">
+                                                                                                                                                                                                                                                <field name="VALUE-0">SoldierStateBool</field>
+                                                                                                                                                                                                                                                <field name="VALUE-1">IsAISoldier</field>
+                                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                            <next>
+                                                                                                                                                                                                              <block type="EnableAllInputRestrictions">
+                                                                                                                                                                                                                <value name="VALUE-0">
                                                                                                                                                                                                                   <block type="FirstOf">
                                                                                                                                                                                                                     <value name="VALUE-0">
                                                                                                                                                                                                                       <block type="FilteredArray">
@@ -1279,47 +1269,57 @@
                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                 </value>
-                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                                                                              <block type="Boolean">
-                                                                                                                                                                                                                <field name="BOOL">TRUE</field>
-                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                            <next>
-                                                                                                                                                                                                              <block type="SetVariable">
-                                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                    <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
+                                                                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                                                                  <block type="Boolean">
+                                                                                                                                                                                                                    <field name="BOOL">FALSE</field>
                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                 </value>
-                                                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                                                  <block type="ValueInArray">
+                                                                                                                                                                                                                <next>
+                                                                                                                                                                                                                  <block type="SetVariable">
                                                                                                                                                                                                                     <value name="VALUE-0">
-                                                                                                                                                                                                                      <block type="GetVariable">
-                                                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
-                                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                                                                                      <block type="GetVariable">
-                                                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                                                                                            <mutation isObjectVar="true"></mutation>
-                                                                                                                                                                                                                            <field name="OBJECTTYPE">TeamId</field>
-                                                                                                                                                                                                                            <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
-                                                                                                                                                                                                                            <value name="OBJECT">
-                                                                                                                                                                                                                              <block type="GetTeamId">
+                                                                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                                                                                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                                                                                                                                                        <field name="VAR" id="J6`?DrE|dPq]+;d@I7*x" variabletype="Player">hasSwitchedTeam</field>
+                                                                                                                                                                                                                        <value name="OBJECT">
+                                                                                                                                                                                                                          <block type="FirstOf">
+                                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                                              <block type="FilteredArray">
                                                                                                                                                                                                                                 <value name="VALUE-0">
-                                                                                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                                                                                    <field name="NUM">2</field>
+                                                                                                                                                                                                                                  <block type="AllPlayers"></block>
+                                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                                                                                  <block type="And">
+                                                                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                                                                      <block type="GetSoldierState">
+                                                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                                                          <block type="CurrentArrayElement"></block>
+                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                                                                                                          <block type="SoldierStateBoolItem">
+                                                                                                                                                                                                                                            <field name="VALUE-0">SoldierStateBool</field>
+                                                                                                                                                                                                                                            <field name="VALUE-1">IsAlive</field>
+                                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                                                                                                      <block type="Not">
+                                                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                                                          <block type="GetSoldierState">
+                                                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                                                              <block type="CurrentArrayElement"></block>
+                                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                                                                                              <block type="SoldierStateBoolItem">
+                                                                                                                                                                                                                                                <field name="VALUE-0">SoldierStateBool</field>
+                                                                                                                                                                                                                                                <field name="VALUE-1">IsAISoldier</field>
+                                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                                    </value>
                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                               </block>
@@ -1328,33 +1328,84 @@
                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                     </value>
-                                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                                <next>
-                                                                                                                                                                                                                  <block type="UnspawnAllPlayers">
+                                                                                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                                                                                      <block type="Boolean">
+                                                                                                                                                                                                                        <field name="BOOL">TRUE</field>
+                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                    </value>
                                                                                                                                                                                                                     <next>
                                                                                                                                                                                                                       <block type="SetVariable">
                                                                                                                                                                                                                         <value name="VALUE-0">
                                                                                                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                            <field name="VAR" id="Qt}+}r4]GZ3w75sU506n" variabletype="Global">gameOngoing</field>
+                                                                                                                                                                                                                            <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                         <value name="VALUE-1">
-                                                                                                                                                                                                                          <block type="Boolean">
-                                                                                                                                                                                                                            <field name="BOOL">TRUE</field>
+                                                                                                                                                                                                                          <block type="ValueInArray">
+                                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                                              <block type="GetVariable">
+                                                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                                                                              <block type="GetVariable">
+                                                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                                                                                                    <mutation isObjectVar="true"></mutation>
+                                                                                                                                                                                                                                    <field name="OBJECTTYPE">TeamId</field>
+                                                                                                                                                                                                                                    <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
+                                                                                                                                                                                                                                    <value name="OBJECT">
+                                                                                                                                                                                                                                      <block type="GetTeamId">
+                                                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                                                                                            <field name="NUM">2</field>
+                                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                            </value>
                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                         <next>
-                                                                                                                                                                                                                          <block type="ResetRoundTime">
+                                                                                                                                                                                                                          <block type="UnspawnAllPlayers">
                                                                                                                                                                                                                             <next>
-                                                                                                                                                                                                                              <block type="EnablePlayerSpawning">
+                                                                                                                                                                                                                              <block type="SetVariable">
                                                                                                                                                                                                                                 <value name="VALUE-0">
+                                                                                                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                                                    <field name="VAR" id="Qt}+}r4]GZ3w75sU506n" variabletype="Global">gameOngoing</field>
+                                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                                <value name="VALUE-1">
                                                                                                                                                                                                                                   <block type="Boolean">
                                                                                                                                                                                                                                     <field name="BOOL">TRUE</field>
                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                 </value>
+                                                                                                                                                                                                                                <next>
+                                                                                                                                                                                                                                  <block type="ResetRoundTime">
+                                                                                                                                                                                                                                    <next>
+                                                                                                                                                                                                                                      <block type="EnablePlayerSpawning">
+                                                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                                                          <block type="Boolean">
+                                                                                                                                                                                                                                            <field name="BOOL">TRUE</field>
+                                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                                    </next>
+                                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                                </next>
                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                             </next>
                                                                                                                                                                                                                           </block>
@@ -3969,7 +4020,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13216">
+  <block type="subroutineBlock" deletable="false" x="0" y="13350">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -4926,7 +4977,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14841">
+  <block type="subroutineBlock" deletable="false" x="0" y="14975">
     <field name="SUBROUTINE_NAME">initPayloadTrackOrbital</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -6054,7 +6105,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="16731">
+  <block type="subroutineBlock" deletable="false" x="0" y="16865">
     <field name="SUBROUTINE_NAME">initPayloadTrackKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -7272,7 +7323,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="18755">
+  <block type="subroutineBlock" deletable="false" x="0" y="18889">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -8085,7 +8136,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20176">
+  <block type="subroutineBlock" deletable="false" x="0" y="20310">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -8988,7 +9039,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="21731">
+  <block type="subroutineBlock" deletable="false" x="0" y="21865">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -9801,7 +9852,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23152">
+  <block type="subroutineBlock" deletable="false" x="0" y="23286">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -10794,7 +10845,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="24841">
+  <block type="subroutineBlock" deletable="false" x="0" y="24975">
     <field name="SUBROUTINE_NAME">controlPayload</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11153,7 +11204,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25594">
+  <block type="subroutineBlock" deletable="false" x="0" y="25728">
     <field name="SUBROUTINE_NAME">makePayloadInvincible</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11517,7 +11568,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26226">
+  <block type="subroutineBlock" deletable="false" x="0" y="26360">
     <field name="SUBROUTINE_NAME">calculatePayloadPos</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11901,8 +11952,23 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">0.025</field>
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="true"></mutation>
+                                <field name="OBJECTTYPE">TeamId</field>
+                                <field name="VAR" id=",x4/Aa$P%,d{ZqW}5WtO" variabletype="TeamId">payloadSpeedAdditionMultiplier</field>
+                                <value name="OBJECT">
+                                  <block type="GetTeamId">
+                                    <value name="VALUE-0">
+                                      <block type="Number">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
                           </block>
                         </value>
                       </block>
@@ -11972,7 +12038,7 @@
                           <block type="GetTeamId">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">1</field>
+                                <field name="NUM">2</field>
                               </block>
                             </value>
                           </block>
@@ -12034,8 +12100,23 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">0.025</field>
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="true"></mutation>
+                                <field name="OBJECTTYPE">TeamId</field>
+                                <field name="VAR" id=",x4/Aa$P%,d{ZqW}5WtO" variabletype="TeamId">payloadSpeedAdditionMultiplier</field>
+                                <value name="OBJECT">
+                                  <block type="GetTeamId">
+                                    <value name="VALUE-0">
+                                      <block type="Number">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
                           </block>
                         </value>
                       </block>
@@ -15386,7 +15467,7 @@
                                                           <block type="GetTeamId">
                                                             <value name="VALUE-0">
                                                               <block type="Number">
-                                                                <field name="NUM">1</field>
+                                                                <field name="NUM">2</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -15423,7 +15504,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32315">
+  <block type="subroutineBlock" deletable="false" x="0" y="32449">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -15972,7 +16053,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33284">
+  <block type="subroutineBlock" deletable="false" x="0" y="33418">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -16237,7 +16318,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33994">
+  <block type="subroutineBlock" deletable="false" x="0" y="34128">
     <field name="SUBROUTINE_NAME">displayDebugMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -16399,7 +16480,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34461">
+  <block type="subroutineBlock" deletable="false" x="0" y="34595">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -16824,7 +16905,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35538">
+  <block type="subroutineBlock" deletable="false" x="0" y="35672">
     <field name="SUBROUTINE_NAME">arctan</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -17616,7 +17697,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38038">
+  <block type="subroutineBlock" deletable="false" x="0" y="38172">
     <field name="SUBROUTINE_NAME">yawToObject</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
