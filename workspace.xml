@@ -4046,12 +4046,31 @@
                                                                                                                   </block>
                                                                                                                 </value>
                                                                                                                 <value name="VALUE-1">
-                                                                                                                  <block type="GetVariable">
+                                                                                                                  <block type="ValueInArray">
                                                                                                                     <value name="VALUE-0">
-                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                        <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
+                                                                                                                      <block type="GetVariable">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-1">
+                                                                                                                      <block type="LastOf">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="GetVariable">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                          </block>
+                                                                                                                        </value>
                                                                                                                       </block>
                                                                                                                     </value>
                                                                                                                   </block>
@@ -16122,58 +16141,43 @@
                                   <block type="variableReferenceBlock">
                                     <mutation isObjectVar="false"></mutation>
                                     <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                    <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="ValueInArray">
+                              <block type="Add">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
-                                      </block>
-                                    </value>
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Add">
+                                  <block type="IndexOfArrayValue">
                                     <value name="VALUE-0">
-                                      <block type="Number">
-                                        <field name="NUM">1</field>
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="IndexOfArrayValue">
+                                      <block type="GetVariable">
                                         <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="true"></mutation>
-                                                <field name="OBJECTTYPE">TeamId</field>
-                                                <field name="VAR" id="eX@kSPz}?H0nj5~5-!}1" variabletype="TeamId">currentCheckpoint</field>
-                                                <value name="OBJECT">
-                                                  <block type="GetTeamId">
-                                                    <value name="VALUE-0">
-                                                      <block type="Number">
-                                                        <field name="NUM">1</field>
-                                                      </block>
-                                                    </value>
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="true"></mutation>
+                                            <field name="OBJECTTYPE">TeamId</field>
+                                            <field name="VAR" id="eX@kSPz}?H0nj5~5-!}1" variabletype="TeamId">currentCheckpoint</field>
+                                            <value name="OBJECT">
+                                              <block type="GetTeamId">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">1</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -16280,58 +16284,43 @@
                                           <block type="variableReferenceBlock">
                                             <mutation isObjectVar="false"></mutation>
                                             <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                            <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="ValueInArray">
+                                      <block type="Add">
                                         <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
-                                              </block>
-                                            </value>
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="Add">
+                                          <block type="IndexOfArrayValue">
                                             <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">2</field>
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
+                                                  </block>
+                                                </value>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="IndexOfArrayValue">
+                                              <block type="GetVariable">
                                                 <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="true"></mutation>
-                                                        <field name="OBJECTTYPE">TeamId</field>
-                                                        <field name="VAR" id="eX@kSPz}?H0nj5~5-!}1" variabletype="TeamId">currentCheckpoint</field>
-                                                        <value name="OBJECT">
-                                                          <block type="GetTeamId">
-                                                            <value name="VALUE-0">
-                                                              <block type="Number">
-                                                                <field name="NUM">1</field>
-                                                              </block>
-                                                            </value>
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="true"></mutation>
+                                                    <field name="OBJECTTYPE">TeamId</field>
+                                                    <field name="VAR" id="eX@kSPz}?H0nj5~5-!}1" variabletype="TeamId">currentCheckpoint</field>
+                                                    <value name="OBJECT">
+                                                      <block type="GetTeamId">
+                                                        <value name="VALUE-0">
+                                                          <block type="Number">
+                                                            <field name="NUM">1</field>
                                                           </block>
                                                         </value>
                                                       </block>
