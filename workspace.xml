@@ -1384,30 +1384,35 @@
                                                                                                                                                                                                                               <block type="subroutineInstanceBlock">
                                                                                                                                                                                                                                 <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
                                                                                                                                                                                                                                 <next>
-                                                                                                                                                                                                                                  <block type="UnspawnAllPlayers">
+                                                                                                                                                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                                                                                                                                                    <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
                                                                                                                                                                                                                                     <next>
-                                                                                                                                                                                                                                      <block type="SetVariable">
-                                                                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                            <field name="VAR" id="Qt}+}r4]GZ3w75sU506n" variabletype="Global">gameOngoing</field>
-                                                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                                                                                                          <block type="Boolean">
-                                                                                                                                                                                                                                            <field name="BOOL">TRUE</field>
-                                                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                      <block type="UnspawnAllPlayers">
                                                                                                                                                                                                                                         <next>
-                                                                                                                                                                                                                                          <block type="ResetRoundTime">
+                                                                                                                                                                                                                                          <block type="SetVariable">
+                                                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                                                                <field name="VAR" id="Qt}+}r4]GZ3w75sU506n" variabletype="Global">gameOngoing</field>
+                                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                                                                                              <block type="Boolean">
+                                                                                                                                                                                                                                                <field name="BOOL">TRUE</field>
+                                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                                            </value>
                                                                                                                                                                                                                                             <next>
-                                                                                                                                                                                                                                              <block type="EnablePlayerSpawning">
-                                                                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                                                                  <block type="Boolean">
-                                                                                                                                                                                                                                                    <field name="BOOL">TRUE</field>
+                                                                                                                                                                                                                                              <block type="ResetRoundTime">
+                                                                                                                                                                                                                                                <next>
+                                                                                                                                                                                                                                                  <block type="EnablePlayerSpawning">
+                                                                                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                                                                                      <block type="Boolean">
+                                                                                                                                                                                                                                                        <field name="BOOL">TRUE</field>
+                                                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                                                    </value>
                                                                                                                                                                                                                                                   </block>
-                                                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                                                </next>
                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                             </next>
                                                                                                                                                                                                                                           </block>
@@ -3617,7 +3622,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="11733">
+  <block type="subroutineBlock" deletable="false" x="0" y="11784">
     <field name="SUBROUTINE_NAME">initIcons</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconImage">
@@ -4179,7 +4184,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13614">
+  <block type="subroutineBlock" deletable="false" x="0" y="13665">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -5136,7 +5141,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="15239">
+  <block type="subroutineBlock" deletable="false" x="0" y="15290">
     <field name="SUBROUTINE_NAME">initPayloadTrackOrbital</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -6264,7 +6269,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="17129">
+  <block type="subroutineBlock" deletable="false" x="0" y="17180">
     <field name="SUBROUTINE_NAME">initPayloadTrackKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -7482,7 +7487,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="19153">
+  <block type="subroutineBlock" deletable="false" x="0" y="19204">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -8295,7 +8300,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20574">
+  <block type="subroutineBlock" deletable="false" x="0" y="20625">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -9198,7 +9203,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22129">
+  <block type="subroutineBlock" deletable="false" x="0" y="22180">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -10011,7 +10016,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23550">
+  <block type="subroutineBlock" deletable="false" x="0" y="23601">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -11004,7 +11009,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25239">
+  <block type="subroutineBlock" deletable="false" x="0" y="25290">
     <field name="SUBROUTINE_NAME">controlPayload</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11363,7 +11368,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25992">
+  <block type="subroutineBlock" deletable="false" x="0" y="26043">
     <field name="SUBROUTINE_NAME">makePayloadInvincible</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11992,7 +11997,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27183">
+  <block type="subroutineBlock" deletable="false" x="0" y="27234">
     <field name="SUBROUTINE_NAME">calculatePayloadPos</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -12841,7 +12846,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="28606">
+  <block type="subroutineBlock" deletable="false" x="0" y="28657">
     <field name="SUBROUTINE_NAME">teamTwoIsPushing</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -14107,7 +14112,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30956">
+  <block type="subroutineBlock" deletable="false" x="0" y="31007">
     <field name="SUBROUTINE_NAME">payloadIsBlocked</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -14975,7 +14980,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32539">
+  <block type="subroutineBlock" deletable="false" x="0" y="32590">
     <field name="SUBROUTINE_NAME">teamOneIsPushing</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -15185,6 +15190,11 @@
                             </value>
                           </block>
                         </value>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
@@ -15962,7 +15972,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34556">
+  <block type="subroutineBlock" deletable="false" x="0" y="34658">
     <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -16011,7 +16021,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34841">
+  <block type="subroutineBlock" deletable="false" x="0" y="34943">
     <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -16425,7 +16435,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35653">
+  <block type="subroutineBlock" deletable="false" x="0" y="35755">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -16974,7 +16984,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36622">
+  <block type="subroutineBlock" deletable="false" x="0" y="36724">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -17239,7 +17249,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37332">
+  <block type="subroutineBlock" deletable="false" x="0" y="37434">
     <field name="SUBROUTINE_NAME">displayDebugMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -17401,7 +17411,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37799">
+  <block type="subroutineBlock" deletable="false" x="0" y="37901">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -17826,7 +17836,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38876">
+  <block type="subroutineBlock" deletable="false" x="0" y="38978">
     <field name="SUBROUTINE_NAME">arctan</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -18618,7 +18628,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41376">
+  <block type="subroutineBlock" deletable="false" x="0" y="41478">
     <field name="SUBROUTINE_NAME">yawToObject</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
