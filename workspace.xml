@@ -3718,9 +3718,38 @@
             <statement name="DO">
               <block type="If">
                 <value name="VALUE-0">
-                  <block type="Equals">
+                  <block type="And">
                     <value name="VALUE-0">
-                      <block type="Modulo">
+                      <block type="Equals">
+                        <value name="VALUE-0">
+                          <block type="Modulo">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="NotEqualTo">
                         <value name="VALUE-0">
                           <block type="GetVariable">
                             <value name="VALUE-0">
@@ -3734,14 +3763,9 @@
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">2</field>
+                            <field name="NUM">0</field>
                           </block>
                         </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">0</field>
                       </block>
                     </value>
                   </block>
