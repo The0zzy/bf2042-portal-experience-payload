@@ -34,6 +34,8 @@
     <variable type="Global" id="_?RiR|}Zck0ohVjj)q9A">tickArray</variable>
     <variable type="Global" id=")nl=-)}qWj/+)`mdr6f.">switchTeamTime</variable>
     <variable type="Global" id="x.J1NIf[J@3LFGbhjYh`">tmp</variable>
+    <variable type="Global" id="+RRS:[EjpfAtrwUASg6x">payloadDistanceTotal</variable>
+    <variable type="Global" id="kYFLv8[)Z=A]-rD-H`jV">payloadDistanceCurrent</variable>
   </variables>
   <block type="modBlock" deletable="false" x="0" y="0">
     <statement name="RULES">
@@ -10570,24 +10572,16 @@
     </statement>
     <statement name="ACTIONS">
       <block type="If">
+        <comment pinned="false" h="80" w="160">calculate total distance once</comment>
         <value name="VALUE-0">
           <block type="Equals">
             <value name="VALUE-0">
-              <block type="ValueInArray">
+              <block type="GetVariable">
                 <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">0</field>
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="+RRS:[EjpfAtrwUASg6x" variabletype="Global">payloadDistanceTotal</field>
                   </block>
                 </value>
               </block>
@@ -10614,38 +10608,14 @@
               </block>
             </value>
             <value name="VALUE-2">
-              <block type="Subtract">
+              <block type="CountOf">
                 <value name="VALUE-0">
-                  <block type="CountOf">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
                   <block type="GetVariable">
                     <value name="VALUE-0">
                       <block type="variableReferenceBlock">
-                        <mutation isObjectVar="true"></mutation>
-                        <field name="OBJECTTYPE">TeamId</field>
-                        <field name="VAR" id="dFQ}z}vwF=/-})wvth7T" variabletype="TeamId">spawnDistance</field>
-                        <value name="OBJECT">
-                          <block type="GetTeamId">
-                            <value name="VALUE-0">
-                              <block type="Number">
-                                <field name="NUM">2</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
                       </block>
                     </value>
                   </block>
@@ -10658,98 +10628,61 @@
               </block>
             </value>
             <statement name="DO">
-              <block type="SetVariableAtIndex">
+              <block type="If">
                 <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
-                <value name="VALUE-2">
-                  <block type="Add">
+                  <block type="And" inline="false">
                     <value name="VALUE-0">
-                      <block type="ValueInArray">
+                      <block type="GreaterThanEqualTo">
                         <value name="VALUE-0">
                           <block type="GetVariable">
                             <value name="VALUE-0">
                               <block type="variableReferenceBlock">
                                 <mutation isObjectVar="false"></mutation>
                                 <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
+                                <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">0</field>
+                          <block type="FirstOf">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
                           </block>
                         </value>
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="DistanceBetween">
+                      <block type="LessThanEqualTo">
                         <value name="VALUE-0">
-                          <block type="ValueInArray">
+                          <block type="GetVariable">
                             <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Subtract">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">1</field>
-                                  </block>
-                                </value>
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="ValueInArray">
+                          <block type="LastOf">
                             <value name="VALUE-0">
                               <block type="GetVariable">
                                 <value name="VALUE-0">
                                   <block type="variableReferenceBlock">
                                     <mutation isObjectVar="false"></mutation>
                                     <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
+                                    <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
                                   </block>
                                 </value>
                               </block>
@@ -10758,108 +10691,32 @@
                         </value>
                       </block>
                     </value>
-                  </block>
-                </value>
-              </block>
-            </statement>
-          </block>
-        </statement>
-        <next>
-          <block type="SetVariableAtIndex">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-            <value name="VALUE-2">
-              <block type="Number">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-            <next>
-              <block type="ForVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">1</field>
-                  </block>
-                </value>
-                <value name="VALUE-2">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="true"></mutation>
-                        <field name="OBJECTTYPE">TeamId</field>
-                        <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
-                        <value name="OBJECT">
-                          <block type="GetTeamId">
-                            <value name="VALUE-0">
-                              <block type="Number">
-                                <field name="NUM">1</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-3">
-                  <block type="Number">
-                    <field name="NUM">1</field>
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="SetVariableAtIndex">
+                  <block type="SetVariable">
                     <value name="VALUE-0">
                       <block type="variableReferenceBlock">
                         <mutation isObjectVar="false"></mutation>
                         <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
+                        <field name="VAR" id="+RRS:[EjpfAtrwUASg6x" variabletype="Global">payloadDistanceTotal</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-2">
-                      <block type="Add">
+                      <block type="Add" inline="false">
                         <value name="VALUE-0">
-                          <block type="ValueInArray">
+                          <block type="GetVariable">
                             <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">1</field>
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="+RRS:[EjpfAtrwUASg6x" variabletype="Global">payloadDistanceTotal</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="DistanceBetween">
+                          <block type="DistanceBetween" inline="false">
                             <value name="VALUE-0">
                               <block type="ValueInArray">
                                 <value name="VALUE-0">
@@ -10927,46 +10784,248 @@
                     </value>
                   </block>
                 </statement>
-                <next>
-                  <block type="SetVariableAtIndex">
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="SetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="kYFLv8[)Z=A]-rD-H`jV" variabletype="Global">payloadDistanceCurrent</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="ForVariable">
+                <value name="VALUE-0">
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="GetVariable">
                     <value name="VALUE-0">
                       <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-2">
-                      <block type="Add">
-                        <value name="VALUE-0">
-                          <block type="ValueInArray">
+                        <mutation isObjectVar="true"></mutation>
+                        <field name="OBJECTTYPE">TeamId</field>
+                        <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
+                        <value name="OBJECT">
+                          <block type="GetTeamId">
                             <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
                               <block type="Number">
                                 <field name="NUM">1</field>
                               </block>
                             </value>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="DistanceBetween">
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-3">
+                  <block type="Number">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="If">
+                    <value name="VALUE-0">
+                      <block type="And" inline="false">
+                        <value name="VALUE-0">
+                          <block type="GreaterThanEqualTo">
                             <value name="VALUE-0">
-                              <block type="ValueInArray">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="FirstOf">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="LessThanEqualTo">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="LastOf">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="SetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="kYFLv8[)Z=A]-rD-H`jV" variabletype="Global">payloadDistanceCurrent</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Add" inline="false">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="kYFLv8[)Z=A]-rD-H`jV" variabletype="Global">payloadDistanceCurrent</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="DistanceBetween" inline="false">
+                                <value name="VALUE-0">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Subtract">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="LMb($!J=Q9/UFN13r*1c" variabletype="Global">loopCounter1</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <next>
+                  <block type="SetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="kYFLv8[)Z=A]-rD-H`jV" variabletype="Global">payloadDistanceCurrent</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Add" inline="false">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="kYFLv8[)Z=A]-rD-H`jV" variabletype="Global">payloadDistanceCurrent</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="DistanceBetween" inline="false">
+                            <value name="VALUE-0">
+                              <block type="ValueInArray" inline="false">
                                 <value name="VALUE-0">
                                   <block type="GetVariable">
                                     <value name="VALUE-0">
@@ -11025,7 +11084,7 @@
                       </block>
                     </value>
                     <next>
-                      <block type="SetVariableAtIndex">
+                      <block type="SetVariable">
                         <value name="VALUE-0">
                           <block type="variableReferenceBlock">
                             <mutation isObjectVar="false"></mutation>
@@ -11034,52 +11093,29 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">1</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-2">
-                          <block type="RoundToInteger">
+                          <block type="RoundToInteger" inline="false">
                             <value name="VALUE-0">
                               <block type="Multiply">
                                 <value name="VALUE-0">
-                                  <block type="Divide">
+                                  <block type="Divide" inline="false">
                                     <value name="VALUE-0">
-                                      <block type="ValueInArray">
+                                      <block type="GetVariable">
                                         <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">1</field>
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="kYFLv8[)Z=A]-rD-H`jV" variabletype="Global">payloadDistanceCurrent</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="ValueInArray">
+                                      <block type="GetVariable">
                                         <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">0</field>
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="+RRS:[EjpfAtrwUASg6x" variabletype="Global">payloadDistanceTotal</field>
                                           </block>
                                         </value>
                                       </block>
@@ -11106,7 +11142,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="28756">
+  <block type="subroutineBlock" deletable="false" x="0" y="30080">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -11143,21 +11179,12 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="ValueInArray">
+                  <block type="GetVariable">
                     <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">1</field>
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
                       </block>
                     </value>
                   </block>
@@ -11371,7 +11398,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29466">
+  <block type="subroutineBlock" deletable="false" x="0" y="30790">
     <field name="SUBROUTINE_NAME">displayDebugMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -11533,7 +11560,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29933">
+  <block type="subroutineBlock" deletable="false" x="0" y="31257">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11743,7 +11770,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30612">
+  <block type="subroutineBlock" deletable="false" x="0" y="31936">
     <field name="SUBROUTINE_NAME">spawnPlayerOld</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -12159,7 +12186,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31686">
+  <block type="subroutineBlock" deletable="false" x="0" y="33010">
     <field name="SUBROUTINE_NAME">arctan</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -12951,7 +12978,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34186">
+  <block type="subroutineBlock" deletable="false" x="0" y="35510">
     <field name="SUBROUTINE_NAME">yawToObject</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -13363,7 +13390,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35626">
+  <block type="subroutineBlock" deletable="false" x="0" y="36950">
     <field name="SUBROUTINE_NAME">initPayloadTrackOrbital</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -14491,7 +14518,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37516">
+  <block type="subroutineBlock" deletable="false" x="0" y="38840">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -15394,7 +15421,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39071">
+  <block type="subroutineBlock" deletable="false" x="0" y="40395">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -16387,7 +16414,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40760">
+  <block type="subroutineBlock" deletable="false" x="0" y="42084">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -17200,7 +17227,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42181">
+  <block type="subroutineBlock" deletable="false" x="0" y="43505">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -18013,7 +18040,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43602">
+  <block type="subroutineBlock" deletable="false" x="0" y="44926">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -18970,7 +18997,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45227">
+  <block type="subroutineBlock" deletable="false" x="0" y="46551">
     <field name="SUBROUTINE_NAME">initPayloadTrackKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -20188,7 +20215,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47251">
+  <block type="subroutineBlock" deletable="false" x="0" y="48575">
     <field name="SUBROUTINE_NAME">initCheckpointsKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -20532,7 +20559,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48203">
+  <block type="subroutineBlock" deletable="false" x="0" y="49527">
     <field name="SUBROUTINE_NAME">initSpawnpointsKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
