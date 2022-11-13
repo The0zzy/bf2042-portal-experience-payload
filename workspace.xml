@@ -6340,12 +6340,28 @@
           </block>
         </value>
         <value name="VALUE-1">
-          <block type="GetVariable">
+          <block type="Add">
             <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
+              <block type="GetVariable">
+                <value name="VALUE-0">
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Multiply">
+                <value name="VALUE-0">
+                  <block type="UpVector"></block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">0.5</field>
+                  </block>
+                </value>
               </block>
             </value>
           </block>
@@ -6430,7 +6446,16 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="UpVector"></block>
+                  <block type="Multiply">
+                    <value name="VALUE-0">
+                      <block type="UpVector"></block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">1.25</field>
+                      </block>
+                    </value>
+                  </block>
                 </value>
               </block>
             </value>
@@ -6577,7 +6602,16 @@
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="DownVector"></block>
+                      <block type="Multiply">
+                        <value name="VALUE-0">
+                          <block type="UpVector"></block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">-0.25</field>
+                          </block>
+                        </value>
+                      </block>
                     </value>
                   </block>
                 </value>
@@ -6650,56 +6684,60 @@
                     <value name="VALUE-1">
                       <block type="Add">
                         <value name="VALUE-0">
-                          <block type="GetVariable">
+                          <block type="Add">
                             <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Multiply">
-                            <value name="VALUE-0">
-                              <block type="DirectionTowards">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
-                                      </block>
-                                    </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="ValueInArray">
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Multiply">
+                                <value name="VALUE-0">
+                                  <block type="DirectionTowards">
                                     <value name="VALUE-0">
                                       <block type="GetVariable">
                                         <value name="VALUE-0">
                                           <block type="variableReferenceBlock">
                                             <mutation isObjectVar="false"></mutation>
                                             <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                            <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="GetVariable">
+                                      <block type="ValueInArray">
                                         <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="true"></mutation>
-                                            <field name="OBJECTTYPE">TeamId</field>
-                                            <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
-                                            <value name="OBJECT">
-                                              <block type="GetTeamId">
-                                                <value name="VALUE-0">
-                                                  <block type="Number">
-                                                    <field name="NUM">1</field>
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="true"></mutation>
+                                                <field name="OBJECTTYPE">TeamId</field>
+                                                <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
+                                                <value name="OBJECT">
+                                                  <block type="GetTeamId">
+                                                    <value name="VALUE-0">
+                                                      <block type="Number">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
                                                   </block>
                                                 </value>
                                               </block>
@@ -6710,11 +6748,23 @@
                                     </value>
                                   </block>
                                 </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
                               </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Multiply">
+                            <value name="VALUE-0">
+                              <block type="UpVector"></block>
                             </value>
                             <value name="VALUE-1">
                               <block type="Number">
-                                <field name="NUM">1</field>
+                                <field name="NUM">0.5</field>
                               </block>
                             </value>
                           </block>
@@ -6864,7 +6914,16 @@
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="UpVector"></block>
+                              <block type="Multiply">
+                                <value name="VALUE-0">
+                                  <block type="UpVector"></block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">1.25</field>
+                                  </block>
+                                </value>
+                              </block>
                             </value>
                           </block>
                         </value>
@@ -7011,7 +7070,16 @@
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="DownVector"></block>
+                                  <block type="Multiply">
+                                    <value name="VALUE-0">
+                                      <block type="UpVector"></block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">-0.25</field>
+                                      </block>
+                                    </value>
+                                  </block>
                                 </value>
                               </block>
                             </value>
@@ -7084,56 +7152,60 @@
                                 <value name="VALUE-1">
                                   <block type="Add">
                                     <value name="VALUE-0">
-                                      <block type="GetVariable">
+                                      <block type="Add">
                                         <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Multiply">
-                                        <value name="VALUE-0">
-                                          <block type="DirectionTowards">
+                                          <block type="GetVariable">
                                             <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
-                                                  </block>
-                                                </value>
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
                                               </block>
                                             </value>
-                                            <value name="VALUE-1">
-                                              <block type="ValueInArray">
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Multiply">
+                                            <value name="VALUE-0">
+                                              <block type="DirectionTowards">
                                                 <value name="VALUE-0">
                                                   <block type="GetVariable">
                                                     <value name="VALUE-0">
                                                       <block type="variableReferenceBlock">
                                                         <mutation isObjectVar="false"></mutation>
                                                         <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                                        <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
                                                       </block>
                                                     </value>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="GetVariable">
+                                                  <block type="ValueInArray">
                                                     <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="true"></mutation>
-                                                        <field name="OBJECTTYPE">TeamId</field>
-                                                        <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
-                                                        <value name="OBJECT">
-                                                          <block type="GetTeamId">
-                                                            <value name="VALUE-0">
-                                                              <block type="Number">
-                                                                <field name="NUM">1</field>
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">payloadTrackPoints</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="true"></mutation>
+                                                            <field name="OBJECTTYPE">TeamId</field>
+                                                            <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
+                                                            <value name="OBJECT">
+                                                              <block type="GetTeamId">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">1</field>
+                                                                  </block>
+                                                                </value>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -7144,11 +7216,23 @@
                                                 </value>
                                               </block>
                                             </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">-1</field>
+                                              </block>
+                                            </value>
                                           </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Multiply">
+                                        <value name="VALUE-0">
+                                          <block type="UpVector"></block>
                                         </value>
                                         <value name="VALUE-1">
                                           <block type="Number">
-                                            <field name="NUM">-1</field>
+                                            <field name="NUM">0.5</field>
                                           </block>
                                         </value>
                                       </block>
@@ -7298,7 +7382,16 @@
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="UpVector"></block>
+                                          <block type="Multiply">
+                                            <value name="VALUE-0">
+                                              <block type="UpVector"></block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">1.25</field>
+                                              </block>
+                                            </value>
+                                          </block>
                                         </value>
                                       </block>
                                     </value>
@@ -7363,7 +7456,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23358">
+  <block type="subroutineBlock" deletable="false" x="0" y="23382">
     <field name="SUBROUTINE_NAME">teamTwoIsPushing</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8634,7 +8727,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25759">
+  <block type="subroutineBlock" deletable="false" x="0" y="25783">
     <field name="SUBROUTINE_NAME">payloadIsBlocked</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -9502,7 +9595,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27342">
+  <block type="subroutineBlock" deletable="false" x="0" y="27366">
     <field name="SUBROUTINE_NAME">teamOneIsPushing</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10521,7 +10614,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29611">
+  <block type="subroutineBlock" deletable="false" x="0" y="29635">
     <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -10570,7 +10663,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29896">
+  <block type="subroutineBlock" deletable="false" x="0" y="29920">
     <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11104,7 +11197,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31176">
+  <block type="subroutineBlock" deletable="false" x="0" y="31200">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -11687,7 +11780,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33469">
+  <block type="subroutineBlock" deletable="false" x="0" y="33493">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -11943,7 +12036,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34179">
+  <block type="subroutineBlock" deletable="false" x="0" y="34203">
     <field name="SUBROUTINE_NAME">displayDebugMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -12105,7 +12198,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34646">
+  <block type="subroutineBlock" deletable="false" x="0" y="34670">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -12315,7 +12408,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35325">
+  <block type="subroutineBlock" deletable="false" x="0" y="35349">
     <field name="SUBROUTINE_NAME">arctan</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -13107,7 +13200,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37825">
+  <block type="subroutineBlock" deletable="false" x="0" y="37849">
     <field name="SUBROUTINE_NAME">yawToObject</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -13519,7 +13612,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39265">
+  <block type="subroutineBlock" deletable="false" x="0" y="39289">
     <field name="SUBROUTINE_NAME">initPayloadTrackOrbital</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -14647,7 +14740,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41155">
+  <block type="subroutineBlock" deletable="false" x="0" y="41179">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -15550,7 +15643,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42710">
+  <block type="subroutineBlock" deletable="false" x="0" y="42734">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -16543,7 +16636,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44399">
+  <block type="subroutineBlock" deletable="false" x="0" y="44423">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -17356,7 +17449,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45820">
+  <block type="subroutineBlock" deletable="false" x="0" y="45844">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -18169,7 +18262,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47241">
+  <block type="subroutineBlock" deletable="false" x="0" y="47265">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -19126,7 +19219,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48866">
+  <block type="subroutineBlock" deletable="false" x="0" y="48890">
     <field name="SUBROUTINE_NAME">initPayloadTrackKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -20344,7 +20437,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50890">
+  <block type="subroutineBlock" deletable="false" x="0" y="50914">
     <field name="SUBROUTINE_NAME">initCheckpointsKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -20688,7 +20781,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51842">
+  <block type="subroutineBlock" deletable="false" x="0" y="51866">
     <field name="SUBROUTINE_NAME">initSpawnpointsKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
