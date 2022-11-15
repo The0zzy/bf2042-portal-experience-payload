@@ -5963,7 +5963,7 @@
                       <block type="If">
                         <mutation else="1"></mutation>
                         <value name="VALUE-0">
-                          <block type="LessThanEqualTo">
+                          <block type="LessThan">
                             <value name="VALUE-0">
                               <block type="Add">
                                 <value name="VALUE-0">
@@ -6360,15 +6360,6 @@
                                             </value>
                                           </block>
                                         </value>
-                                        <next>
-                                          <block type="Wait">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">0.05</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </next>
                                       </block>
                                     </statement>
                                     <next>
@@ -6912,15 +6903,6 @@
                                                         </value>
                                                       </block>
                                                     </value>
-                                                    <next>
-                                                      <block type="Wait">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">0.05</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </next>
                                                   </block>
                                                 </statement>
                                                 <next>
