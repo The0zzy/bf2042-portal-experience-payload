@@ -4129,7 +4129,6 @@
       </block>
     </statement>
   </block>
-  <block type="UnspawnAllPlayers" x="969" y="6250"></block>
   <block type="subroutineBlock" deletable="false" x="0" y="15460">
     <field name="SUBROUTINE_NAME">globalEverySecond</field>
     <statement name="ACTIONS">
@@ -12499,7 +12498,7 @@
                 </value>
                 <value name="VALUE-1">
                   <block type="Number">
-                    <field name="NUM">4</field>
+                    <field name="NUM">0.5</field>
                   </block>
                 </value>
               </block>
