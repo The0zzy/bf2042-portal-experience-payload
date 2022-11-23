@@ -4776,9 +4776,8 @@
                             </statement>
                             <next>
                               <block type="If">
-                                <mutation else="1"></mutation>
                                 <value name="VALUE-0">
-                                  <block type="GreaterThanEqualTo">
+                                  <block type="LessThan">
                                     <value name="VALUE-0">
                                       <block type="GetVariable">
                                         <value name="VALUE-0">
@@ -4798,52 +4797,6 @@
                                   </block>
                                 </value>
                                 <statement name="DO">
-                                  <block type="DisplayCustomNotificationMessage">
-                                    <value name="VALUE-0">
-                                      <block type="Message">
-                                        <value name="VALUE-0">
-                                          <block type="Text">
-                                            <field name="TEXT">{} minute and {} seconds left!</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="FN,maFDn|QjwB4_0Iw,f" variabletype="Global">minutesLeft</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-2">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="Q,,;RAm*uQbV7Mc{r!f@" variabletype="Global">secondsLeft</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="CustomMessagesItem">
-                                        <field name="VALUE-0">CustomMessages</field>
-                                        <field name="VALUE-1">MessageText4</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-2">
-                                      <block type="Number">
-                                        <field name="NUM">2</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </statement>
-                                <statement name="ELSE">
                                   <block type="DisplayCustomNotificationMessage">
                                     <value name="VALUE-0">
                                       <block type="Message">
