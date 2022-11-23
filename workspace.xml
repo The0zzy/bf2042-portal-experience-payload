@@ -4688,7 +4688,7 @@
             <value name="VALUE-0">
               <block type="MCOMsItem">
                 <field name="VALUE-0">MCOMs</field>
-                <field name="VALUE-1">A</field>
+                <field name="VALUE-1">B</field>
               </block>
             </value>
           </block>
