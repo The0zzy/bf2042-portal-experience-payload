@@ -4535,7 +4535,7 @@
                           <block type="Message">
                             <value name="VALUE-0">
                               <block type="Text">
-                                <field name="TEXT">{}{}0{} minutes left!</field>
+                                <field name="TEXT">{} {}{} minutes left!</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -4551,7 +4551,7 @@
                             </value>
                             <value name="VALUE-2">
                               <block type="Text">
-                                <field name="TEXT">:</field>
+                                <field name="TEXT">: 0</field>
                               </block>
                             </value>
                             <value name="VALUE-3">
@@ -4632,7 +4632,7 @@
                               <block type="Message">
                                 <value name="VALUE-0">
                                   <block type="Text">
-                                    <field name="TEXT">0{}{}0{} minutes left!</field>
+                                    <field name="TEXT">0{} {}{} minutes left!</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -4648,7 +4648,7 @@
                                 </value>
                                 <value name="VALUE-2">
                                   <block type="Text">
-                                    <field name="TEXT">:</field>
+                                    <field name="TEXT">: 0</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-3">
@@ -4729,7 +4729,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">0{}{}{} minutes left!</field>
+                                        <field name="TEXT">0{} {} {} minutes left!</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
