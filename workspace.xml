@@ -8210,7 +8210,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27499">
+  <block type="subroutineBlock" deletable="false" x="0" y="27708">
     <field name="SUBROUTINE_NAME">updatePayloadTower</field>
     <statement name="ACTIONS">
       <block type="Teleport" inline="false">
@@ -9351,7 +9351,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30234">
+  <block type="subroutineBlock" deletable="false" x="0" y="30443">
     <field name="SUBROUTINE_NAME">teamTwoIsPushing</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10670,7 +10670,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32635">
+  <block type="subroutineBlock" deletable="false" x="0" y="32962">
     <field name="SUBROUTINE_NAME">payloadIsBlocked</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -11538,7 +11538,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34218">
+  <block type="subroutineBlock" deletable="false" x="0" y="34545">
     <field name="SUBROUTINE_NAME">teamOneIsPushing</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12579,7 +12579,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36554">
+  <block type="subroutineBlock" deletable="false" x="0" y="36881">
     <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -12628,7 +12628,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36839">
+  <block type="subroutineBlock" deletable="false" x="0" y="37166">
     <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -13162,7 +13162,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38119">
+  <block type="subroutineBlock" deletable="false" x="0" y="38446">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -13745,7 +13745,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40412">
+  <block type="subroutineBlock" deletable="false" x="0" y="40739">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -13753,91 +13753,24 @@
           <block type="Message">
             <value name="VALUE-0">
               <block type="Text">
-                <field name="TEXT">PAYLOAD</field>
+                <field name="TEXT">Payload Progress: {}% - Reached Checkpoint {} of {}</field>
               </block>
             </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="CustomMessagesItem">
-            <field name="VALUE-0">CustomMessages</field>
-            <field name="VALUE-1">HeaderText</field>
-          </block>
-        </value>
-        <value name="VALUE-2">
-          <block type="Number">
-            <field name="NUM">3</field>
-          </block>
-        </value>
-        <value name="VALUE-3">
-          <block type="EventTeam"></block>
-        </value>
-        <next>
-          <block type="DisplayCustomNotificationMessage">
-            <value name="VALUE-0">
-              <block type="Message">
+            <value name="VALUE-1">
+              <block type="GetVariable">
                 <value name="VALUE-0">
-                  <block type="Text">
-                    <field name="TEXT">Payload Progress: {}% - Reached Checkpoint {} of {}</field>
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
                   </block>
                 </value>
-                <value name="VALUE-1">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">payloadProgress</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-2">
-                  <block type="Add">
-                    <value name="VALUE-0">
-                      <block type="IndexOfArrayValue">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="true"></mutation>
-                                <field name="OBJECTTYPE">TeamId</field>
-                                <field name="VAR" id="eX@kSPz}?H0nj5~5-!}1" variabletype="TeamId">currentCheckpoint</field>
-                                <value name="OBJECT">
-                                  <block type="GetTeamId">
-                                    <value name="VALUE-0">
-                                      <block type="Number">
-                                        <field name="NUM">1</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-3">
-                  <block type="CountOf">
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Add">
+                <value name="VALUE-0">
+                  <block type="IndexOfArrayValue">
                     <value name="VALUE-0">
                       <block type="GetVariable">
                         <value name="VALUE-0">
@@ -13849,121 +13782,161 @@
                         </value>
                       </block>
                     </value>
+                    <value name="VALUE-1">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="true"></mutation>
+                            <field name="OBJECTTYPE">TeamId</field>
+                            <field name="VAR" id="eX@kSPz}?H0nj5~5-!}1" variabletype="TeamId">currentCheckpoint</field>
+                            <value name="OBJECT">
+                              <block type="GetTeamId">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
                   </block>
                 </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="CustomMessagesItem">
-                <field name="VALUE-0">CustomMessages</field>
-                <field name="VALUE-1">MessageText1</field>
-              </block>
-            </value>
-            <value name="VALUE-2">
-              <block type="Number">
-                <field name="NUM">3</field>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
               </block>
             </value>
             <value name="VALUE-3">
-              <block type="EventTeam"></block>
-            </value>
-            <next>
-              <block type="If">
-                <mutation elseif="1"></mutation>
+              <block type="CountOf">
                 <value name="VALUE-0">
-                  <block type="Equals">
+                  <block type="GetVariable">
                     <value name="VALUE-0">
-                      <block type="EventTeam"></block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetTeamId">
-                        <value name="VALUE-0">
-                          <block type="Number">
-                            <field name="NUM">1</field>
-                          </block>
-                        </value>
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">payloadCheckPoints</field>
                       </block>
                     </value>
                   </block>
                 </value>
-                <statement name="DO">
-                  <block type="DisplayCustomNotificationMessage">
-                    <value name="VALUE-0">
-                      <block type="Message">
-                        <value name="VALUE-0">
-                          <block type="Text">
-                            <field name="TEXT">Get close to the payload to push it!</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="CustomMessagesItem">
-                        <field name="VALUE-0">CustomMessages</field>
-                        <field name="VALUE-1">MessageText2</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-2">
-                      <block type="Number">
-                        <field name="NUM">3</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-3">
-                      <block type="EventTeam"></block>
-                    </value>
-                  </block>
-                </statement>
-                <value name="IF1">
-                  <block type="Equals">
-                    <value name="VALUE-0">
-                      <block type="EventTeam"></block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetTeamId">
-                        <value name="VALUE-0">
-                          <block type="Number">
-                            <field name="NUM">2</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <statement name="DO1">
-                  <block type="DisplayCustomNotificationMessage">
-                    <value name="VALUE-0">
-                      <block type="Message">
-                        <value name="VALUE-0">
-                          <block type="Text">
-                            <field name="TEXT">Get close to the payload to stop it!</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="CustomMessagesItem">
-                        <field name="VALUE-0">CustomMessages</field>
-                        <field name="VALUE-1">MessageText2</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-2">
-                      <block type="Number">
-                        <field name="NUM">3</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-3">
-                      <block type="EventTeam"></block>
-                    </value>
-                  </block>
-                </statement>
               </block>
-            </next>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE-1">
+          <block type="CustomMessagesItem">
+            <field name="VALUE-0">CustomMessages</field>
+            <field name="VALUE-1">MessageText1</field>
+          </block>
+        </value>
+        <value name="VALUE-2">
+          <block type="Number">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+        <value name="VALUE-3">
+          <block type="EventTeam"></block>
+        </value>
+        <next>
+          <block type="If">
+            <mutation elseif="1"></mutation>
+            <value name="VALUE-0">
+              <block type="Equals">
+                <value name="VALUE-0">
+                  <block type="EventTeam"></block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetTeamId">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="DisplayCustomNotificationMessage">
+                <value name="VALUE-0">
+                  <block type="Message">
+                    <value name="VALUE-0">
+                      <block type="Text">
+                        <field name="TEXT">Get close to the payload to push it!</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="CustomMessagesItem">
+                    <field name="VALUE-0">CustomMessages</field>
+                    <field name="VALUE-1">MessageText2</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="Number">
+                    <field name="NUM">3</field>
+                  </block>
+                </value>
+                <value name="VALUE-3">
+                  <block type="EventTeam"></block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="Equals">
+                <value name="VALUE-0">
+                  <block type="EventTeam"></block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetTeamId">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="DisplayCustomNotificationMessage">
+                <value name="VALUE-0">
+                  <block type="Message">
+                    <value name="VALUE-0">
+                      <block type="Text">
+                        <field name="TEXT">Get close to the payload to stop it!</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="CustomMessagesItem">
+                    <field name="VALUE-0">CustomMessages</field>
+                    <field name="VALUE-1">MessageText2</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="Number">
+                    <field name="NUM">3</field>
+                  </block>
+                </value>
+                <value name="VALUE-3">
+                  <block type="EventTeam"></block>
+                </value>
+              </block>
+            </statement>
           </block>
         </next>
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41063">
+  <block type="subroutineBlock" deletable="false" x="0" y="41331">
     <field name="SUBROUTINE_NAME">displayDebugMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -14125,7 +14098,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41530">
+  <block type="subroutineBlock" deletable="false" x="0" y="41798">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -14392,7 +14365,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42464">
+  <block type="subroutineBlock" deletable="false" x="0" y="42732">
     <field name="SUBROUTINE_NAME">arctan</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -15184,7 +15157,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44964">
+  <block type="subroutineBlock" deletable="false" x="0" y="45232">
     <field name="SUBROUTINE_NAME">yawToObject</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -15596,7 +15569,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46404">
+  <block type="subroutineBlock" deletable="false" x="0" y="46672">
     <field name="SUBROUTINE_NAME">initPayloadTrackOrbital</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -16724,7 +16697,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48294">
+  <block type="subroutineBlock" deletable="false" x="0" y="48562">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -17627,7 +17600,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="49849">
+  <block type="subroutineBlock" deletable="false" x="0" y="50117">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -18485,7 +18458,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51337">
+  <block type="subroutineBlock" deletable="false" x="0" y="51605">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -19208,7 +19181,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="52624">
+  <block type="subroutineBlock" deletable="false" x="0" y="52892">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -21596,7 +21569,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="56390">
+  <block type="subroutineBlock" deletable="false" x="0" y="56658">
     <field name="SUBROUTINE_NAME">initSpawnpointsSpearhead</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -22369,7 +22342,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="57515">
+  <block type="subroutineBlock" deletable="false" x="0" y="57783">
     <field name="SUBROUTINE_NAME">initCheckpointsSpearhead</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -22558,7 +22531,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="58132">
+  <block type="subroutineBlock" deletable="false" x="0" y="58400">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -23371,7 +23344,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="59553">
+  <block type="subroutineBlock" deletable="false" x="0" y="59821">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -25624,7 +25597,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="63118">
+  <block type="subroutineBlock" deletable="false" x="0" y="63386">
     <field name="SUBROUTINE_NAME">initCheckpointsAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -25875,10 +25848,7 @@
       </block>
     </statement>
   </block>
-  <block type="Text" x="0" y="63869">
-    <field name="TEXT">53</field>
-  </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="63957">
+  <block type="subroutineBlock" deletable="false" x="0" y="64137">
     <field name="SUBROUTINE_NAME">initSpawnPointsAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -26959,7 +26929,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="65446">
+  <block type="subroutineBlock" deletable="false" x="0" y="65626">
     <field name="SUBROUTINE_NAME">initPayloadTrackKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -27997,7 +27967,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="67202">
+  <block type="subroutineBlock" deletable="false" x="0" y="67382">
     <field name="SUBROUTINE_NAME">initCheckpointsKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -28341,7 +28311,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="68154">
+  <block type="subroutineBlock" deletable="false" x="0" y="68334">
     <field name="SUBROUTINE_NAME">initSpawnpointsKaleidoscope</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
