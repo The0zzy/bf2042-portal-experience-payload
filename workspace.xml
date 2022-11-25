@@ -1756,7 +1756,19 @@
                                                                                                                                                                                                                                                                 <field name="SUBROUTINE_NAME">initIcons</field>
                                                                                                                                                                                                                                                                 <next>
                                                                                                                                                                                                                                                                   <block type="subroutineInstanceBlock">
+                                                                                                                                                                                                                                                                    <mutation>
+                                                                                                                                                                                                                                                                      <parameter types="TeamId">pushingTeam</parameter>
+                                                                                                                                                                                                                                                                    </mutation>
                                                                                                                                                                                                                                                                     <field name="SUBROUTINE_NAME">updatePayloadTower</field>
+                                                                                                                                                                                                                                                                    <value name="PARAM-0">
+                                                                                                                                                                                                                                                                      <block type="GetTeamId">
+                                                                                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                                                                                                                            <field name="NUM">1</field>
+                                                                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                                                                    </value>
                                                                                                                                                                                                                                                                     <next>
                                                                                                                                                                                                                                                                       <block type="subroutineInstanceBlock">
                                                                                                                                                                                                                                                                         <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
@@ -7695,6 +7707,9 @@
         <field name="SUBROUTINE_NAME">calculatePayloadPos</field>
         <next>
           <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="TeamId">pushingTeam</parameter>
+            </mutation>
             <field name="SUBROUTINE_NAME">updatePayloadTower</field>
           </block>
         </next>
@@ -8743,6 +8758,9 @@
     </statement>
   </block>
   <block type="subroutineBlock" deletable="false" x="0" y="29656">
+    <mutation>
+      <parameter types="TeamId">pushingTeam</parameter>
+    </mutation>
     <field name="SUBROUTINE_NAME">updatePayloadTower</field>
     <statement name="ACTIONS">
       <block type="Teleport" inline="false">
@@ -9003,12 +9021,8 @@
                                             <field name="OBJECTTYPE">TeamId</field>
                                             <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
                                             <value name="OBJECT">
-                                              <block type="GetTeamId">
-                                                <value name="VALUE-0">
-                                                  <block type="Number">
-                                                    <field name="NUM">1</field>
-                                                  </block>
-                                                </value>
+                                              <block type="subroutineArgumentBlock">
+                                                <field name="ARGUMENT_INDEX">0</field>
                                               </block>
                                             </value>
                                           </block>
@@ -9159,12 +9173,8 @@
                                                 <field name="OBJECTTYPE">TeamId</field>
                                                 <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
                                                 <value name="OBJECT">
-                                                  <block type="GetTeamId">
-                                                    <value name="VALUE-0">
-                                                      <block type="Number">
-                                                        <field name="NUM">1</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="subroutineArgumentBlock">
+                                                    <field name="ARGUMENT_INDEX">0</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -9315,12 +9325,8 @@
                                                     <field name="OBJECTTYPE">TeamId</field>
                                                     <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
                                                     <value name="OBJECT">
-                                                      <block type="GetTeamId">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">1</field>
-                                                          </block>
-                                                        </value>
+                                                      <block type="subroutineArgumentBlock">
+                                                        <field name="ARGUMENT_INDEX">0</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -9471,12 +9477,8 @@
                                                         <field name="OBJECTTYPE">TeamId</field>
                                                         <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
                                                         <value name="OBJECT">
-                                                          <block type="GetTeamId">
-                                                            <value name="VALUE-0">
-                                                              <block type="Number">
-                                                                <field name="NUM">1</field>
-                                                              </block>
-                                                            </value>
+                                                          <block type="subroutineArgumentBlock">
+                                                            <field name="ARGUMENT_INDEX">0</field>
                                                           </block>
                                                         </value>
                                                       </block>
@@ -9627,12 +9629,8 @@
                                                             <field name="OBJECTTYPE">TeamId</field>
                                                             <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
                                                             <value name="OBJECT">
-                                                              <block type="GetTeamId">
-                                                                <value name="VALUE-0">
-                                                                  <block type="Number">
-                                                                    <field name="NUM">1</field>
-                                                                  </block>
-                                                                </value>
+                                                              <block type="subroutineArgumentBlock">
+                                                                <field name="ARGUMENT_INDEX">0</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -9783,12 +9781,8 @@
                                                                 <field name="OBJECTTYPE">TeamId</field>
                                                                 <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
                                                                 <value name="OBJECT">
-                                                                  <block type="GetTeamId">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="Number">
-                                                                        <field name="NUM">1</field>
-                                                                      </block>
-                                                                    </value>
+                                                                  <block type="subroutineArgumentBlock">
+                                                                    <field name="ARGUMENT_INDEX">0</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
@@ -11028,7 +11022,19 @@
                                     <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
                                     <next>
                                       <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="TeamId">pushingTeam</parameter>
+                                        </mutation>
                                         <field name="SUBROUTINE_NAME">updatePayloadTower</field>
+                                        <value name="PARAM-0">
+                                          <block type="GetTeamId">
+                                            <value name="VALUE-0">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
                                       </block>
                                     </next>
                                   </block>
@@ -12981,7 +12987,19 @@
                         <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
                         <next>
                           <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="TeamId">pushingTeam</parameter>
+                            </mutation>
                             <field name="SUBROUTINE_NAME">updatePayloadTower</field>
+                            <value name="PARAM-0">
+                              <block type="GetTeamId">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
                           </block>
                         </next>
                       </block>
