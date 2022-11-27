@@ -17283,7 +17283,7 @@
               <block type="CreateVector">
                 <value name="VALUE-0">
                   <block type="Number">
-                    <field name="NUM">-130.77</field>
+                    <field name="NUM">-130.75</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -17293,7 +17293,7 @@
                 </value>
                 <value name="VALUE-2">
                   <block type="Number">
-                    <field name="NUM">451.6</field>
+                    <field name="NUM">441.2</field>
                   </block>
                 </value>
               </block>
@@ -17508,7 +17508,7 @@
                           <block type="CreateVector">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">340.5</field>
+                                <field name="NUM">-241</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -17518,7 +17518,7 @@
                             </value>
                             <value name="VALUE-2">
                               <block type="Number">
-                                <field name="NUM">455.6</field>
+                                <field name="NUM">457.6</field>
                               </block>
                             </value>
                           </block>
