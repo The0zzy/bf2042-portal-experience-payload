@@ -956,30 +956,12 @@
                                                                                                                                                                                       </block>
                                                                                                                                                                                     </value>
                                                                                                                                                                                     <value name="VALUE-1">
-                                                                                                                                                                                      <block type="Add">
+                                                                                                                                                                                      <block type="GetVariable">
                                                                                                                                                                                         <value name="VALUE-0">
-                                                                                                                                                                                          <block type="GetVariable">
-                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                                                <mutation isObjectVar="true"></mutation>
-                                                                                                                                                                                                <field name="OBJECTTYPE">TeamId</field>
-                                                                                                                                                                                                <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">payloadTrackIndex</field>
-                                                                                                                                                                                                <value name="OBJECT">
-                                                                                                                                                                                                  <block type="GetTeamId">
-                                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                                                        <field name="NUM">1</field>
-                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                              </block>
-                                                                                                                                                                                            </value>
-                                                                                                                                                                                          </block>
-                                                                                                                                                                                        </value>
-                                                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                                                          <block type="Number">
-                                                                                                                                                                                            <field name="NUM">-1</field>
+                                                                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                            <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
                                                                                                                                                                                           </block>
                                                                                                                                                                                         </value>
                                                                                                                                                                                       </block>
@@ -10703,18 +10685,9 @@
                                   <block type="GetVariable">
                                     <value name="VALUE-0">
                                       <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">TeamId</field>
-                                        <field name="VAR" id="eX@kSPz}?H0nj5~5-!}1" variabletype="TeamId">currentCheckpoint</field>
-                                        <value name="OBJECT">
-                                          <block type="GetTeamId">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
                                       </block>
                                     </value>
                                   </block>
