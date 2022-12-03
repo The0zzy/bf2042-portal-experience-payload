@@ -31046,7 +31046,7 @@
                         </value>
                         <value name="VALUE-2">
                           <block type="Number">
-                            <field name="NUM">-220.94</field>
+                            <field name="NUM">-221</field>
                           </block>
                         </value>
                       </block>
@@ -31820,7 +31820,7 @@
                                                                                                 </value>
                                                                                                 <value name="VALUE-2">
                                                                                                   <block type="Number">
-                                                                                                    <field name="NUM">-229.47</field>
+                                                                                                    <field name="NUM">-229.5</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
@@ -31863,7 +31863,7 @@
                                                                                                     </value>
                                                                                                     <value name="VALUE-2">
                                                                                                       <block type="Number">
-                                                                                                        <field name="NUM">-214.77</field>
+                                                                                                        <field name="NUM">-214.8</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
