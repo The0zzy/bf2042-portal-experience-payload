@@ -4704,82 +4704,45 @@
                   <block type="If">
                     <mutation elseif="2" else="1"></mutation>
                     <value name="VALUE-0">
-                      <block type="And" inline="false">
+                      <block type="GreaterThan">
                         <value name="VALUE-0">
-                          <block type="GreaterThan">
+                          <block type="CountOf">
                             <value name="VALUE-0">
-                              <block type="CountOf">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">TeamId</field>
-                                        <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
-                                        <value name="OBJECT">
-                                          <block type="GetTeamId">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="true"></mutation>
+                                    <field name="OBJECTTYPE">TeamId</field>
+                                    <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
+                                    <value name="OBJECT">
+                                      <block type="GetTeamId">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">1</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">0</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="GreaterThan">
+                          <block type="CountOf">
                             <value name="VALUE-0">
-                              <block type="CountOf">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">TeamId</field>
-                                        <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
-                                        <value name="OBJECT">
-                                          <block type="GetTeamId">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="CountOf">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">TeamId</field>
-                                        <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
-                                        <value name="OBJECT">
-                                          <block type="GetTeamId">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">2</field>
-                                              </block>
-                                            </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="true"></mutation>
+                                    <field name="OBJECTTYPE">TeamId</field>
+                                    <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
+                                    <value name="OBJECT">
+                                      <block type="GetTeamId">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
                                           </block>
                                         </value>
                                       </block>
@@ -4892,82 +4855,45 @@
                       </block>
                     </statement>
                     <value name="IF2">
-                      <block type="And">
+                      <block type="GreaterThan">
                         <value name="VALUE-0">
-                          <block type="GreaterThan">
+                          <block type="CountOf">
                             <value name="VALUE-0">
-                              <block type="CountOf">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">TeamId</field>
-                                        <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
-                                        <value name="OBJECT">
-                                          <block type="GetTeamId">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">2</field>
-                                              </block>
-                                            </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="true"></mutation>
+                                    <field name="OBJECTTYPE">TeamId</field>
+                                    <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
+                                    <value name="OBJECT">
+                                      <block type="GetTeamId">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">0</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="GreaterThan">
+                          <block type="CountOf">
                             <value name="VALUE-0">
-                              <block type="CountOf">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">TeamId</field>
-                                        <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
-                                        <value name="OBJECT">
-                                          <block type="GetTeamId">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">2</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="CountOf">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">TeamId</field>
-                                        <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
-                                        <value name="OBJECT">
-                                          <block type="GetTeamId">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="true"></mutation>
+                                    <field name="OBJECTTYPE">TeamId</field>
+                                    <field name="VAR" id="!Z@S(d0hTDeIo/s8!-h2" variabletype="TeamId">pushingPlayers</field>
+                                    <value name="OBJECT">
+                                      <block type="GetTeamId">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">1</field>
                                           </block>
                                         </value>
                                       </block>
@@ -5034,7 +4960,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="19510">
+  <block type="subroutineBlock" deletable="false" x="0" y="19358">
     <mutation>
       <parameter types="TeamId">pushingTeam</parameter>
     </mutation>
@@ -6194,7 +6120,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22181">
+  <block type="subroutineBlock" deletable="false" x="0" y="22029">
     <field name="SUBROUTINE_NAME">teamTwoIsPushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -6731,7 +6657,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23464">
+  <block type="subroutineBlock" deletable="false" x="0" y="23312">
     <field name="SUBROUTINE_NAME">payloadIsBlocked</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -6774,7 +6700,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23789">
+  <block type="subroutineBlock" deletable="false" x="0" y="23637">
     <field name="SUBROUTINE_NAME">teamOneIsPushing</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -7433,7 +7359,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25605">
+  <block type="subroutineBlock" deletable="false" x="0" y="25453">
     <field name="SUBROUTINE_NAME">updateCheckpointTime</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -7521,7 +7447,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26149">
+  <block type="subroutineBlock" deletable="false" x="0" y="25997">
     <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconPosition">
@@ -7561,7 +7487,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26431">
+  <block type="subroutineBlock" deletable="false" x="0" y="26279">
     <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconPosition">
@@ -7984,7 +7910,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27551">
+  <block type="subroutineBlock" deletable="false" x="0" y="27399">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8558,7 +8484,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29841">
+  <block type="subroutineBlock" deletable="false" x="0" y="29689">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -8740,7 +8666,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30417">
+  <block type="subroutineBlock" deletable="false" x="0" y="30265">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="ACTIONS">
       <block type="SetPlayerMaxHealth">
@@ -8932,7 +8858,70 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31112">
+  <block type="subroutineBlock" deletable="false" x="0" y="30960">
+    <mutation>
+      <parameter types="TeamId">team</parameter>
+      <parameter types="Number">checkpointIndex</parameter>
+      <parameter types="Vector">spawnpoint</parameter>
+    </mutation>
+    <field name="SUBROUTINE_NAME">addSpawnpoint</field>
+    <statement name="ACTIONS">
+      <block type="SetVariableAtIndex">
+        <value name="VALUE-0">
+          <block type="variableReferenceBlock">
+            <mutation isObjectVar="true"></mutation>
+            <field name="OBJECTTYPE">TeamId</field>
+            <field name="VAR" id="8)IE?`KADV4LDA;;Th{4" variabletype="TeamId">spawnpointList</field>
+            <value name="OBJECT">
+              <block type="subroutineArgumentBlock">
+                <field name="ARGUMENT_INDEX">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE-1">
+          <block type="subroutineArgumentBlock">
+            <field name="ARGUMENT_INDEX">1</field>
+          </block>
+        </value>
+        <value name="VALUE-2">
+          <block type="AppendToArray">
+            <value name="VALUE-0">
+              <block type="ValueInArray">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="true"></mutation>
+                        <field name="OBJECTTYPE">TeamId</field>
+                        <field name="VAR" id="8)IE?`KADV4LDA;;Th{4" variabletype="TeamId">spawnpointList</field>
+                        <value name="OBJECT">
+                          <block type="subroutineArgumentBlock">
+                            <field name="ARGUMENT_INDEX">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="subroutineArgumentBlock">
+                    <field name="ARGUMENT_INDEX">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="subroutineArgumentBlock">
+                <field name="ARGUMENT_INDEX">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="31258">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -10555,79 +10544,45 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33739">
+  <block type="subroutineBlock" deletable="false" x="0" y="33885">
     <field name="SUBROUTINE_NAME">initializeSpawnsCaspianBorder</field>
     <statement name="ACTIONS">
-      <block type="SetVariableAtIndex">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="true"></mutation>
-            <field name="OBJECTTYPE">TeamId</field>
-            <field name="VAR" id="8)IE?`KADV4LDA;;Th{4" variabletype="TeamId">spawnpointList</field>
-            <value name="OBJECT">
-              <block type="GetTeamId">
-                <value name="VALUE-0">
-                  <block type="Number">
-                    <field name="NUM">1</field>
-                  </block>
-                </value>
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="TeamId">team</parameter>
+          <parameter types="Number">checkpointIndex</parameter>
+          <parameter types="Vector">spawnpoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addSpawnpoint</field>
+        <value name="PARAM-0">
+          <block type="GetTeamId">
+            <value name="VALUE-0">
+              <block type="Number">
+                <field name="NUM">1</field>
               </block>
             </value>
           </block>
         </value>
-        <value name="VALUE-1">
+        <value name="PARAM-1">
           <block type="Number">
             <field name="NUM">0</field>
           </block>
         </value>
-        <value name="VALUE-2">
-          <block type="AppendToArray">
+        <value name="PARAM-2">
+          <block type="CreateVector">
             <value name="VALUE-0">
-              <block type="ValueInArray">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="true"></mutation>
-                        <field name="OBJECTTYPE">TeamId</field>
-                        <field name="VAR" id="8)IE?`KADV4LDA;;Th{4" variabletype="TeamId">spawnpointList</field>
-                        <value name="OBJECT">
-                          <block type="GetTeamId">
-                            <value name="VALUE-0">
-                              <block type="Number">
-                                <field name="NUM">1</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
+              <block type="Number">
+                <field name="NUM">22</field>
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="CreateVector">
-                <value name="VALUE-0">
-                  <block type="Number">
-                    <field name="NUM">22</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">132</field>
-                  </block>
-                </value>
-                <value name="VALUE-2">
-                  <block type="Number">
-                    <field name="NUM">271</field>
-                  </block>
-                </value>
+              <block type="Number">
+                <field name="NUM">132</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">271</field>
               </block>
             </value>
           </block>
@@ -10643,7 +10598,7 @@
                   <block type="GetTeamId">
                     <value name="VALUE-0">
                       <block type="Number">
-                        <field name="NUM">2</field>
+                        <field name="NUM">1</field>
                       </block>
                     </value>
                   </block>
@@ -10670,7 +10625,7 @@
                               <block type="GetTeamId">
                                 <value name="VALUE-0">
                                   <block type="Number">
-                                    <field name="NUM">2</field>
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                               </block>
@@ -10690,17 +10645,17 @@
                   <block type="CreateVector">
                     <value name="VALUE-0">
                       <block type="Number">
-                        <field name="NUM">-40.5</field>
+                        <field name="NUM">22</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
                       <block type="Number">
-                        <field name="NUM">148</field>
+                        <field name="NUM">132</field>
                       </block>
                     </value>
                     <value name="VALUE-2">
                       <block type="Number">
-                        <field name="NUM">85.6</field>
+                        <field name="NUM">271</field>
                       </block>
                     </value>
                   </block>
@@ -10718,7 +10673,7 @@
                       <block type="GetTeamId">
                         <value name="VALUE-0">
                           <block type="Number">
-                            <field name="NUM">1</field>
+                            <field name="NUM">2</field>
                           </block>
                         </value>
                       </block>
@@ -10727,7 +10682,7 @@
                 </value>
                 <value name="VALUE-1">
                   <block type="Number">
-                    <field name="NUM">1</field>
+                    <field name="NUM">0</field>
                   </block>
                 </value>
                 <value name="VALUE-2">
@@ -10745,7 +10700,7 @@
                                   <block type="GetTeamId">
                                     <value name="VALUE-0">
                                       <block type="Number">
-                                        <field name="NUM">1</field>
+                                        <field name="NUM">2</field>
                                       </block>
                                     </value>
                                   </block>
@@ -10756,7 +10711,7 @@
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">1</field>
+                            <field name="NUM">0</field>
                           </block>
                         </value>
                       </block>
@@ -10765,17 +10720,17 @@
                       <block type="CreateVector">
                         <value name="VALUE-0">
                           <block type="Number">
-                            <field name="NUM">34</field>
+                            <field name="NUM">-40.5</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">132</field>
+                            <field name="NUM">148</field>
                           </block>
                         </value>
                         <value name="VALUE-2">
                           <block type="Number">
-                            <field name="NUM">170</field>
+                            <field name="NUM">85.6</field>
                           </block>
                         </value>
                       </block>
@@ -10793,7 +10748,7 @@
                           <block type="GetTeamId">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">2</field>
+                                <field name="NUM">1</field>
                               </block>
                             </value>
                           </block>
@@ -10820,7 +10775,7 @@
                                       <block type="GetTeamId">
                                         <value name="VALUE-0">
                                           <block type="Number">
-                                            <field name="NUM">2</field>
+                                            <field name="NUM">1</field>
                                           </block>
                                         </value>
                                       </block>
@@ -10840,17 +10795,17 @@
                           <block type="CreateVector">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">-129</field>
+                                <field name="NUM">34</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
                               <block type="Number">
-                                <field name="NUM">133</field>
+                                <field name="NUM">132</field>
                               </block>
                             </value>
                             <value name="VALUE-2">
                               <block type="Number">
-                                <field name="NUM">56</field>
+                                <field name="NUM">170</field>
                               </block>
                             </value>
                           </block>
@@ -10868,7 +10823,7 @@
                               <block type="GetTeamId">
                                 <value name="VALUE-0">
                                   <block type="Number">
-                                    <field name="NUM">1</field>
+                                    <field name="NUM">2</field>
                                   </block>
                                 </value>
                               </block>
@@ -10877,7 +10832,7 @@
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">2</field>
+                            <field name="NUM">1</field>
                           </block>
                         </value>
                         <value name="VALUE-2">
@@ -10895,7 +10850,7 @@
                                           <block type="GetTeamId">
                                             <value name="VALUE-0">
                                               <block type="Number">
-                                                <field name="NUM">1</field>
+                                                <field name="NUM">2</field>
                                               </block>
                                             </value>
                                           </block>
@@ -10906,7 +10861,7 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Number">
-                                    <field name="NUM">2</field>
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                               </block>
@@ -10915,17 +10870,17 @@
                               <block type="CreateVector">
                                 <value name="VALUE-0">
                                   <block type="Number">
-                                    <field name="NUM">-49</field>
+                                    <field name="NUM">-129</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Number">
-                                    <field name="NUM">146</field>
+                                    <field name="NUM">133</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-2">
                                   <block type="Number">
-                                    <field name="NUM">106</field>
+                                    <field name="NUM">56</field>
                                   </block>
                                 </value>
                               </block>
@@ -10943,7 +10898,7 @@
                                   <block type="GetTeamId">
                                     <value name="VALUE-0">
                                       <block type="Number">
-                                        <field name="NUM">2</field>
+                                        <field name="NUM">1</field>
                                       </block>
                                     </value>
                                   </block>
@@ -10970,7 +10925,7 @@
                                               <block type="GetTeamId">
                                                 <value name="VALUE-0">
                                                   <block type="Number">
-                                                    <field name="NUM">2</field>
+                                                    <field name="NUM">1</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -10990,17 +10945,17 @@
                                   <block type="CreateVector">
                                     <value name="VALUE-0">
                                       <block type="Number">
-                                        <field name="NUM">-220</field>
+                                        <field name="NUM">-49</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
                                       <block type="Number">
-                                        <field name="NUM">142</field>
+                                        <field name="NUM">146</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-2">
                                       <block type="Number">
-                                        <field name="NUM">-88</field>
+                                        <field name="NUM">106</field>
                                       </block>
                                     </value>
                                   </block>
@@ -11018,7 +10973,7 @@
                                       <block type="GetTeamId">
                                         <value name="VALUE-0">
                                           <block type="Number">
-                                            <field name="NUM">1</field>
+                                            <field name="NUM">2</field>
                                           </block>
                                         </value>
                                       </block>
@@ -11027,7 +10982,7 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Number">
-                                    <field name="NUM">3</field>
+                                    <field name="NUM">2</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-2">
@@ -11045,7 +11000,7 @@
                                                   <block type="GetTeamId">
                                                     <value name="VALUE-0">
                                                       <block type="Number">
-                                                        <field name="NUM">1</field>
+                                                        <field name="NUM">2</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -11056,7 +11011,7 @@
                                         </value>
                                         <value name="VALUE-1">
                                           <block type="Number">
-                                            <field name="NUM">3</field>
+                                            <field name="NUM">2</field>
                                           </block>
                                         </value>
                                       </block>
@@ -11065,17 +11020,17 @@
                                       <block type="CreateVector">
                                         <value name="VALUE-0">
                                           <block type="Number">
-                                            <field name="NUM">-207</field>
+                                            <field name="NUM">-220</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
                                           <block type="Number">
-                                            <field name="NUM">138</field>
+                                            <field name="NUM">142</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-2">
                                           <block type="Number">
-                                            <field name="NUM">56</field>
+                                            <field name="NUM">-88</field>
                                           </block>
                                         </value>
                                       </block>
@@ -11093,7 +11048,7 @@
                                           <block type="GetTeamId">
                                             <value name="VALUE-0">
                                               <block type="Number">
-                                                <field name="NUM">2</field>
+                                                <field name="NUM">1</field>
                                               </block>
                                             </value>
                                           </block>
@@ -11120,7 +11075,7 @@
                                                       <block type="GetTeamId">
                                                         <value name="VALUE-0">
                                                           <block type="Number">
-                                                            <field name="NUM">2</field>
+                                                            <field name="NUM">1</field>
                                                           </block>
                                                         </value>
                                                       </block>
@@ -11140,23 +11095,100 @@
                                           <block type="CreateVector">
                                             <value name="VALUE-0">
                                               <block type="Number">
-                                                <field name="NUM">-108</field>
+                                                <field name="NUM">-207</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
                                               <block type="Number">
-                                                <field name="NUM">142</field>
+                                                <field name="NUM">138</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-2">
                                               <block type="Number">
-                                                <field name="NUM">-123</field>
+                                                <field name="NUM">56</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
+                                    <next>
+                                      <block type="SetVariableAtIndex">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="true"></mutation>
+                                            <field name="OBJECTTYPE">TeamId</field>
+                                            <field name="VAR" id="8)IE?`KADV4LDA;;Th{4" variabletype="TeamId">spawnpointList</field>
+                                            <value name="OBJECT">
+                                              <block type="GetTeamId">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">3</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="AppendToArray">
+                                            <value name="VALUE-0">
+                                              <block type="ValueInArray">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="true"></mutation>
+                                                        <field name="OBJECTTYPE">TeamId</field>
+                                                        <field name="VAR" id="8)IE?`KADV4LDA;;Th{4" variabletype="TeamId">spawnpointList</field>
+                                                        <value name="OBJECT">
+                                                          <block type="GetTeamId">
+                                                            <value name="VALUE-0">
+                                                              <block type="Number">
+                                                                <field name="NUM">2</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="CreateVector">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">-108</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">142</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">-123</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
@@ -11174,7 +11206,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34682">
+  <block type="subroutineBlock" deletable="false" x="0" y="34887">
     <field name="SUBROUTINE_NAME">initializeCheckpointsCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -11332,7 +11364,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35232">
+  <block type="subroutineBlock" deletable="false" x="0" y="35437">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -13000,7 +13032,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37926">
+  <block type="subroutineBlock" deletable="false" x="0" y="38131">
     <field name="SUBROUTINE_NAME">initSpawnsNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -13927,7 +13959,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39233">
+  <block type="subroutineBlock" deletable="false" x="0" y="39438">
     <field name="SUBROUTINE_NAME">initCheckpointsNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -14147,7 +14179,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39917">
+  <block type="subroutineBlock" deletable="false" x="0" y="40122">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -15590,7 +15622,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42276">
+  <block type="subroutineBlock" deletable="false" x="0" y="42481">
     <field name="SUBROUTINE_NAME">initializeSpawnsBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -16671,7 +16703,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43765">
+  <block type="subroutineBlock" deletable="false" x="0" y="43970">
     <field name="SUBROUTINE_NAME">initializeCheckpointsBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -16922,7 +16954,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44516">
+  <block type="subroutineBlock" deletable="false" x="0" y="44721">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -19310,7 +19342,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48282">
+  <block type="subroutineBlock" deletable="false" x="0" y="48487">
     <field name="SUBROUTINE_NAME">initSpawnpointsSpearhead</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -20083,7 +20115,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="49407">
+  <block type="subroutineBlock" deletable="false" x="0" y="49612">
     <field name="SUBROUTINE_NAME">initCheckpointsSpearhead</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -20272,7 +20304,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50024">
+  <block type="subroutineBlock" deletable="false" x="0" y="50229">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -23425,7 +23457,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="54929">
+  <block type="subroutineBlock" deletable="false" x="0" y="55134">
     <field name="SUBROUTINE_NAME">initializeSpawnsValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -25122,7 +25154,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="57146">
+  <block type="subroutineBlock" deletable="false" x="0" y="57351">
     <field name="SUBROUTINE_NAME">initializeCheckpointsValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -25497,7 +25529,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="58165">
+  <block type="subroutineBlock" deletable="false" x="0" y="58370">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -27750,7 +27782,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="61730">
+  <block type="subroutineBlock" deletable="false" x="0" y="61935">
     <field name="SUBROUTINE_NAME">initCheckpointsAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -28001,7 +28033,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="62481">
+  <block type="subroutineBlock" deletable="false" x="0" y="62686">
     <field name="SUBROUTINE_NAME">initSpawnPointsAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -29082,7 +29114,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="63970">
+  <block type="subroutineBlock" deletable="false" x="0" y="64175">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -30930,7 +30962,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="66932">
+  <block type="subroutineBlock" deletable="false" x="0" y="67137">
     <field name="SUBROUTINE_NAME">initSpawnsExposure</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -31395,7 +31427,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="67693">
+  <block type="subroutineBlock" deletable="false" x="0" y="67898">
     <field name="SUBROUTINE_NAME">initCheckpointExposure</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -31522,7 +31554,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="68176">
+  <block type="subroutineBlock" deletable="false" x="0" y="68381">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -34585,7 +34617,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="72947">
+  <block type="subroutineBlock" deletable="false" x="0" y="73152">
     <field name="SUBROUTINE_NAME">initSpawnsEl_Alamein</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -35204,7 +35236,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="73890">
+  <block type="subroutineBlock" deletable="false" x="0" y="74095">
     <field name="SUBROUTINE_NAME">initCheckpointEl_Alamein</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
