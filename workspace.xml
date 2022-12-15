@@ -7062,85 +7062,18 @@
   <block type="subroutineBlock" deletable="false" x="0" y="25605">
     <field name="SUBROUTINE_NAME">updateCheckpointTime</field>
     <statement name="ACTIONS">
-      <block type="If">
-        <mutation else="1"></mutation>
+      <block type="SetRoundTimeLimit">
         <value name="VALUE-0">
-          <block type="GreaterThan">
+          <block type="GetVariable">
             <value name="VALUE-0">
-              <block type="GetMatchTimeElapsed"></block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Multiply">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="bzZM1+0E3GenBJD4OK-s" variabletype="Global">defaultCheckpointTime</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">0.5</field>
-                  </block>
-                </value>
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="bzZM1+0E3GenBJD4OK-s" variabletype="Global">defaultCheckpointTime</field>
               </block>
             </value>
           </block>
         </value>
-        <statement name="DO">
-          <block type="SetRoundTimeLimit">
-            <value name="VALUE-0">
-              <block type="RoundToInteger">
-                <value name="VALUE-0">
-                  <block type="Multiply">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="bzZM1+0E3GenBJD4OK-s" variabletype="Global">defaultCheckpointTime</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">1.5</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </statement>
-        <statement name="ELSE">
-          <block type="SetRoundTimeLimit">
-            <value name="VALUE-0">
-              <block type="Add">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="bzZM1+0E3GenBJD4OK-s" variabletype="Global">defaultCheckpointTime</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="GetMatchTimeElapsed"></block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </statement>
         <next>
           <block type="ResetRoundTime"></block>
         </next>
