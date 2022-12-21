@@ -13,8 +13,9 @@ Fight across multiple maps and all the eras of Battlefield, from the WW2 deserts
 - **Classic:** Attackers vs Defenders with checkpoints along the way of the payload
 - **TOW (Tug of War):** The payload starts in the middle of the track and the team pushing it to the opposing end wins
 
-## PAYLOAD CLASSIC - OF AGES ##
-Fight your way through all eras available in Portal
+## Experience Codes: ##
+**AA3HNY** - PAYLOAD CLASSIC - OF AGES (showcase)
+   
    - Battlefield era is based on Map
    - Map Rotation:
       - Battle of the Buldge (BF 1942)
@@ -23,11 +24,7 @@ Fight your way through all eras available in Portal
       - Spearhead (BF 2042)
       - El Alamein (BF 1942)
       - Arica Harbor (BC2)
-      - Noshahr Canals (BF3)
       - Exposure (BF 2042)
-
-### Experience Codes: ###
-AA3HNY - PAYLOAD CLASSIC - OF AGES
 
 # Trailer #
 https://www.youtube.com/watch?v=HNWBBw-PT6E
