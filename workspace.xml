@@ -1488,6 +1488,11 @@
                                     <statement name="ACTIONS">
                                       <block type="subroutineInstanceBlock">
                                         <field name="SUBROUTINE_NAME">displayGameMessages</field>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <field name="SUBROUTINE_NAME">playPayloadSound</field>
+                                          </block>
+                                        </next>
                                       </block>
                                     </statement>
                                     <next>
@@ -1539,6 +1544,11 @@
                                         <statement name="ACTIONS">
                                           <block type="subroutineInstanceBlock">
                                             <field name="SUBROUTINE_NAME">displayGameMessages</field>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">playPayloadSound</field>
+                                              </block>
+                                            </next>
                                           </block>
                                         </statement>
                                         <next>
@@ -2989,74 +2999,6 @@
                                     </value>
                                   </block>
                                 </statement>
-                                <next>
-                                  <block type="If">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="uOH0J@0iE;-mgov0]/^J" variabletype="Global">isPayloadSoundActive</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <statement name="DO">
-                                      <block type="If">
-                                        <mutation else="1"></mutation>
-                                        <value name="VALUE-0">
-                                          <block type="Equals">
-                                            <value name="VALUE-0">
-                                              <block type="GetGamemodeScore">
-                                                <value name="VALUE-0">
-                                                  <block type="GetTeamId">
-                                                    <value name="VALUE-0">
-                                                      <block type="Number">
-                                                        <field name="NUM">1</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">100</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <statement name="DO">
-                                          <block type="TriggerAudio">
-                                            <value name="VALUE-0">
-                                              <block type="SoundsItem">
-                                                <field name="VALUE-0">Sounds</field>
-                                                <field name="VALUE-1">ObjectiveCapping</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="EventTeam"></block>
-                                            </value>
-                                          </block>
-                                        </statement>
-                                        <statement name="ELSE">
-                                          <block type="TriggerAudio">
-                                            <value name="VALUE-0">
-                                              <block type="SoundsItem">
-                                                <field name="VALUE-0">Sounds</field>
-                                                <field name="VALUE-1">ShowObjective</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="EventTeam"></block>
-                                            </value>
-                                          </block>
-                                        </statement>
-                                      </block>
-                                    </statement>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
@@ -3069,6 +3011,77 @@
             </next>
           </block>
         </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="-967" y="12167">
+    <field name="SUBROUTINE_NAME">playPayloadSound</field>
+    <statement name="CONDITIONS">
+      <block type="conditionBlock">
+        <value name="CONDITION">
+          <block type="GetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="uOH0J@0iE;-mgov0]/^J" variabletype="Global">isPayloadSoundActive</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="ACTIONS">
+      <block type="If">
+        <mutation else="1"></mutation>
+        <value name="VALUE-0">
+          <block type="Equals">
+            <value name="VALUE-0">
+              <block type="GetGamemodeScore">
+                <value name="VALUE-0">
+                  <block type="GetTeamId">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="TriggerAudio">
+            <value name="VALUE-0">
+              <block type="SoundsItem">
+                <field name="VALUE-0">Sounds</field>
+                <field name="VALUE-1">ObjectiveCapping</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="EventTeam"></block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="TriggerAudio">
+            <value name="VALUE-0">
+              <block type="SoundsItem">
+                <field name="VALUE-0">Sounds</field>
+                <field name="VALUE-1">ShowObjective</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="EventTeam"></block>
+            </value>
+          </block>
+        </statement>
       </block>
     </statement>
   </block>
