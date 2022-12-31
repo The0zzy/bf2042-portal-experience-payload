@@ -29,3 +29,11 @@ Fight across multiple maps and all the eras of Battlefield, from the WW2 deserts
 # Trailer #
 https://www.youtube.com/watch?v=HNWBBw-PT6E
 [![PAYLOAD CLASSIC TRAILER](/resources/trailer.png "PAYLOAD CLASSIC TRAILER")](https://www.youtube.com/watch?v=HNWBBw-PT6E)
+
+## Gameplay Footage ##
+
+- https://www.youtube.com/watch?v=jeKlKUO03C4
+- https://youtu.be/vZ9dLq6IXXg
+- https://youtu.be/GlJySB2P3ms
+- https://www.youtube.com/watch?v=f7aOf0-rMZ4
+- https://www.youtube.com/watch?v=95TNttYehY4
