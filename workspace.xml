@@ -398,673 +398,183 @@
                                                                                                       <block type="subroutineInstanceBlock">
                                                                                                         <field name="SUBROUTINE_NAME">initSpawnpointList</field>
                                                                                                         <next>
-                                                                                                          <block type="If">
-                                                                                                            <value name="VALUE-0">
-                                                                                                              <block type="IsCurrentMap">
-                                                                                                                <value name="VALUE-0">
-                                                                                                                  <block type="MapsItem">
-                                                                                                                    <field name="VALUE-0">Maps</field>
-                                                                                                                    <field name="VALUE-1">Oasis</field>
-                                                                                                                  </block>
-                                                                                                                </value>
-                                                                                                              </block>
-                                                                                                            </value>
-                                                                                                            <statement name="DO">
-                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                <field name="SUBROUTINE_NAME">initPayloadEl_Alamein1</field>
-                                                                                                                <next>
-                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                    <field name="SUBROUTINE_NAME">initPayloadEl_Alamein2</field>
-                                                                                                                    <next>
-                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                        <field name="SUBROUTINE_NAME">initPayloadEl_Alamein3</field>
-                                                                                                                        <next>
-                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                            <field name="SUBROUTINE_NAME">initPayloadEl_Alamein4</field>
-                                                                                                                            <next>
-                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                <field name="SUBROUTINE_NAME">initPayloadEl_Alamein5</field>
-                                                                                                                                <next>
-                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                    <field name="SUBROUTINE_NAME">initPayloadEl_Alamein6</field>
-                                                                                                                                    <next>
-                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                        <field name="SUBROUTINE_NAME">initCheckpointEl_Alamein</field>
-                                                                                                                                        <next>
-                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                            <field name="SUBROUTINE_NAME">initSpawnsEl_Alamein</field>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
-                                                                                                                                    </next>
-                                                                                                                                  </block>
-                                                                                                                                </next>
-                                                                                                                              </block>
-                                                                                                                            </next>
-                                                                                                                          </block>
-                                                                                                                        </next>
-                                                                                                                      </block>
-                                                                                                                    </next>
-                                                                                                                  </block>
-                                                                                                                </next>
-                                                                                                              </block>
-                                                                                                            </statement>
+                                                                                                          <block type="subroutineInstanceBlock">
+                                                                                                            <field name="SUBROUTINE_NAME">mapDetect</field>
                                                                                                             <next>
-                                                                                                              <block type="If">
+                                                                                                              <block type="SetVariable">
                                                                                                                 <value name="VALUE-0">
-                                                                                                                  <block type="IsCurrentMap">
+                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                    <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <value name="VALUE-1">
+                                                                                                                  <block type="FirstOf">
                                                                                                                     <value name="VALUE-0">
-                                                                                                                      <block type="MapsItem">
-                                                                                                                        <field name="VALUE-0">Maps</field>
-                                                                                                                        <field name="VALUE-1">Harbor</field>
+                                                                                                                      <block type="GetVariable">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                            <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
                                                                                                                       </block>
                                                                                                                     </value>
                                                                                                                   </block>
                                                                                                                 </value>
-                                                                                                                <statement name="DO">
-                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor1</field>
-                                                                                                                    <next>
-                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                        <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor2</field>
-                                                                                                                        <next>
-                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                            <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor3</field>
-                                                                                                                            <next>
-                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor4</field>
-                                                                                                                                <next>
-                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor5</field>
-                                                                                                                                    <next>
-                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                        <field name="SUBROUTINE_NAME">initCheckpointsAricaHarbor</field>
-                                                                                                                                        <next>
-                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                            <field name="SUBROUTINE_NAME">initSpawnPointsAricaHarbor</field>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
-                                                                                                                                    </next>
-                                                                                                                                  </block>
-                                                                                                                                </next>
-                                                                                                                              </block>
-                                                                                                                            </next>
-                                                                                                                          </block>
-                                                                                                                        </next>
-                                                                                                                      </block>
-                                                                                                                    </next>
-                                                                                                                  </block>
-                                                                                                                </statement>
                                                                                                                 <next>
-                                                                                                                  <block type="If">
+                                                                                                                  <block type="SetVariable">
                                                                                                                     <value name="VALUE-0">
-                                                                                                                      <block type="IsCurrentMap">
-                                                                                                                        <value name="VALUE-0">
-                                                                                                                          <block type="MapsItem">
-                                                                                                                            <field name="VALUE-0">Maps</field>
-                                                                                                                            <field name="VALUE-1">LightsOut</field>
+                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                                                        <field name="OBJECTTYPE">TeamId</field>
+                                                                                                                        <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">waypointIndex</field>
+                                                                                                                        <value name="OBJECT">
+                                                                                                                          <block type="GetTeamId">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="Number">
+                                                                                                                                <field name="NUM">1</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
                                                                                                                           </block>
                                                                                                                         </value>
                                                                                                                       </block>
                                                                                                                     </value>
-                                                                                                                    <statement name="DO">
-                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                        <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso1</field>
-                                                                                                                        <next>
-                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                            <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead2</field>
-                                                                                                                            <next>
-                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead3</field>
-                                                                                                                                <next>
-                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead4</field>
-                                                                                                                                    <next>
-                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                        <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead5</field>
-                                                                                                                                        <next>
-                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                            <field name="SUBROUTINE_NAME">initCheckpointsSpearhead</field>
-                                                                                                                                            <next>
-                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                <field name="SUBROUTINE_NAME">initSpawnpointsSpearhead</field>
-                                                                                                                                              </block>
-                                                                                                                                            </next>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
-                                                                                                                                    </next>
-                                                                                                                                  </block>
-                                                                                                                                </next>
-                                                                                                                              </block>
-                                                                                                                            </next>
-                                                                                                                          </block>
-                                                                                                                        </next>
-                                                                                                                      </block>
-                                                                                                                    </statement>
-                                                                                                                    <next>
-                                                                                                                      <block type="If">
+                                                                                                                    <value name="VALUE-1">
+                                                                                                                      <block type="Add">
                                                                                                                         <value name="VALUE-0">
-                                                                                                                          <block type="IsCurrentMap">
+                                                                                                                          <block type="GetVariable">
                                                                                                                             <value name="VALUE-0">
-                                                                                                                              <block type="MapsItem">
-                                                                                                                                <field name="VALUE-0">Maps</field>
-                                                                                                                                <field name="VALUE-1">Frost</field>
+                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
                                                                                                                               </block>
                                                                                                                             </value>
                                                                                                                           </block>
                                                                                                                         </value>
-                                                                                                                        <statement name="DO">
-                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                            <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB1</field>
-                                                                                                                            <next>
-                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB2</field>
-                                                                                                                                <next>
-                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB3</field>
-                                                                                                                                    <next>
-                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                        <field name="SUBROUTINE_NAME">initializeCheckpointsBOTB</field>
-                                                                                                                                        <next>
-                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                            <field name="SUBROUTINE_NAME">initializeSpawnsBOTB</field>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
-                                                                                                                                    </next>
-                                                                                                                                  </block>
-                                                                                                                                </next>
-                                                                                                                              </block>
-                                                                                                                            </next>
+                                                                                                                        <value name="VALUE-1">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">1</field>
                                                                                                                           </block>
-                                                                                                                        </statement>
-                                                                                                                        <next>
-                                                                                                                          <block type="If">
-                                                                                                                            <value name="VALUE-0">
-                                                                                                                              <block type="IsCurrentMap">
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <next>
+                                                                                                                      <block type="SetVariable">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                            <mutation isObjectVar="true"></mutation>
+                                                                                                                            <field name="OBJECTTYPE">TeamId</field>
+                                                                                                                            <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">waypointIndex</field>
+                                                                                                                            <value name="OBJECT">
+                                                                                                                              <block type="GetTeamId">
                                                                                                                                 <value name="VALUE-0">
-                                                                                                                                  <block type="MapsItem">
-                                                                                                                                    <field name="VALUE-0">Maps</field>
-                                                                                                                                    <field name="VALUE-1">Lighthouse</field>
+                                                                                                                                  <block type="Number">
+                                                                                                                                    <field name="NUM">2</field>
                                                                                                                                   </block>
                                                                                                                                 </value>
                                                                                                                               </block>
                                                                                                                             </value>
-                                                                                                                            <statement name="DO">
-                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso1</field>
-                                                                                                                                <next>
-                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso2</field>
-                                                                                                                                    <next>
-                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                        <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso3</field>
-                                                                                                                                        <next>
-                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                            <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso4</field>
-                                                                                                                                            <next>
-                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso5</field>
-                                                                                                                                                <next>
-                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso6</field>
-                                                                                                                                                    <next>
-                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                        <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso7</field>
-                                                                                                                                                        <next>
-                                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                                            <field name="SUBROUTINE_NAME">initializeCheckpointsValparaiso</field>
-                                                                                                                                                            <next>
-                                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                                <field name="SUBROUTINE_NAME">initializeSpawnsValparaiso</field>
-                                                                                                                                                              </block>
-                                                                                                                                                            </next>
-                                                                                                                                                          </block>
-                                                                                                                                                        </next>
-                                                                                                                                                      </block>
-                                                                                                                                                    </next>
-                                                                                                                                                  </block>
-                                                                                                                                                </next>
-                                                                                                                                              </block>
-                                                                                                                                            </next>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
-                                                                                                                                    </next>
-                                                                                                                                  </block>
-                                                                                                                                </next>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-1">
+                                                                                                                          <block type="GetVariable">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
                                                                                                                               </block>
-                                                                                                                            </statement>
-                                                                                                                            <next>
-                                                                                                                              <block type="If">
+                                                                                                                            </value>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <next>
+                                                                                                                          <block type="SetVariable">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <value name="VALUE-1">
+                                                                                                                              <block type="ValueInArray">
                                                                                                                                 <value name="VALUE-0">
-                                                                                                                                  <block type="IsCurrentMap">
+                                                                                                                                  <block type="GetVariable">
                                                                                                                                     <value name="VALUE-0">
-                                                                                                                                      <block type="MapsItem">
-                                                                                                                                        <field name="VALUE-0">Maps</field>
-                                                                                                                                        <field name="VALUE-1">Rural</field>
+                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
                                                                                                                                       </block>
                                                                                                                                     </value>
                                                                                                                                   </block>
                                                                                                                                 </value>
-                                                                                                                                <statement name="DO">
-                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder1</field>
-                                                                                                                                    <next>
-                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                        <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder2</field>
-                                                                                                                                        <next>
-                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                            <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder3</field>
-                                                                                                                                            <next>
-                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                <field name="SUBROUTINE_NAME">initializeCheckpointsCaspianBorder</field>
-                                                                                                                                                <next>
-                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                    <field name="SUBROUTINE_NAME">initializeSpawnsCaspianBorder</field>
-                                                                                                                                                  </block>
-                                                                                                                                                </next>
-                                                                                                                                              </block>
-                                                                                                                                            </next>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
-                                                                                                                                    </next>
-                                                                                                                                  </block>
-                                                                                                                                </statement>
-                                                                                                                                <next>
-                                                                                                                                  <block type="If">
+                                                                                                                                <value name="VALUE-1">
+                                                                                                                                  <block type="GetVariable">
                                                                                                                                     <value name="VALUE-0">
-                                                                                                                                      <block type="IsCurrentMap">
-                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                          <block type="MapsItem">
-                                                                                                                                            <field name="VALUE-0">Maps</field>
-                                                                                                                                            <field name="VALUE-1">Ridge</field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
+                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                        <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
                                                                                                                                       </block>
                                                                                                                                     </value>
-                                                                                                                                    <statement name="DO">
-                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                        <field name="SUBROUTINE_NAME">initPayloadTrackExposure1</field>
-                                                                                                                                        <next>
-                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                            <field name="SUBROUTINE_NAME">initPayloadTrackExposure2</field>
-                                                                                                                                            <next>
-                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                <field name="SUBROUTINE_NAME">initPayloadTrackExposure3</field>
-                                                                                                                                                <next>
-                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                    <field name="SUBROUTINE_NAME">initPayloadTrackExposure4</field>
-                                                                                                                                                    <next>
-                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                        <field name="SUBROUTINE_NAME">initCheckpointExposure</field>
-                                                                                                                                                        <next>
-                                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                                            <field name="SUBROUTINE_NAME">initSpawnsExposure</field>
-                                                                                                                                                          </block>
-                                                                                                                                                        </next>
-                                                                                                                                                      </block>
-                                                                                                                                                    </next>
-                                                                                                                                                  </block>
-                                                                                                                                                </next>
-                                                                                                                                              </block>
-                                                                                                                                            </next>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
-                                                                                                                                    </statement>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <next>
+                                                                                                                              <block type="subroutineInstanceBlock">
+                                                                                                                                <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
+                                                                                                                                <next>
+                                                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                                                    <field name="SUBROUTINE_NAME">initPayloadYaw</field>
                                                                                                                                     <next>
-                                                                                                                                      <block type="If">
-                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                          <block type="IsCurrentMap">
-                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                              <block type="MapsItem">
-                                                                                                                                                <field name="VALUE-0">Maps</field>
-                                                                                                                                                <field name="VALUE-1">TheWall</field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                        <statement name="DO">
-                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                            <field name="SUBROUTINE_NAME">initializePayloadRenewal1</field>
-                                                                                                                                            <next>
-                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadRenewal2</field>
-                                                                                                                                                <next>
-                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadRenewal3</field>
-                                                                                                                                                    <next>
-                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                        <field name="SUBROUTINE_NAME">initializePayloadRenewal4</field>
-                                                                                                                                                        <next>
-                                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                                            <field name="SUBROUTINE_NAME">initializePayloadRenewal5</field>
-                                                                                                                                                            <next>
-                                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadRenewal6</field>
-                                                                                                                                                                <next>
-                                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                                    <field name="SUBROUTINE_NAME">initializeCheckpointsRenewal</field>
-                                                                                                                                                                    <next>
-                                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                                        <field name="SUBROUTINE_NAME">initializeSpawnpointsRenewal</field>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </next>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </next>
-                                                                                                                                                              </block>
-                                                                                                                                                            </next>
-                                                                                                                                                          </block>
-                                                                                                                                                        </next>
-                                                                                                                                                      </block>
-                                                                                                                                                    </next>
-                                                                                                                                                  </block>
-                                                                                                                                                </next>
-                                                                                                                                              </block>
-                                                                                                                                            </next>
-                                                                                                                                          </block>
-                                                                                                                                        </statement>
+                                                                                                                                      <block type="subroutineInstanceBlock">
+                                                                                                                                        <field name="SUBROUTINE_NAME">initPayloadObjects</field>
                                                                                                                                         <next>
-                                                                                                                                          <block type="If">
-                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                              <block type="IsCurrentMap">
-                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                  <block type="MapsItem">
-                                                                                                                                                    <field name="VALUE-0">Maps</field>
-                                                                                                                                                    <field name="VALUE-1">Drained</field>
-                                                                                                                                                  </block>
-                                                                                                                                                </value>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                            <statement name="DO">
-                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadTrackStranded1</field>
-                                                                                                                                                <next>
-                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackStranded2</field>
-                                                                                                                                                    <next>
-                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                        <field name="SUBROUTINE_NAME">initializePayloadTrackStranded3</field>
-                                                                                                                                                        <next>
-                                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                                            <field name="SUBROUTINE_NAME">initializePayloadTrackStranded4</field>
-                                                                                                                                                            <next>
-                                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                                <field name="SUBROUTINE_NAME">initializePayloadTrackStranded5</field>
-                                                                                                                                                                <next>
-                                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                                    <field name="SUBROUTINE_NAME">initCheckpointsStranded</field>
-                                                                                                                                                                    <next>
-                                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                                        <field name="SUBROUTINE_NAME">initSpawnpointsStranded1</field>
-                                                                                                                                                                        <next>
-                                                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                                                            <field name="SUBROUTINE_NAME">initSpawnpointsStranded2</field>
-                                                                                                                                                                            <next>
-                                                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                                                <field name="SUBROUTINE_NAME">initSpawnpointsStranded3</field>
-                                                                                                                                                                                <next>
-                                                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                                                    <field name="SUBROUTINE_NAME">initSpawnpointsStranded4</field>
-                                                                                                                                                                                  </block>
-                                                                                                                                                                                </next>
-                                                                                                                                                                              </block>
-                                                                                                                                                                            </next>
-                                                                                                                                                                          </block>
-                                                                                                                                                                        </next>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </next>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </next>
-                                                                                                                                                              </block>
-                                                                                                                                                            </next>
-                                                                                                                                                          </block>
-                                                                                                                                                        </next>
-                                                                                                                                                      </block>
-                                                                                                                                                    </next>
-                                                                                                                                                  </block>
-                                                                                                                                                </next>
-                                                                                                                                              </block>
-                                                                                                                                            </statement>
+                                                                                                                                          <block type="subroutineInstanceBlock">
+                                                                                                                                            <field name="SUBROUTINE_NAME">initIcons</field>
                                                                                                                                             <next>
-                                                                                                                                              <block type="If">
-                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                  <block type="IsCurrentMap">
+                                                                                                                                              <block type="subroutineInstanceBlock">
+                                                                                                                                                <mutation>
+                                                                                                                                                  <parameter types="TeamId">pushingTeam</parameter>
+                                                                                                                                                </mutation>
+                                                                                                                                                <field name="SUBROUTINE_NAME">updatePayloadTower</field>
+                                                                                                                                                <value name="PARAM-0">
+                                                                                                                                                  <block type="GetTeamId">
                                                                                                                                                     <value name="VALUE-0">
-                                                                                                                                                      <block type="MapsItem">
-                                                                                                                                                        <field name="VALUE-0">Maps</field>
-                                                                                                                                                        <field name="VALUE-1">Port</field>
+                                                                                                                                                      <block type="Number">
+                                                                                                                                                        <field name="NUM">1</field>
                                                                                                                                                       </block>
                                                                                                                                                     </value>
                                                                                                                                                   </block>
                                                                                                                                                 </value>
-                                                                                                                                                <statement name="DO">
+                                                                                                                                                <next>
                                                                                                                                                   <block type="subroutineInstanceBlock">
-                                                                                                                                                    <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr1</field>
+                                                                                                                                                    <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
                                                                                                                                                     <next>
                                                                                                                                                       <block type="subroutineInstanceBlock">
-                                                                                                                                                        <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr2</field>
-                                                                                                                                                        <next>
-                                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                                            <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr3</field>
-                                                                                                                                                            <next>
-                                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                                <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr4</field>
-                                                                                                                                                                <next>
-                                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                                    <field name="SUBROUTINE_NAME">initCheckpointsNoshahr</field>
-                                                                                                                                                                    <next>
-                                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                                        <field name="SUBROUTINE_NAME">initSpawnsNoshahr</field>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </next>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </next>
-                                                                                                                                                              </block>
-                                                                                                                                                            </next>
-                                                                                                                                                          </block>
-                                                                                                                                                        </next>
-                                                                                                                                                      </block>
-                                                                                                                                                    </next>
-                                                                                                                                                  </block>
-                                                                                                                                                </statement>
-                                                                                                                                                <next>
-                                                                                                                                                  <block type="SetVariable">
-                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                        <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
-                                                                                                                                                      </block>
-                                                                                                                                                    </value>
-                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                      <block type="FirstOf">
-                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                          <block type="GetVariable">
-                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                                                                                                                                                              </block>
-                                                                                                                                                            </value>
-                                                                                                                                                          </block>
-                                                                                                                                                        </value>
-                                                                                                                                                      </block>
-                                                                                                                                                    </value>
-                                                                                                                                                    <next>
-                                                                                                                                                      <block type="SetVariable">
-                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                            <mutation isObjectVar="true"></mutation>
-                                                                                                                                                            <field name="OBJECTTYPE">TeamId</field>
-                                                                                                                                                            <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">waypointIndex</field>
-                                                                                                                                                            <value name="OBJECT">
-                                                                                                                                                              <block type="GetTeamId">
-                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                    <field name="NUM">1</field>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
-                                                                                                                                                              </block>
-                                                                                                                                                            </value>
-                                                                                                                                                          </block>
-                                                                                                                                                        </value>
-                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                          <block type="Add">
-                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                              <block type="GetVariable">
-                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                    <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
-                                                                                                                                                              </block>
-                                                                                                                                                            </value>
-                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                              <block type="Number">
-                                                                                                                                                                <field name="NUM">1</field>
-                                                                                                                                                              </block>
-                                                                                                                                                            </value>
-                                                                                                                                                          </block>
-                                                                                                                                                        </value>
+                                                                                                                                                        <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
                                                                                                                                                         <next>
                                                                                                                                                           <block type="SetVariable">
                                                                                                                                                             <value name="VALUE-0">
                                                                                                                                                               <block type="variableReferenceBlock">
-                                                                                                                                                                <mutation isObjectVar="true"></mutation>
-                                                                                                                                                                <field name="OBJECTTYPE">TeamId</field>
-                                                                                                                                                                <field name="VAR" id="aln0+lKE.pu;RI:]-+q-" variabletype="TeamId">waypointIndex</field>
-                                                                                                                                                                <value name="OBJECT">
-                                                                                                                                                                  <block type="GetTeamId">
-                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                        <field name="NUM">2</field>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </value>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
+                                                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                <field name="VAR" id="Qt}+}r4]GZ3w75sU506n" variabletype="Global">gameOngoing</field>
                                                                                                                                                               </block>
                                                                                                                                                             </value>
                                                                                                                                                             <value name="VALUE-1">
-                                                                                                                                                              <block type="GetVariable">
-                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                    <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
+                                                                                                                                                              <block type="Boolean">
+                                                                                                                                                                <field name="BOOL">TRUE</field>
                                                                                                                                                               </block>
                                                                                                                                                             </value>
                                                                                                                                                             <next>
-                                                                                                                                                              <block type="SetVariable">
-                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                    <field name="VAR" id="1TLZ]hyu5D78teIo@M_0" variabletype="Global">intermediatePayloadPoint</field>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
-                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                  <block type="ValueInArray">
-                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                      <block type="GetVariable">
-                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                                                                                                                                          </block>
-                                                                                                                                                                        </value>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </value>
-                                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                                      <block type="GetVariable">
-                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                            <field name="VAR" id="`BS0v`?kB5-)1v1(RX,$" variabletype="Global">currentCheckpoint</field>
-                                                                                                                                                                          </block>
-                                                                                                                                                                        </value>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </value>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
-                                                                                                                                                                <next>
-                                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                                    <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
-                                                                                                                                                                    <next>
-                                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                                        <field name="SUBROUTINE_NAME">initPayloadYaw</field>
-                                                                                                                                                                        <next>
-                                                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                                                            <field name="SUBROUTINE_NAME">initPayloadObjects</field>
-                                                                                                                                                                            <next>
-                                                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                                                <field name="SUBROUTINE_NAME">initIcons</field>
-                                                                                                                                                                                <next>
-                                                                                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                                                                                    <mutation>
-                                                                                                                                                                                      <parameter types="TeamId">pushingTeam</parameter>
-                                                                                                                                                                                    </mutation>
-                                                                                                                                                                                    <field name="SUBROUTINE_NAME">updatePayloadTower</field>
-                                                                                                                                                                                    <value name="PARAM-0">
-                                                                                                                                                                                      <block type="GetTeamId">
-                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                          <block type="Number">
-                                                                                                                                                                                            <field name="NUM">1</field>
-                                                                                                                                                                                          </block>
-                                                                                                                                                                                        </value>
-                                                                                                                                                                                      </block>
-                                                                                                                                                                                    </value>
-                                                                                                                                                                                    <next>
-                                                                                                                                                                                      <block type="subroutineInstanceBlock">
-                                                                                                                                                                                        <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
-                                                                                                                                                                                        <next>
-                                                                                                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                                                                                                            <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
-                                                                                                                                                                                            <next>
-                                                                                                                                                                                              <block type="SetVariable">
-                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                    <field name="VAR" id="Qt}+}r4]GZ3w75sU506n" variabletype="Global">gameOngoing</field>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                                  <block type="Boolean">
-                                                                                                                                                                                                    <field name="BOOL">TRUE</field>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                                <next>
-                                                                                                                                                                                                  <block type="ResetRoundTime"></block>
-                                                                                                                                                                                                </next>
-                                                                                                                                                                                              </block>
-                                                                                                                                                                                            </next>
-                                                                                                                                                                                          </block>
-                                                                                                                                                                                        </next>
-                                                                                                                                                                                      </block>
-                                                                                                                                                                                    </next>
-                                                                                                                                                                                  </block>
-                                                                                                                                                                                </next>
-                                                                                                                                                                              </block>
-                                                                                                                                                                            </next>
-                                                                                                                                                                          </block>
-                                                                                                                                                                        </next>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </next>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </next>
-                                                                                                                                                              </block>
+                                                                                                                                                              <block type="ResetRoundTime"></block>
                                                                                                                                                             </next>
                                                                                                                                                           </block>
                                                                                                                                                         </next>
@@ -2434,7 +1944,505 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="11989">
+  <block type="subroutineBlock" deletable="false" x="0" y="7933">
+    <field name="SUBROUTINE_NAME">mapDetect</field>
+    <statement name="ACTIONS">
+      <block type="If">
+        <value name="VALUE-0">
+          <block type="IsCurrentMap">
+            <value name="VALUE-0">
+              <block type="MapsItem">
+                <field name="VALUE-0">Maps</field>
+                <field name="VALUE-1">Oasis</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="subroutineInstanceBlock">
+            <field name="SUBROUTINE_NAME">initPayloadEl_Alamein1</field>
+            <next>
+              <block type="subroutineInstanceBlock">
+                <field name="SUBROUTINE_NAME">initPayloadEl_Alamein2</field>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <field name="SUBROUTINE_NAME">initPayloadEl_Alamein3</field>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <field name="SUBROUTINE_NAME">initPayloadEl_Alamein4</field>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <field name="SUBROUTINE_NAME">initPayloadEl_Alamein5</field>
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <field name="SUBROUTINE_NAME">initPayloadEl_Alamein6</field>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <field name="SUBROUTINE_NAME">initCheckpointEl_Alamein</field>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <field name="SUBROUTINE_NAME">initSpawnsEl_Alamein</field>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="If">
+            <value name="VALUE-0">
+              <block type="IsCurrentMap">
+                <value name="VALUE-0">
+                  <block type="MapsItem">
+                    <field name="VALUE-0">Maps</field>
+                    <field name="VALUE-1">Harbor</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="subroutineInstanceBlock">
+                <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor1</field>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor2</field>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor3</field>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor4</field>
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor5</field>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <field name="SUBROUTINE_NAME">initCheckpointsAricaHarbor</field>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <field name="SUBROUTINE_NAME">initSpawnPointsAricaHarbor</field>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="If">
+                <value name="VALUE-0">
+                  <block type="IsCurrentMap">
+                    <value name="VALUE-0">
+                      <block type="MapsItem">
+                        <field name="VALUE-0">Maps</field>
+                        <field name="VALUE-1">LightsOut</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="subroutineInstanceBlock">
+                    <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso1</field>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead2</field>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead3</field>
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead4</field>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead5</field>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <field name="SUBROUTINE_NAME">initCheckpointsSpearhead</field>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <field name="SUBROUTINE_NAME">initSpawnpointsSpearhead</field>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="If">
+                    <value name="VALUE-0">
+                      <block type="IsCurrentMap">
+                        <value name="VALUE-0">
+                          <block type="MapsItem">
+                            <field name="VALUE-0">Maps</field>
+                            <field name="VALUE-1">Frost</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="subroutineInstanceBlock">
+                        <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB1</field>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB2</field>
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB3</field>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <field name="SUBROUTINE_NAME">initializeCheckpointsBOTB</field>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <field name="SUBROUTINE_NAME">initializeSpawnsBOTB</field>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="If">
+                        <value name="VALUE-0">
+                          <block type="IsCurrentMap">
+                            <value name="VALUE-0">
+                              <block type="MapsItem">
+                                <field name="VALUE-0">Maps</field>
+                                <field name="VALUE-1">Lighthouse</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="subroutineInstanceBlock">
+                            <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso1</field>
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso2</field>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso3</field>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso4</field>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso5</field>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso6</field>
+                                                <next>
+                                                  <block type="subroutineInstanceBlock">
+                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso7</field>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <field name="SUBROUTINE_NAME">initializeCheckpointsValparaiso</field>
+                                                        <next>
+                                                          <block type="subroutineInstanceBlock">
+                                                            <field name="SUBROUTINE_NAME">initializeSpawnsValparaiso</field>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="If">
+                            <value name="VALUE-0">
+                              <block type="IsCurrentMap">
+                                <value name="VALUE-0">
+                                  <block type="MapsItem">
+                                    <field name="VALUE-0">Maps</field>
+                                    <field name="VALUE-1">Rural</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="subroutineInstanceBlock">
+                                <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder1</field>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder2</field>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder3</field>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <field name="SUBROUTINE_NAME">initializeCheckpointsCaspianBorder</field>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">initializeSpawnsCaspianBorder</field>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="If">
+                                <value name="VALUE-0">
+                                  <block type="IsCurrentMap">
+                                    <value name="VALUE-0">
+                                      <block type="MapsItem">
+                                        <field name="VALUE-0">Maps</field>
+                                        <field name="VALUE-1">Ridge</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="subroutineInstanceBlock">
+                                    <field name="SUBROUTINE_NAME">initPayloadTrackExposure1</field>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <field name="SUBROUTINE_NAME">initPayloadTrackExposure2</field>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <field name="SUBROUTINE_NAME">initPayloadTrackExposure3</field>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">initPayloadTrackExposure4</field>
+                                                <next>
+                                                  <block type="subroutineInstanceBlock">
+                                                    <field name="SUBROUTINE_NAME">initCheckpointExposure</field>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <field name="SUBROUTINE_NAME">initSpawnsExposure</field>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="If">
+                                    <value name="VALUE-0">
+                                      <block type="IsCurrentMap">
+                                        <value name="VALUE-0">
+                                          <block type="MapsItem">
+                                            <field name="VALUE-0">Maps</field>
+                                            <field name="VALUE-1">TheWall</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO">
+                                      <block type="subroutineInstanceBlock">
+                                        <field name="SUBROUTINE_NAME">initializePayloadRenewal1</field>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <field name="SUBROUTINE_NAME">initializePayloadRenewal2</field>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">initializePayloadRenewal3</field>
+                                                <next>
+                                                  <block type="subroutineInstanceBlock">
+                                                    <field name="SUBROUTINE_NAME">initializePayloadRenewal4</field>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <field name="SUBROUTINE_NAME">initializePayloadRenewal5</field>
+                                                        <next>
+                                                          <block type="subroutineInstanceBlock">
+                                                            <field name="SUBROUTINE_NAME">initializePayloadRenewal6</field>
+                                                            <next>
+                                                              <block type="subroutineInstanceBlock">
+                                                                <field name="SUBROUTINE_NAME">initializeCheckpointsRenewal</field>
+                                                                <next>
+                                                                  <block type="subroutineInstanceBlock">
+                                                                    <field name="SUBROUTINE_NAME">initializeSpawnpointsRenewal</field>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="If">
+                                        <value name="VALUE-0">
+                                          <block type="IsCurrentMap">
+                                            <value name="VALUE-0">
+                                              <block type="MapsItem">
+                                                <field name="VALUE-0">Maps</field>
+                                                <field name="VALUE-1">Drained</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="subroutineInstanceBlock">
+                                            <field name="SUBROUTINE_NAME">initializePayloadTrackStranded1</field>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">initializePayloadTrackStranded2</field>
+                                                <next>
+                                                  <block type="subroutineInstanceBlock">
+                                                    <field name="SUBROUTINE_NAME">initializePayloadTrackStranded3</field>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <field name="SUBROUTINE_NAME">initializePayloadTrackStranded4</field>
+                                                        <next>
+                                                          <block type="subroutineInstanceBlock">
+                                                            <field name="SUBROUTINE_NAME">initializePayloadTrackStranded5</field>
+                                                            <next>
+                                                              <block type="subroutineInstanceBlock">
+                                                                <field name="SUBROUTINE_NAME">initCheckpointsStranded</field>
+                                                                <next>
+                                                                  <block type="subroutineInstanceBlock">
+                                                                    <field name="SUBROUTINE_NAME">initSpawnpointsStranded1</field>
+                                                                    <next>
+                                                                      <block type="subroutineInstanceBlock">
+                                                                        <field name="SUBROUTINE_NAME">initSpawnpointsStranded2</field>
+                                                                        <next>
+                                                                          <block type="subroutineInstanceBlock">
+                                                                            <field name="SUBROUTINE_NAME">initSpawnpointsStranded3</field>
+                                                                            <next>
+                                                                              <block type="subroutineInstanceBlock">
+                                                                                <field name="SUBROUTINE_NAME">initSpawnpointsStranded4</field>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="If">
+                                            <value name="VALUE-0">
+                                              <block type="IsCurrentMap">
+                                                <value name="VALUE-0">
+                                                  <block type="MapsItem">
+                                                    <field name="VALUE-0">Maps</field>
+                                                    <field name="VALUE-1">Port</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr1</field>
+                                                <next>
+                                                  <block type="subroutineInstanceBlock">
+                                                    <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr2</field>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr3</field>
+                                                        <next>
+                                                          <block type="subroutineInstanceBlock">
+                                                            <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr4</field>
+                                                            <next>
+                                                              <block type="subroutineInstanceBlock">
+                                                                <field name="SUBROUTINE_NAME">initCheckpointsNoshahr</field>
+                                                                <next>
+                                                                  <block type="subroutineInstanceBlock">
+                                                                    <field name="SUBROUTINE_NAME">initSpawnsNoshahr</field>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="12649">
     <mutation>
       <parameter types="Vector">position</parameter>
       <parameter types="Vector">objectPosition</parameter>
@@ -2637,7 +2645,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="12624">
+  <block type="subroutineBlock" deletable="false" x="0" y="13284">
     <field name="SUBROUTINE_NAME">initPayloadYaw</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -2788,7 +2796,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13077">
+  <block type="subroutineBlock" deletable="false" x="0" y="13737">
     <field name="SUBROUTINE_NAME">displayRemainingTime</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -3308,7 +3316,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14273">
+  <block type="subroutineBlock" deletable="false" x="0" y="14933">
     <field name="SUBROUTINE_NAME">playPayloadSound</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -3379,7 +3387,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14737">
+  <block type="subroutineBlock" deletable="false" x="0" y="15397">
     <field name="SUBROUTINE_NAME">initPayloadObjects</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -3579,7 +3587,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="15469">
+  <block type="subroutineBlock" deletable="false" x="0" y="16129">
     <field name="SUBROUTINE_NAME">initSpawnpointList</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -3676,7 +3684,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="15898">
+  <block type="subroutineBlock" deletable="false" x="0" y="16558">
     <field name="SUBROUTINE_NAME">initIcons</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconImage">
@@ -4060,7 +4068,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="17229">
+  <block type="subroutineBlock" deletable="false" x="0" y="17889">
     <field name="SUBROUTINE_NAME">calculatePayloadPos</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -4620,7 +4628,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="18332">
+  <block type="subroutineBlock" deletable="false" x="0" y="18992">
     <mutation>
       <parameter types="TeamId">pushingTeam</parameter>
     </mutation>
@@ -5780,7 +5788,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="19419">
+  <block type="subroutineBlock" deletable="false" x="0" y="20079">
     <field name="SUBROUTINE_NAME">teamTwoIsPushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -6317,7 +6325,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20702">
+  <block type="subroutineBlock" deletable="false" x="0" y="21362">
     <field name="SUBROUTINE_NAME">payloadIsBlocked</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -6360,7 +6368,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="21027">
+  <block type="subroutineBlock" deletable="false" x="0" y="21687">
     <field name="SUBROUTINE_NAME">teamOneIsPushing</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -7019,7 +7027,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22843">
+  <block type="subroutineBlock" deletable="false" x="0" y="23503">
     <field name="SUBROUTINE_NAME">updateCheckpointTime</field>
     <statement name="ACTIONS">
       <block type="SetRoundTimeLimit">
@@ -7040,7 +7048,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23168">
+  <block type="subroutineBlock" deletable="false" x="0" y="23828">
     <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconPosition">
@@ -7080,7 +7088,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23450">
+  <block type="subroutineBlock" deletable="false" x="0" y="24110">
     <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconPosition">
@@ -7503,7 +7511,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="24570">
+  <block type="subroutineBlock" deletable="false" x="0" y="25230">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8077,7 +8085,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25728">
+  <block type="subroutineBlock" deletable="false" x="0" y="26388">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -8259,7 +8267,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26304">
+  <block type="subroutineBlock" deletable="false" x="0" y="26964">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="ACTIONS">
       <block type="SetPlayerMaxHealth">
@@ -8451,7 +8459,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26999">
+  <block type="subroutineBlock" deletable="false" x="0" y="27659">
     <mutation>
       <parameter types="TeamId">team</parameter>
       <parameter types="Number">CPIndex</parameter>
@@ -8514,7 +8522,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27297">
+  <block type="subroutineBlock" deletable="false" x="0" y="27957">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -9057,7 +9065,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="28316">
+  <block type="subroutineBlock" deletable="false" x="0" y="28976">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -9600,7 +9608,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29335">
+  <block type="subroutineBlock" deletable="false" x="0" y="29995">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -10143,7 +10151,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30354">
+  <block type="subroutineBlock" deletable="false" x="0" y="31014">
     <field name="SUBROUTINE_NAME">initializeSpawnsCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -10490,7 +10498,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31041">
+  <block type="subroutineBlock" deletable="false" x="0" y="31701">
     <field name="SUBROUTINE_NAME">initializeCheckpointsCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -10648,7 +10656,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31591">
+  <block type="subroutineBlock" deletable="false" x="0" y="32251">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -11101,7 +11109,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32476">
+  <block type="subroutineBlock" deletable="false" x="0" y="33136">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -11599,7 +11607,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33428">
+  <block type="subroutineBlock" deletable="false" x="0" y="34088">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -12097,7 +12105,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34380">
+  <block type="subroutineBlock" deletable="false" x="0" y="35040">
     <field name="SUBROUTINE_NAME">initializeSpawnsBOTB</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12702,7 +12710,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35421">
+  <block type="subroutineBlock" deletable="false" x="0" y="36081">
     <field name="SUBROUTINE_NAME">initializeCheckpointsBOTB</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -12953,7 +12961,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36172">
+  <block type="subroutineBlock" deletable="false" x="0" y="36832">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -13406,7 +13414,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37057">
+  <block type="subroutineBlock" deletable="false" x="0" y="37717">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -13904,7 +13912,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38009">
+  <block type="subroutineBlock" deletable="false" x="0" y="38669">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -14402,7 +14410,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38961">
+  <block type="subroutineBlock" deletable="false" x="0" y="39621">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead4</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -14900,7 +14908,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39913">
+  <block type="subroutineBlock" deletable="false" x="0" y="40573">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead5</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -15353,7 +15361,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40798">
+  <block type="subroutineBlock" deletable="false" x="0" y="41458">
     <field name="SUBROUTINE_NAME">initSpawnpointsSpearhead</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -15786,7 +15794,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41603">
+  <block type="subroutineBlock" deletable="false" x="0" y="42263">
     <field name="SUBROUTINE_NAME">initCheckpointsSpearhead</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -15975,7 +15983,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42220">
+  <block type="subroutineBlock" deletable="false" x="0" y="42880">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -16428,7 +16436,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43105">
+  <block type="subroutineBlock" deletable="false" x="0" y="43765">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -16881,7 +16889,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43990">
+  <block type="subroutineBlock" deletable="false" x="0" y="44650">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -17334,7 +17342,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44875">
+  <block type="subroutineBlock" deletable="false" x="0" y="45535">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso4</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -17787,7 +17795,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45760">
+  <block type="subroutineBlock" deletable="false" x="0" y="46420">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso5</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -18285,7 +18293,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46712">
+  <block type="subroutineBlock" deletable="false" x="0" y="47372">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso6</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -18828,7 +18836,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47731">
+  <block type="subroutineBlock" deletable="false" x="0" y="48391">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso7</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -19191,7 +19199,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48482">
+  <block type="subroutineBlock" deletable="false" x="0" y="49142">
     <field name="SUBROUTINE_NAME">initializeSpawnsValparaiso</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -20140,7 +20148,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="49995">
+  <block type="subroutineBlock" deletable="false" x="0" y="50655">
     <field name="SUBROUTINE_NAME">initializeCheckpointsValparaiso</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -20515,7 +20523,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51014">
+  <block type="subroutineBlock" deletable="false" x="0" y="51674">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -20968,7 +20976,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51899">
+  <block type="subroutineBlock" deletable="false" x="0" y="52559">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -21421,7 +21429,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="52784">
+  <block type="subroutineBlock" deletable="false" x="0" y="53444">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -21874,7 +21882,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="53669">
+  <block type="subroutineBlock" deletable="false" x="0" y="54329">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor4</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -22327,7 +22335,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="54554">
+  <block type="subroutineBlock" deletable="false" x="0" y="55214">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor5</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -22780,7 +22788,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="55439">
+  <block type="subroutineBlock" deletable="false" x="0" y="56099">
     <field name="SUBROUTINE_NAME">initCheckpointsAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -23031,7 +23039,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="56190">
+  <block type="subroutineBlock" deletable="false" x="0" y="56850">
     <field name="SUBROUTINE_NAME">initSpawnPointsAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -23636,7 +23644,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="57231">
+  <block type="subroutineBlock" deletable="false" x="0" y="57891">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -24089,7 +24097,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="58116">
+  <block type="subroutineBlock" deletable="false" x="0" y="58776">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -24542,7 +24550,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="59001">
+  <block type="subroutineBlock" deletable="false" x="0" y="59661">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -24995,7 +25003,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="59886">
+  <block type="subroutineBlock" deletable="false" x="0" y="60546">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure4</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -25493,7 +25501,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="60838">
+  <block type="subroutineBlock" deletable="false" x="0" y="61498">
     <field name="SUBROUTINE_NAME">initSpawnsExposure</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -25754,7 +25762,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="61407">
+  <block type="subroutineBlock" deletable="false" x="0" y="62067">
     <field name="SUBROUTINE_NAME">initCheckpointExposure</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -25881,7 +25889,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="61890">
+  <block type="subroutineBlock" deletable="false" x="0" y="62550">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -26334,7 +26342,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="62775">
+  <block type="subroutineBlock" deletable="false" x="0" y="63435">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -26787,7 +26795,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="63660">
+  <block type="subroutineBlock" deletable="false" x="0" y="64320">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -27285,7 +27293,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="64612">
+  <block type="subroutineBlock" deletable="false" x="0" y="65272">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein4</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -27828,7 +27836,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="65631">
+  <block type="subroutineBlock" deletable="false" x="0" y="66291">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein5</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -28371,7 +28379,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="66650">
+  <block type="subroutineBlock" deletable="false" x="0" y="67310">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein6</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -28959,7 +28967,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="67736">
+  <block type="subroutineBlock" deletable="false" x="0" y="68396">
     <field name="SUBROUTINE_NAME">initSpawnsEl_Alamein</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -29306,7 +29314,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="68423">
+  <block type="subroutineBlock" deletable="false" x="0" y="69083">
     <field name="SUBROUTINE_NAME">initCheckpointEl_Alamein</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -29464,7 +29472,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="68973">
+  <block type="subroutineBlock" deletable="false" x="0" y="69633">
     <field name="SUBROUTINE_NAME">initializeSpawnpointsRenewal</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -29983,7 +29991,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="69896">
+  <block type="subroutineBlock" deletable="false" x="0" y="70556">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -30436,7 +30444,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="70781">
+  <block type="subroutineBlock" deletable="false" x="0" y="71441">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -30934,7 +30942,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="71733">
+  <block type="subroutineBlock" deletable="false" x="0" y="72393">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -31477,7 +31485,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="72752">
+  <block type="subroutineBlock" deletable="false" x="0" y="73412">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal4</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -32065,7 +32073,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="73838">
+  <block type="subroutineBlock" deletable="false" x="0" y="74498">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal5</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -32608,7 +32616,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="74857">
+  <block type="subroutineBlock" deletable="false" x="0" y="75517">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal6</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -33376,7 +33384,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="76211">
+  <block type="subroutineBlock" deletable="false" x="0" y="76871">
     <field name="SUBROUTINE_NAME">initializeCheckpointsRenewal</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -33596,7 +33604,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="76895">
+  <block type="subroutineBlock" deletable="false" x="0" y="77555">
     <field name="SUBROUTINE_NAME">initializeSpawnpointsRenewal</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -34115,7 +34123,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="77818">
+  <block type="subroutineBlock" deletable="false" x="0" y="78478">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -34568,7 +34576,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="78703">
+  <block type="subroutineBlock" deletable="false" x="0" y="79363">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -35021,7 +35029,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="79588">
+  <block type="subroutineBlock" deletable="false" x="0" y="80248">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -35474,7 +35482,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="80473">
+  <block type="subroutineBlock" deletable="false" x="0" y="81133">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded4</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -35927,7 +35935,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="81358">
+  <block type="subroutineBlock" deletable="false" x="0" y="82018">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded5</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -36470,7 +36478,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="82377">
+  <block type="subroutineBlock" deletable="false" x="0" y="83037">
     <field name="SUBROUTINE_NAME">initCheckpointsStranded</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -36752,7 +36760,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="83195">
+  <block type="subroutineBlock" deletable="false" x="0" y="83855">
     <field name="SUBROUTINE_NAME">initSpawnpointsStranded1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -37185,7 +37193,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="84000">
+  <block type="subroutineBlock" deletable="false" x="0" y="84660">
     <field name="SUBROUTINE_NAME">initSpawnpointsStranded2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -37618,7 +37626,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="84805">
+  <block type="subroutineBlock" deletable="false" x="0" y="85465">
     <field name="SUBROUTINE_NAME">initSpawnpointsStranded3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -38051,7 +38059,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="85610">
+  <block type="subroutineBlock" deletable="false" x="0" y="86270">
     <field name="SUBROUTINE_NAME">initSpawnpointsStranded4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -38742,7 +38750,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="4" y="86800">
+  <block type="subroutineBlock" deletable="false" x="0" y="87429">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr1</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -39195,7 +39203,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="2108" y="86888">
+  <block type="subroutineBlock" deletable="false" x="0" y="88314">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr2</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -39648,7 +39656,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="4609" y="86981">
+  <block type="subroutineBlock" deletable="false" x="0" y="89199">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr3</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -40101,7 +40109,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="6938" y="87216">
+  <block type="subroutineBlock" deletable="false" x="0" y="90084">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr4</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -40419,7 +40427,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="-59" y="88321">
+  <block type="subroutineBlock" deletable="false" x="0" y="90768">
     <field name="SUBROUTINE_NAME">initCheckpointsNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -40639,7 +40647,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="-67" y="89193">
+  <block type="subroutineBlock" deletable="false" x="0" y="91452">
     <field name="SUBROUTINE_NAME">initSpawnsNoshahr</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
