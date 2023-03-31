@@ -5077,7 +5077,7 @@
                           <block type="Message">
                             <value name="VALUE-0">
                               <block type="Text">
-                                <field name="TEXT">Payload Status: Idle</field>
+                                <field name="TEXT">Payload Status: IDLE</field>
                               </block>
                             </value>
                           </block>
@@ -6427,7 +6427,7 @@
                       <block type="Message">
                         <value name="VALUE-0">
                           <block type="Text">
-                            <field name="TEXT">Payload Status: Locked</field>
+                            <field name="TEXT">Payload Status: LOCKED</field>
                           </block>
                         </value>
                       </block>
@@ -6467,7 +6467,7 @@
                       <block type="Message">
                         <value name="VALUE-0">
                           <block type="Text">
-                            <field name="TEXT">Payload Status: Pushing Back</field>
+                            <field name="TEXT">Payload Status: PUSHING BACK</field>
                           </block>
                         </value>
                       </block>
@@ -6825,7 +6825,7 @@
           <block type="Message">
             <value name="VALUE-0">
               <block type="Text">
-                <field name="TEXT">Payload Status: Contested</field>
+                <field name="TEXT">Payload Status: CONTESTED</field>
               </block>
             </value>
           </block>
@@ -6868,7 +6868,7 @@
           <block type="Message">
             <value name="VALUE-0">
               <block type="Text">
-                <field name="TEXT">Payload Status: Advancing</field>
+                <field name="TEXT">Payload Status: ADVANCING</field>
               </block>
             </value>
           </block>
