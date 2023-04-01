@@ -12069,49 +12069,44 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineInstanceBlock" x="2004" y="39190">
-    <mutation>
-      <parameter types="Number">checkpoint</parameter>
-    </mutation>
-    <field name="SUBROUTINE_NAME">addCheckpoint</field>
-    <next>
+  <block type="subroutineBlock" deletable="false" x="0" y="39323">
+    <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead1</field>
+    <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
         <mutation>
           <parameter types="Vector">waypoint</parameter>
         </mutation>
         <field name="SUBROUTINE_NAME">addWaypoint</field>
-      </block>
-    </next>
-  </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39323">
-    <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead1</field>
-    <statement name="ACTIONS">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="AppendToArray">
+        <value name="PARAM-0">
+          <block type="CreateVector">
             <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
+              <block type="Number">
+                <field name="NUM">92.8</field>
               </block>
             </value>
             <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">144</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">-34.15</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Vector">waypoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addWaypoint</field>
+            <value name="PARAM-0">
               <block type="CreateVector">
                 <value name="VALUE-0">
                   <block type="Number">
-                    <field name="NUM">92.8</field>
+                    <field name="NUM">100.1</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -12121,40 +12116,22 @@
                 </value>
                 <value name="VALUE-2">
                   <block type="Number">
-                    <field name="NUM">-34.15</field>
+                    <field name="NUM">-34.1</field>
                   </block>
                 </value>
               </block>
             </value>
-          </block>
-        </value>
-        <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="AppendToArray">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Vector">waypoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                <value name="PARAM-0">
                   <block type="CreateVector">
                     <value name="VALUE-0">
                       <block type="Number">
-                        <field name="NUM">100.1</field>
+                        <field name="NUM">102.4</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
@@ -12164,40 +12141,22 @@
                     </value>
                     <value name="VALUE-2">
                       <block type="Number">
-                        <field name="NUM">-34.1</field>
+                        <field name="NUM">-35.9</field>
                       </block>
                     </value>
                   </block>
                 </value>
-              </block>
-            </value>
-            <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="AppendToArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Vector">waypoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                    <value name="PARAM-0">
                       <block type="CreateVector">
                         <value name="VALUE-0">
                           <block type="Number">
-                            <field name="NUM">102.4</field>
+                            <field name="NUM">102.7</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
@@ -12207,40 +12166,22 @@
                         </value>
                         <value name="VALUE-2">
                           <block type="Number">
-                            <field name="NUM">-35.9</field>
+                            <field name="NUM">-45.6</field>
                           </block>
                         </value>
                       </block>
                     </value>
-                  </block>
-                </value>
-                <next>
-                  <block type="SetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="AppendToArray">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Vector">waypoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                        <value name="PARAM-0">
                           <block type="CreateVector">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">102.7</field>
+                                <field name="NUM">105.3</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -12250,40 +12191,22 @@
                             </value>
                             <value name="VALUE-2">
                               <block type="Number">
-                                <field name="NUM">-45.6</field>
+                                <field name="NUM">-49.5</field>
                               </block>
                             </value>
                           </block>
                         </value>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="SetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="AppendToArray">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Vector">waypoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                            <value name="PARAM-0">
                               <block type="CreateVector">
                                 <value name="VALUE-0">
                                   <block type="Number">
-                                    <field name="NUM">105.3</field>
+                                    <field name="NUM">105.5</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -12293,40 +12216,22 @@
                                 </value>
                                 <value name="VALUE-2">
                                   <block type="Number">
-                                    <field name="NUM">-49.5</field>
+                                    <field name="NUM">-57.4</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="SetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="AppendToArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="Vector">waypoint</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                <value name="PARAM-0">
                                   <block type="CreateVector">
                                     <value name="VALUE-0">
                                       <block type="Number">
-                                        <field name="NUM">105.5</field>
+                                        <field name="NUM">101.74</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -12336,40 +12241,22 @@
                                     </value>
                                     <value name="VALUE-2">
                                       <block type="Number">
-                                        <field name="NUM">-57.4</field>
+                                        <field name="NUM">-63.4</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="SetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="AppendToArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <mutation>
+                                      <parameter types="Vector">waypoint</parameter>
+                                    </mutation>
+                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                    <value name="PARAM-0">
                                       <block type="CreateVector">
                                         <value name="VALUE-0">
                                           <block type="Number">
-                                            <field name="NUM">101.74</field>
+                                            <field name="NUM">101.6</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
@@ -12379,40 +12266,22 @@
                                         </value>
                                         <value name="VALUE-2">
                                           <block type="Number">
-                                            <field name="NUM">-63.4</field>
+                                            <field name="NUM">-79.6</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="SetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="AppendToArray">
-                                        <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="Vector">waypoint</parameter>
+                                        </mutation>
+                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                        <value name="PARAM-0">
                                           <block type="CreateVector">
                                             <value name="VALUE-0">
                                               <block type="Number">
-                                                <field name="NUM">101.6</field>
+                                                <field name="NUM">103.1</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
@@ -12422,40 +12291,22 @@
                                             </value>
                                             <value name="VALUE-2">
                                               <block type="Number">
-                                                <field name="NUM">-79.6</field>
+                                                <field name="NUM">-86.3</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="SetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="AppendToArray">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <mutation>
+                                              <parameter types="Vector">waypoint</parameter>
+                                            </mutation>
+                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                            <value name="PARAM-0">
                                               <block type="CreateVector">
                                                 <value name="VALUE-0">
                                                   <block type="Number">
-                                                    <field name="NUM">103.1</field>
+                                                    <field name="NUM">108.8</field>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
@@ -12465,52 +12316,7 @@
                                                 </value>
                                                 <value name="VALUE-2">
                                                   <block type="Number">
-                                                    <field name="NUM">-86.3</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="SetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="AppendToArray">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="CreateVector">
-                                                    <value name="VALUE-0">
-                                                      <block type="Number">
-                                                        <field name="NUM">108.8</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="Number">
-                                                        <field name="NUM">144</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-2">
-                                                      <block type="Number">
-                                                        <field name="NUM">-86</field>
-                                                      </block>
-                                                    </value>
+                                                    <field name="NUM">-86</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -12539,32 +12345,41 @@
   <block type="subroutineBlock" deletable="false" x="0" y="40208">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead2</field>
     <statement name="ACTIONS">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="AppendToArray">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Vector">waypoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addWaypoint</field>
+        <value name="PARAM-0">
+          <block type="CreateVector">
             <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
+              <block type="Number">
+                <field name="NUM">110.6</field>
               </block>
             </value>
             <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">144</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">-88.4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Vector">waypoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addWaypoint</field>
+            <value name="PARAM-0">
               <block type="CreateVector">
                 <value name="VALUE-0">
                   <block type="Number">
-                    <field name="NUM">110.6</field>
+                    <field name="NUM">110.8</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -12574,40 +12389,22 @@
                 </value>
                 <value name="VALUE-2">
                   <block type="Number">
-                    <field name="NUM">-88.4</field>
+                    <field name="NUM">-99.7</field>
                   </block>
                 </value>
               </block>
             </value>
-          </block>
-        </value>
-        <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="AppendToArray">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Vector">waypoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                <value name="PARAM-0">
                   <block type="CreateVector">
                     <value name="VALUE-0">
                       <block type="Number">
-                        <field name="NUM">110.8</field>
+                        <field name="NUM">105.7</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
@@ -12617,40 +12414,22 @@
                     </value>
                     <value name="VALUE-2">
                       <block type="Number">
-                        <field name="NUM">-99.7</field>
+                        <field name="NUM">-111.56</field>
                       </block>
                     </value>
                   </block>
                 </value>
-              </block>
-            </value>
-            <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="AppendToArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Vector">waypoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                    <value name="PARAM-0">
                       <block type="CreateVector">
                         <value name="VALUE-0">
                           <block type="Number">
-                            <field name="NUM">105.7</field>
+                            <field name="NUM">105.5</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
@@ -12660,40 +12439,22 @@
                         </value>
                         <value name="VALUE-2">
                           <block type="Number">
-                            <field name="NUM">-111.56</field>
+                            <field name="NUM">-117.87</field>
                           </block>
                         </value>
                       </block>
                     </value>
-                  </block>
-                </value>
-                <next>
-                  <block type="SetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="AppendToArray">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Vector">waypoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                        <value name="PARAM-0">
                           <block type="CreateVector">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">105.5</field>
+                                <field name="NUM">106.8</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -12703,40 +12464,22 @@
                             </value>
                             <value name="VALUE-2">
                               <block type="Number">
-                                <field name="NUM">-117.87</field>
+                                <field name="NUM">-122.23</field>
                               </block>
                             </value>
                           </block>
                         </value>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="SetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="AppendToArray">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Vector">waypoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                            <value name="PARAM-0">
                               <block type="CreateVector">
                                 <value name="VALUE-0">
                                   <block type="Number">
-                                    <field name="NUM">106.8</field>
+                                    <field name="NUM">106.7</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -12746,40 +12489,22 @@
                                 </value>
                                 <value name="VALUE-2">
                                   <block type="Number">
-                                    <field name="NUM">-122.23</field>
+                                    <field name="NUM">-133.4</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="SetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="AppendToArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="Vector">waypoint</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                <value name="PARAM-0">
                                   <block type="CreateVector">
                                     <value name="VALUE-0">
                                       <block type="Number">
-                                        <field name="NUM">106.7</field>
+                                        <field name="NUM">103.85</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -12789,40 +12514,22 @@
                                     </value>
                                     <value name="VALUE-2">
                                       <block type="Number">
-                                        <field name="NUM">-133.4</field>
+                                        <field name="NUM">-140.2</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="SetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="AppendToArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <mutation>
+                                      <parameter types="Vector">waypoint</parameter>
+                                    </mutation>
+                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                    <value name="PARAM-0">
                                       <block type="CreateVector">
                                         <value name="VALUE-0">
                                           <block type="Number">
-                                            <field name="NUM">103.85</field>
+                                            <field name="NUM">103.7</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
@@ -12832,40 +12539,22 @@
                                         </value>
                                         <value name="VALUE-2">
                                           <block type="Number">
-                                            <field name="NUM">-140.2</field>
+                                            <field name="NUM">-152</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="SetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="AppendToArray">
-                                        <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="Vector">waypoint</parameter>
+                                        </mutation>
+                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                        <value name="PARAM-0">
                                           <block type="CreateVector">
                                             <value name="VALUE-0">
                                               <block type="Number">
-                                                <field name="NUM">103.7</field>
+                                                <field name="NUM">106</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
@@ -12875,40 +12564,22 @@
                                             </value>
                                             <value name="VALUE-2">
                                               <block type="Number">
-                                                <field name="NUM">-152</field>
+                                                <field name="NUM">-155.6</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="SetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="AppendToArray">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <mutation>
+                                              <parameter types="Vector">waypoint</parameter>
+                                            </mutation>
+                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                            <value name="PARAM-0">
                                               <block type="CreateVector">
                                                 <value name="VALUE-0">
                                                   <block type="Number">
-                                                    <field name="NUM">106</field>
+                                                    <field name="NUM">105.9</field>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
@@ -12918,40 +12589,22 @@
                                                 </value>
                                                 <value name="VALUE-2">
                                                   <block type="Number">
-                                                    <field name="NUM">-155.6</field>
+                                                    <field name="NUM">-161.5</field>
                                                   </block>
                                                 </value>
                                               </block>
                                             </value>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="SetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="AppendToArray">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <mutation>
+                                                  <parameter types="Vector">waypoint</parameter>
+                                                </mutation>
+                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                <value name="PARAM-0">
                                                   <block type="CreateVector">
                                                     <value name="VALUE-0">
                                                       <block type="Number">
-                                                        <field name="NUM">105.9</field>
+                                                        <field name="NUM">108.5</field>
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
@@ -12961,52 +12614,7 @@
                                                     </value>
                                                     <value name="VALUE-2">
                                                       <block type="Number">
-                                                        <field name="NUM">-161.5</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="SetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="AppendToArray">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="CreateVector">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">108.5</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="Number">
-                                                            <field name="NUM">144</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-2">
-                                                          <block type="Number">
-                                                            <field name="NUM">-164.3</field>
-                                                          </block>
-                                                        </value>
+                                                        <field name="NUM">-164.3</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -13037,32 +12645,41 @@
   <block type="subroutineBlock" deletable="false" x="0" y="41160">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead3</field>
     <statement name="ACTIONS">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="AppendToArray">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Vector">waypoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addWaypoint</field>
+        <value name="PARAM-0">
+          <block type="CreateVector">
             <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
+              <block type="Number">
+                <field name="NUM">115.84</field>
               </block>
             </value>
             <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">144</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">-167.46</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Vector">waypoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addWaypoint</field>
+            <value name="PARAM-0">
               <block type="CreateVector">
                 <value name="VALUE-0">
                   <block type="Number">
-                    <field name="NUM">115.84</field>
+                    <field name="NUM">120.84</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -13072,40 +12689,22 @@
                 </value>
                 <value name="VALUE-2">
                   <block type="Number">
-                    <field name="NUM">-167.46</field>
+                    <field name="NUM">-169.7</field>
                   </block>
                 </value>
               </block>
             </value>
-          </block>
-        </value>
-        <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="AppendToArray">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Vector">waypoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                <value name="PARAM-0">
                   <block type="CreateVector">
                     <value name="VALUE-0">
                       <block type="Number">
-                        <field name="NUM">120.84</field>
+                        <field name="NUM">133.7</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
@@ -13115,83 +12714,47 @@
                     </value>
                     <value name="VALUE-2">
                       <block type="Number">
-                        <field name="NUM">-169.7</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="AppendToArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="CreateVector">
-                        <value name="VALUE-0">
-                          <block type="Number">
-                            <field name="NUM">133.7</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">144</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-2">
-                          <block type="Number">
-                            <field name="NUM">-179.6</field>
-                          </block>
-                        </value>
+                        <field name="NUM">-179.6</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <next>
-                  <block type="SetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="AppendToArray">
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Vector">waypoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                    <value name="PARAM-0">
+                      <block type="CreateVector">
                         <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
+                          <block type="Number">
+                            <field name="NUM">140.94</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">143.3</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-2">
+                          <block type="Number">
+                            <field name="NUM">-186.9</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Vector">waypoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                        <value name="PARAM-0">
                           <block type="CreateVector">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">140.94</field>
+                                <field name="NUM">160.4</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -13201,40 +12764,22 @@
                             </value>
                             <value name="VALUE-2">
                               <block type="Number">
-                                <field name="NUM">-186.9</field>
+                                <field name="NUM">-204.7</field>
                               </block>
                             </value>
                           </block>
                         </value>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="SetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="AppendToArray">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Vector">waypoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                            <value name="PARAM-0">
                               <block type="CreateVector">
                                 <value name="VALUE-0">
                                   <block type="Number">
-                                    <field name="NUM">160.4</field>
+                                    <field name="NUM">173.2</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -13244,83 +12789,47 @@
                                 </value>
                                 <value name="VALUE-2">
                                   <block type="Number">
-                                    <field name="NUM">-204.7</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="SetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="AppendToArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="CreateVector">
-                                    <value name="VALUE-0">
-                                      <block type="Number">
-                                        <field name="NUM">173.2</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">143.3</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-2">
-                                      <block type="Number">
-                                        <field name="NUM">-210.2</field>
-                                      </block>
-                                    </value>
+                                    <field name="NUM">-210.2</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <next>
-                              <block type="SetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="AppendToArray">
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="Vector">waypoint</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                <value name="PARAM-0">
+                                  <block type="CreateVector">
                                     <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
+                                      <block type="Number">
+                                        <field name="NUM">192.1</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">144.8</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
+                                      <block type="Number">
+                                        <field name="NUM">-216.4</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <mutation>
+                                      <parameter types="Vector">waypoint</parameter>
+                                    </mutation>
+                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                    <value name="PARAM-0">
                                       <block type="CreateVector">
                                         <value name="VALUE-0">
                                           <block type="Number">
-                                            <field name="NUM">192.1</field>
+                                            <field name="NUM">204.8</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
@@ -13330,126 +12839,72 @@
                                         </value>
                                         <value name="VALUE-2">
                                           <block type="Number">
-                                            <field name="NUM">-216.4</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="SetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="AppendToArray">
-                                        <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="CreateVector">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">204.8</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">144.8</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-2">
-                                              <block type="Number">
-                                                <field name="NUM">-224</field>
-                                              </block>
-                                            </value>
+                                            <field name="NUM">-224</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="SetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="AppendToArray">
+                                      <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="Vector">waypoint</parameter>
+                                        </mutation>
+                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                        <value name="PARAM-0">
+                                          <block type="CreateVector">
                                             <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                  </block>
-                                                </value>
+                                              <block type="Number">
+                                                <field name="NUM">212.46</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="CreateVector">
-                                                <value name="VALUE-0">
-                                                  <block type="Number">
-                                                    <field name="NUM">212.46</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="Number">
-                                                    <field name="NUM">145.2</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-2">
-                                                  <block type="Number">
-                                                    <field name="NUM">-225.9</field>
-                                                  </block>
-                                                </value>
+                                              <block type="Number">
+                                                <field name="NUM">145.2</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Number">
+                                                <field name="NUM">-225.9</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="SetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="AppendToArray">
+                                          <block type="subroutineInstanceBlock">
+                                            <mutation>
+                                              <parameter types="Vector">waypoint</parameter>
+                                            </mutation>
+                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                            <value name="PARAM-0">
+                                              <block type="CreateVector">
                                                 <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="Number">
+                                                    <field name="NUM">230.36</field>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">145.6</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">-222.6</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <mutation>
+                                                  <parameter types="Vector">waypoint</parameter>
+                                                </mutation>
+                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                <value name="PARAM-0">
                                                   <block type="CreateVector">
                                                     <value name="VALUE-0">
                                                       <block type="Number">
-                                                        <field name="NUM">230.36</field>
+                                                        <field name="NUM">244.1</field>
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
@@ -13459,52 +12914,7 @@
                                                     </value>
                                                     <value name="VALUE-2">
                                                       <block type="Number">
-                                                        <field name="NUM">-222.6</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="SetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="AppendToArray">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="CreateVector">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">244.1</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="Number">
-                                                            <field name="NUM">145.6</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-2">
-                                                          <block type="Number">
-                                                            <field name="NUM">-220.6</field>
-                                                          </block>
-                                                        </value>
+                                                        <field name="NUM">-220.6</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -13535,419 +12945,266 @@
   <block type="subroutineBlock" deletable="false" x="0" y="42112">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead4</field>
     <statement name="ACTIONS">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="AppendToArray">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Vector">waypoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addWaypoint</field>
+        <value name="PARAM-0">
+          <block type="CreateVector">
             <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
+              <block type="Number">
+                <field name="NUM">257.55</field>
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="CreateVector">
-                <value name="VALUE-0">
-                  <block type="Number">
-                    <field name="NUM">257.55</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">144.8</field>
-                  </block>
-                </value>
-                <value name="VALUE-2">
-                  <block type="Number">
-                    <field name="NUM">-213.3</field>
-                  </block>
-                </value>
+              <block type="Number">
+                <field name="NUM">144.8</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">-213.3</field>
               </block>
             </value>
           </block>
         </value>
         <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="AppendToArray">
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Vector">waypoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addWaypoint</field>
+            <value name="PARAM-0">
+              <block type="CreateVector">
                 <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
+                  <block type="Number">
+                    <field name="NUM">274.55</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="CreateVector">
-                    <value name="VALUE-0">
-                      <block type="Number">
-                        <field name="NUM">274.55</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">144.3</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-2">
-                      <block type="Number">
-                        <field name="NUM">-207.35</field>
-                      </block>
-                    </value>
+                  <block type="Number">
+                    <field name="NUM">144.3</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="Number">
+                    <field name="NUM">-207.35</field>
                   </block>
                 </value>
               </block>
             </value>
             <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="AppendToArray">
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Vector">waypoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                <value name="PARAM-0">
+                  <block type="CreateVector">
                     <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
+                      <block type="Number">
+                        <field name="NUM">294.5</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="CreateVector">
-                        <value name="VALUE-0">
-                          <block type="Number">
-                            <field name="NUM">294.5</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">142.6</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-2">
-                          <block type="Number">
-                            <field name="NUM">-200.9</field>
-                          </block>
-                        </value>
+                      <block type="Number">
+                        <field name="NUM">142.6</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-2">
+                      <block type="Number">
+                        <field name="NUM">-200.9</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <next>
-                  <block type="SetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="AppendToArray">
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Vector">waypoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                    <value name="PARAM-0">
+                      <block type="CreateVector">
                         <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
+                          <block type="Number">
+                            <field name="NUM">302.5</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="CreateVector">
-                            <value name="VALUE-0">
-                              <block type="Number">
-                                <field name="NUM">302.5</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">142.2</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-2">
-                              <block type="Number">
-                                <field name="NUM">-199.9</field>
-                              </block>
-                            </value>
+                          <block type="Number">
+                            <field name="NUM">142.2</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-2">
+                          <block type="Number">
+                            <field name="NUM">-199.9</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <next>
-                      <block type="SetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="AppendToArray">
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Vector">waypoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                        <value name="PARAM-0">
+                          <block type="CreateVector">
                             <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
+                              <block type="Number">
+                                <field name="NUM">315</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="CreateVector">
-                                <value name="VALUE-0">
-                                  <block type="Number">
-                                    <field name="NUM">315</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">141.8</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-2">
-                                  <block type="Number">
-                                    <field name="NUM">-203.5</field>
-                                  </block>
-                                </value>
+                              <block type="Number">
+                                <field name="NUM">141.8</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-2">
+                              <block type="Number">
+                                <field name="NUM">-203.5</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <next>
-                          <block type="SetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="AppendToArray">
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Vector">waypoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                            <value name="PARAM-0">
+                              <block type="CreateVector">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
+                                  <block type="Number">
+                                    <field name="NUM">330.1</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="CreateVector">
-                                    <value name="VALUE-0">
-                                      <block type="Number">
-                                        <field name="NUM">330.1</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">140.8</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-2">
-                                      <block type="Number">
-                                        <field name="NUM">-200.8</field>
-                                      </block>
-                                    </value>
+                                  <block type="Number">
+                                    <field name="NUM">140.8</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
+                                  <block type="Number">
+                                    <field name="NUM">-200.8</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <next>
-                              <block type="SetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="AppendToArray">
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="Vector">waypoint</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                <value name="PARAM-0">
+                                  <block type="CreateVector">
                                     <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
+                                      <block type="Number">
+                                        <field name="NUM">344.17</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="CreateVector">
-                                        <value name="VALUE-0">
-                                          <block type="Number">
-                                            <field name="NUM">344.17</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">139.55</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-2">
-                                          <block type="Number">
-                                            <field name="NUM">-198.7</field>
-                                          </block>
-                                        </value>
+                                      <block type="Number">
+                                        <field name="NUM">139.55</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
+                                      <block type="Number">
+                                        <field name="NUM">-198.7</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="SetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="AppendToArray">
+                                  <block type="subroutineInstanceBlock">
+                                    <mutation>
+                                      <parameter types="Vector">waypoint</parameter>
+                                    </mutation>
+                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                    <value name="PARAM-0">
+                                      <block type="CreateVector">
                                         <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
+                                          <block type="Number">
+                                            <field name="NUM">367</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="CreateVector">
-                                            <value name="VALUE-0">
-                                              <block type="Number">
-                                                <field name="NUM">367</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">136.8</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-2">
-                                              <block type="Number">
-                                                <field name="NUM">-201.8</field>
-                                              </block>
-                                            </value>
+                                          <block type="Number">
+                                            <field name="NUM">136.8</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Number">
+                                            <field name="NUM">-201.8</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="SetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="AppendToArray">
+                                      <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="Vector">waypoint</parameter>
+                                        </mutation>
+                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                        <value name="PARAM-0">
+                                          <block type="CreateVector">
                                             <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                  </block>
-                                                </value>
+                                              <block type="Number">
+                                                <field name="NUM">382.3</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="CreateVector">
-                                                <value name="VALUE-0">
-                                                  <block type="Number">
-                                                    <field name="NUM">382.3</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="Number">
-                                                    <field name="NUM">135.4</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-2">
-                                                  <block type="Number">
-                                                    <field name="NUM">-200.84</field>
-                                                  </block>
-                                                </value>
+                                              <block type="Number">
+                                                <field name="NUM">135.4</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Number">
+                                                <field name="NUM">-200.84</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="SetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="AppendToArray">
+                                          <block type="subroutineInstanceBlock">
+                                            <mutation>
+                                              <parameter types="Vector">waypoint</parameter>
+                                            </mutation>
+                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                            <value name="PARAM-0">
+                                              <block type="CreateVector">
                                                 <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="Number">
+                                                    <field name="NUM">393.2</field>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">135</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">-195.1</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <mutation>
+                                                  <parameter types="Vector">waypoint</parameter>
+                                                </mutation>
+                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                <value name="PARAM-0">
                                                   <block type="CreateVector">
                                                     <value name="VALUE-0">
                                                       <block type="Number">
-                                                        <field name="NUM">393.2</field>
+                                                        <field name="NUM">404.9</field>
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
@@ -13957,52 +13214,7 @@
                                                     </value>
                                                     <value name="VALUE-2">
                                                       <block type="Number">
-                                                        <field name="NUM">-195.1</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="SetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="AppendToArray">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="CreateVector">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">404.9</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="Number">
-                                                            <field name="NUM">135</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-2">
-                                                          <block type="Number">
-                                                            <field name="NUM">-190</field>
-                                                          </block>
-                                                        </value>
+                                                        <field name="NUM">-190</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -14033,32 +13245,41 @@
   <block type="subroutineBlock" deletable="false" x="0" y="43064">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead5</field>
     <statement name="ACTIONS">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="AppendToArray">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Vector">waypoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addWaypoint</field>
+        <value name="PARAM-0">
+          <block type="CreateVector">
             <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
+              <block type="Number">
+                <field name="NUM">408.1</field>
               </block>
             </value>
             <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">135</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">-185.3</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Vector">waypoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addWaypoint</field>
+            <value name="PARAM-0">
               <block type="CreateVector">
                 <value name="VALUE-0">
                   <block type="Number">
-                    <field name="NUM">408.1</field>
+                    <field name="NUM">411.36</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -14068,40 +13289,22 @@
                 </value>
                 <value name="VALUE-2">
                   <block type="Number">
-                    <field name="NUM">-185.3</field>
+                    <field name="NUM">-183.84</field>
                   </block>
                 </value>
               </block>
             </value>
-          </block>
-        </value>
-        <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="AppendToArray">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Vector">waypoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                <value name="PARAM-0">
                   <block type="CreateVector">
                     <value name="VALUE-0">
                       <block type="Number">
-                        <field name="NUM">411.36</field>
+                        <field name="NUM">416.17</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
@@ -14111,40 +13314,22 @@
                     </value>
                     <value name="VALUE-2">
                       <block type="Number">
-                        <field name="NUM">-183.84</field>
+                        <field name="NUM">-185.5</field>
                       </block>
                     </value>
                   </block>
                 </value>
-              </block>
-            </value>
-            <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="AppendToArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Vector">waypoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                    <value name="PARAM-0">
                       <block type="CreateVector">
                         <value name="VALUE-0">
                           <block type="Number">
-                            <field name="NUM">416.17</field>
+                            <field name="NUM">419.37</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
@@ -14154,40 +13339,22 @@
                         </value>
                         <value name="VALUE-2">
                           <block type="Number">
-                            <field name="NUM">-185.5</field>
+                            <field name="NUM">-183.1</field>
                           </block>
                         </value>
                       </block>
                     </value>
-                  </block>
-                </value>
-                <next>
-                  <block type="SetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="AppendToArray">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Vector">waypoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                        <value name="PARAM-0">
                           <block type="CreateVector">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">419.37</field>
+                                <field name="NUM">424.7</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -14197,40 +13364,22 @@
                             </value>
                             <value name="VALUE-2">
                               <block type="Number">
-                                <field name="NUM">-183.1</field>
+                                <field name="NUM">-169.6</field>
                               </block>
                             </value>
                           </block>
                         </value>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="SetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="AppendToArray">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Vector">waypoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                            <value name="PARAM-0">
                               <block type="CreateVector">
                                 <value name="VALUE-0">
                                   <block type="Number">
-                                    <field name="NUM">424.7</field>
+                                    <field name="NUM">430</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -14240,40 +13389,22 @@
                                 </value>
                                 <value name="VALUE-2">
                                   <block type="Number">
-                                    <field name="NUM">-169.6</field>
+                                    <field name="NUM">-168.33</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="SetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="AppendToArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="Vector">waypoint</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                <value name="PARAM-0">
                                   <block type="CreateVector">
                                     <value name="VALUE-0">
                                       <block type="Number">
-                                        <field name="NUM">430</field>
+                                        <field name="NUM">438.85</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -14283,40 +13414,22 @@
                                     </value>
                                     <value name="VALUE-2">
                                       <block type="Number">
-                                        <field name="NUM">-168.33</field>
+                                        <field name="NUM">-170.2</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="SetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="AppendToArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <mutation>
+                                      <parameter types="Vector">waypoint</parameter>
+                                    </mutation>
+                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                    <value name="PARAM-0">
                                       <block type="CreateVector">
                                         <value name="VALUE-0">
                                           <block type="Number">
-                                            <field name="NUM">438.85</field>
+                                            <field name="NUM">480.46</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
@@ -14326,40 +13439,22 @@
                                         </value>
                                         <value name="VALUE-2">
                                           <block type="Number">
-                                            <field name="NUM">-170.2</field>
+                                            <field name="NUM">-187.84</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="SetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="AppendToArray">
-                                        <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="Vector">waypoint</parameter>
+                                        </mutation>
+                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                        <value name="PARAM-0">
                                           <block type="CreateVector">
                                             <value name="VALUE-0">
                                               <block type="Number">
-                                                <field name="NUM">480.46</field>
+                                                <field name="NUM">484.7</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
@@ -14369,40 +13464,22 @@
                                             </value>
                                             <value name="VALUE-2">
                                               <block type="Number">
-                                                <field name="NUM">-187.84</field>
+                                                <field name="NUM">-190.5</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="SetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="AppendToArray">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <mutation>
+                                              <parameter types="Vector">waypoint</parameter>
+                                            </mutation>
+                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                            <value name="PARAM-0">
                                               <block type="CreateVector">
                                                 <value name="VALUE-0">
                                                   <block type="Number">
-                                                    <field name="NUM">484.7</field>
+                                                    <field name="NUM">491.44</field>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
@@ -14412,52 +13489,7 @@
                                                 </value>
                                                 <value name="VALUE-2">
                                                   <block type="Number">
-                                                    <field name="NUM">-190.5</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="SetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="AppendToArray">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="s@wSeJO1atU~bJr@pBax" variabletype="Global">waypoints</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="CreateVector">
-                                                    <value name="VALUE-0">
-                                                      <block type="Number">
-                                                        <field name="NUM">491.44</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="Number">
-                                                        <field name="NUM">135</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-2">
-                                                      <block type="Number">
-                                                        <field name="NUM">-193</field>
-                                                      </block>
-                                                    </value>
+                                                    <field name="NUM">-193</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -14919,177 +13951,69 @@
   <block type="subroutineBlock" deletable="false" x="0" y="44754">
     <field name="SUBROUTINE_NAME">initCheckpointsSpearhead</field>
     <statement name="ACTIONS">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="AppendToArray">
-            <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">0</field>
-              </block>
-            </value>
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Number">checkpoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addCheckpoint</field>
+        <value name="PARAM-0">
+          <block type="Number">
+            <field name="NUM">0</field>
           </block>
         </value>
         <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="false"></mutation>
-                <field name="OBJECTTYPE">Global</field>
-                <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="AppendToArray">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">11</field>
-                  </block>
-                </value>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Number">checkpoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addCheckpoint</field>
+            <value name="PARAM-0">
+              <block type="Number">
+                <field name="NUM">11</field>
               </block>
             </value>
             <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="AppendToArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">22</field>
-                      </block>
-                    </value>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Number">checkpoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                <value name="PARAM-0">
+                  <block type="Number">
+                    <field name="NUM">22</field>
                   </block>
                 </value>
                 <next>
-                  <block type="SetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="AppendToArray">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">29</field>
-                          </block>
-                        </value>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Number">checkpoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                    <value name="PARAM-0">
+                      <block type="Number">
+                        <field name="NUM">29</field>
                       </block>
                     </value>
                     <next>
-                      <block type="SetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="AppendToArray">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">40</field>
-                              </block>
-                            </value>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Number">checkpoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                        <value name="PARAM-0">
+                          <block type="Number">
+                            <field name="NUM">40</field>
                           </block>
                         </value>
                         <next>
-                          <block type="SetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="AppendToArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="$}J}?/Qa?{L5lpm^BL!2" variabletype="Global">checkpoints</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">52</field>
-                                  </block>
-                                </value>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Number">checkpoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                            <value name="PARAM-0">
+                              <block type="Number">
+                                <field name="NUM">52</field>
                               </block>
                             </value>
                           </block>
@@ -15104,6 +14028,20 @@
         </next>
       </block>
     </statement>
+  </block>
+  <block type="subroutineInstanceBlock" x="2026" y="45245">
+    <mutation>
+      <parameter types="Number">checkpoint</parameter>
+    </mutation>
+    <field name="SUBROUTINE_NAME">addCheckpoint</field>
+    <next>
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Vector">waypoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addWaypoint</field>
+      </block>
+    </next>
   </block>
   <block type="subroutineBlock" deletable="false" x="0" y="45371">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso1</field>
