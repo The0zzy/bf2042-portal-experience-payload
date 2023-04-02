@@ -32167,7 +32167,7 @@
             </value>
             <value name="VALUE-1">
               <block type="Number">
-                <field name="NUM">7.3</field>
+                <field name="NUM">4.3</field>
               </block>
             </value>
             <value name="VALUE-2">
@@ -32208,7 +32208,7 @@
                 </value>
                 <value name="VALUE-1">
                   <block type="Number">
-                    <field name="NUM">7.3</field>
+                    <field name="NUM">4.3</field>
                   </block>
                 </value>
                 <value name="VALUE-2">
@@ -32249,7 +32249,7 @@
                     </value>
                     <value name="VALUE-1">
                       <block type="Number">
-                        <field name="NUM">7.3</field>
+                        <field name="NUM">4.3</field>
                       </block>
                     </value>
                     <value name="VALUE-2">
@@ -32290,7 +32290,7 @@
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">7.3</field>
+                            <field name="NUM">4.3</field>
                           </block>
                         </value>
                         <value name="VALUE-2">
@@ -32331,7 +32331,7 @@
                             </value>
                             <value name="VALUE-1">
                               <block type="Number">
-                                <field name="NUM">7.3</field>
+                                <field name="NUM">4.3</field>
                               </block>
                             </value>
                             <value name="VALUE-2">
@@ -32372,7 +32372,7 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Number">
-                                    <field name="NUM">7.3</field>
+                                    <field name="NUM">4.3</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-2">
@@ -32413,7 +32413,7 @@
                                     </value>
                                     <value name="VALUE-1">
                                       <block type="Number">
-                                        <field name="NUM">7.3</field>
+                                        <field name="NUM">4.3</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-2">
@@ -32454,7 +32454,7 @@
                                         </value>
                                         <value name="VALUE-1">
                                           <block type="Number">
-                                            <field name="NUM">19.5</field>
+                                            <field name="NUM">15.5</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-2">
@@ -32495,7 +32495,7 @@
                                             </value>
                                             <value name="VALUE-1">
                                               <block type="Number">
-                                                <field name="NUM">7.3</field>
+                                                <field name="NUM">4.3</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-2">
@@ -32536,7 +32536,7 @@
                                                 </value>
                                                 <value name="VALUE-1">
                                                   <block type="Number">
-                                                    <field name="NUM">41.2</field>
+                                                    <field name="NUM">38.2</field>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-2">
@@ -32577,7 +32577,7 @@
                                                     </value>
                                                     <value name="VALUE-1">
                                                       <block type="Number">
-                                                        <field name="NUM">22.2</field>
+                                                        <field name="NUM">19.2</field>
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-2">
@@ -32618,7 +32618,7 @@
                                                         </value>
                                                         <value name="VALUE-1">
                                                           <block type="Number">
-                                                            <field name="NUM">63.7</field>
+                                                            <field name="NUM">60.7</field>
                                                           </block>
                                                         </value>
                                                         <value name="VALUE-2">
@@ -32659,7 +32659,7 @@
                                                             </value>
                                                             <value name="VALUE-1">
                                                               <block type="Number">
-                                                                <field name="NUM">60.1</field>
+                                                                <field name="NUM">57.1</field>
                                                               </block>
                                                             </value>
                                                             <value name="VALUE-2">
@@ -32700,7 +32700,7 @@
                                                                 </value>
                                                                 <value name="VALUE-1">
                                                                   <block type="Number">
-                                                                    <field name="NUM">66.3</field>
+                                                                    <field name="NUM">63.3</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="VALUE-2">
