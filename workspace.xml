@@ -31214,124 +31214,6 @@
     </statement>
   </block>
   <block type="subroutineBlock" deletable="false" x="0" y="89851">
-    <field name="SUBROUTINE_NAME">initSpawnpointsManifest</field>
-    <statement name="ACTIONS">
-      <block type="subroutineInstanceBlock">
-        <mutation>
-          <parameter types="TeamId">team</parameter>
-          <parameter types="Number">CPIndex</parameter>
-          <parameter types="Vector">spawn</parameter>
-        </mutation>
-        <field name="SUBROUTINE_NAME">addSpawn</field>
-        <value name="PARAM-0">
-          <block type="GetTeamId">
-            <value name="VALUE-0">
-              <block type="Number">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <value name="PARAM-1">
-          <block type="Number">
-            <field name="NUM">0</field>
-          </block>
-        </value>
-        <value name="PARAM-2">
-          <block type="CreateVector">
-            <value name="VALUE-0">
-              <block type="Number">
-                <field name="NUM">-106.5</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">17</field>
-              </block>
-            </value>
-            <value name="VALUE-2">
-              <block type="Number">
-                <field name="NUM">666.9</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <next>
-          <block type="subroutineInstanceBlock">
-            <mutation>
-              <parameter types="TeamId">team</parameter>
-              <parameter types="Number">CPIndex</parameter>
-              <parameter types="Vector">spawn</parameter>
-            </mutation>
-            <field name="SUBROUTINE_NAME">addSpawn</field>
-            <value name="PARAM-0">
-              <block type="GetTeamId">
-                <value name="VALUE-0">
-                  <block type="Number">
-                    <field name="NUM">2</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="PARAM-1">
-              <block type="Number">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-            <value name="PARAM-2">
-              <block type="CreateVector">
-                <value name="VALUE-0">
-                  <block type="Number">
-                    <field name="NUM">-45.8</field>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">71.3</field>
-                  </block>
-                </value>
-                <value name="VALUE-2">
-                  <block type="Number">
-                    <field name="NUM">241.1</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </next>
-      </block>
-    </statement>
-  </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="90184">
-    <field name="SUBROUTINE_NAME">initCheckpointsManifest</field>
-    <statement name="ACTIONS">
-      <block type="subroutineInstanceBlock">
-        <mutation>
-          <parameter types="Number">checkpoint</parameter>
-        </mutation>
-        <field name="SUBROUTINE_NAME">addCheckpoint</field>
-        <value name="PARAM-0">
-          <block type="Number">
-            <field name="NUM">0</field>
-          </block>
-        </value>
-        <next>
-          <block type="subroutineInstanceBlock">
-            <mutation>
-              <parameter types="Number">checkpoint</parameter>
-            </mutation>
-            <field name="SUBROUTINE_NAME">addCheckpoint</field>
-            <value name="PARAM-0">
-              <block type="Number">
-                <field name="NUM">30</field>
-              </block>
-            </value>
-          </block>
-        </next>
-      </block>
-    </statement>
-  </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="90501">
     <field name="SUBROUTINE_NAME">initTrackManifest</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -32142,6 +32024,692 @@
                                                                 </next>
                                                               </block>
                                                             </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="91895">
+    <field name="SUBROUTINE_NAME">initCheckpointsManifest</field>
+    <statement name="ACTIONS">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Number">checkpoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addCheckpoint</field>
+        <value name="PARAM-0">
+          <block type="Number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Number">checkpoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addCheckpoint</field>
+            <value name="PARAM-0">
+              <block type="Number">
+                <field name="NUM">7</field>
+              </block>
+            </value>
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Number">checkpoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                <value name="PARAM-0">
+                  <block type="Number">
+                    <field name="NUM">13</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Number">checkpoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                    <value name="PARAM-0">
+                      <block type="Number">
+                        <field name="NUM">20</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Number">checkpoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                        <value name="PARAM-0">
+                          <block type="Number">
+                            <field name="NUM">24</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Number">checkpoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                            <value name="PARAM-0">
+                              <block type="Number">
+                                <field name="NUM">30</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="92416">
+    <field name="SUBROUTINE_NAME">initSpawnpointsManifest</field>
+    <statement name="ACTIONS">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="TeamId">team</parameter>
+          <parameter types="Number">CPIndex</parameter>
+          <parameter types="Vector">spawn</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addSpawn</field>
+        <value name="PARAM-0">
+          <block type="GetTeamId">
+            <value name="VALUE-0">
+              <block type="Number">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="PARAM-1">
+          <block type="Number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="PARAM-2">
+          <block type="CreateVector">
+            <value name="VALUE-0">
+              <block type="Number">
+                <field name="NUM">-107.3</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">12.4</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">692.7</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="TeamId">team</parameter>
+              <parameter types="Number">CPIndex</parameter>
+              <parameter types="Vector">spawn</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addSpawn</field>
+            <value name="PARAM-0">
+              <block type="GetTeamId">
+                <value name="VALUE-0">
+                  <block type="Number">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="PARAM-1">
+              <block type="Number">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="PARAM-2">
+              <block type="CreateVector">
+                <value name="VALUE-0">
+                  <block type="Number">
+                    <field name="NUM">-128.7</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">12.3</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="Number">
+                    <field name="NUM">686.9</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="TeamId">team</parameter>
+                  <parameter types="Number">CPIndex</parameter>
+                  <parameter types="Vector">spawn</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addSpawn</field>
+                <value name="PARAM-0">
+                  <block type="GetTeamId">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="PARAM-1">
+                  <block type="Number">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="PARAM-2">
+                  <block type="CreateVector">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">-112.9</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">12.5</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-2">
+                      <block type="Number">
+                        <field name="NUM">659.5</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="TeamId">team</parameter>
+                      <parameter types="Number">CPIndex</parameter>
+                      <parameter types="Vector">spawn</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addSpawn</field>
+                    <value name="PARAM-0">
+                      <block type="GetTeamId">
+                        <value name="VALUE-0">
+                          <block type="Number">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="PARAM-1">
+                      <block type="Number">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="PARAM-2">
+                      <block type="CreateVector">
+                        <value name="VALUE-0">
+                          <block type="Number">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">12.5</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-2">
+                          <block type="Number">
+                            <field name="NUM">591</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="TeamId">team</parameter>
+                          <parameter types="Number">CPIndex</parameter>
+                          <parameter types="Vector">spawn</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addSpawn</field>
+                        <value name="PARAM-0">
+                          <block type="GetTeamId">
+                            <value name="VALUE-0">
+                              <block type="Number">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="PARAM-1">
+                          <block type="Number">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="PARAM-2">
+                          <block type="CreateVector">
+                            <value name="VALUE-0">
+                              <block type="Number">
+                                <field name="NUM">-6.7</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">12.3</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-2">
+                              <block type="Number">
+                                <field name="NUM">584.7</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="TeamId">team</parameter>
+                              <parameter types="Number">CPIndex</parameter>
+                              <parameter types="Vector">spawn</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addSpawn</field>
+                            <value name="PARAM-0">
+                              <block type="GetTeamId">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="PARAM-1">
+                              <block type="Number">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="PARAM-2">
+                              <block type="CreateVector">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">-25.6</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">12.3</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
+                                  <block type="Number">
+                                    <field name="NUM">565.6</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="TeamId">team</parameter>
+                                  <parameter types="Number">CPIndex</parameter>
+                                  <parameter types="Vector">spawn</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">addSpawn</field>
+                                <value name="PARAM-0">
+                                  <block type="GetTeamId">
+                                    <value name="VALUE-0">
+                                      <block type="Number">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="PARAM-1">
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <value name="PARAM-2">
+                                  <block type="CreateVector">
+                                    <value name="VALUE-0">
+                                      <block type="Number">
+                                        <field name="NUM">-32</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">12.3</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
+                                      <block type="Number">
+                                        <field name="NUM">630</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <mutation>
+                                      <parameter types="TeamId">team</parameter>
+                                      <parameter types="Number">CPIndex</parameter>
+                                      <parameter types="Vector">spawn</parameter>
+                                    </mutation>
+                                    <field name="SUBROUTINE_NAME">addSpawn</field>
+                                    <value name="PARAM-0">
+                                      <block type="GetTeamId">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="PARAM-1">
+                                      <block type="Number">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                    <value name="PARAM-2">
+                                      <block type="CreateVector">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">-26.6</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">24.5</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Number">
+                                            <field name="NUM">461.2</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="TeamId">team</parameter>
+                                          <parameter types="Number">CPIndex</parameter>
+                                          <parameter types="Vector">spawn</parameter>
+                                        </mutation>
+                                        <field name="SUBROUTINE_NAME">addSpawn</field>
+                                        <value name="PARAM-0">
+                                          <block type="GetTeamId">
+                                            <value name="VALUE-0">
+                                              <block type="Number">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="PARAM-1">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                        <value name="PARAM-2">
+                                          <block type="CreateVector">
+                                            <value name="VALUE-0">
+                                              <block type="Number">
+                                                <field name="NUM">22.8</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">12.3</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Number">
+                                                <field name="NUM">515.8</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <mutation>
+                                              <parameter types="TeamId">team</parameter>
+                                              <parameter types="Number">CPIndex</parameter>
+                                              <parameter types="Vector">spawn</parameter>
+                                            </mutation>
+                                            <field name="SUBROUTINE_NAME">addSpawn</field>
+                                            <value name="PARAM-0">
+                                              <block type="GetTeamId">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="PARAM-1">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                            <value name="PARAM-2">
+                                              <block type="CreateVector">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">-34.3</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">46.2</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">403.5</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <mutation>
+                                                  <parameter types="TeamId">team</parameter>
+                                                  <parameter types="Number">CPIndex</parameter>
+                                                  <parameter types="Vector">spawn</parameter>
+                                                </mutation>
+                                                <field name="SUBROUTINE_NAME">addSpawn</field>
+                                                <value name="PARAM-0">
+                                                  <block type="GetTeamId">
+                                                    <value name="VALUE-0">
+                                                      <block type="Number">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="PARAM-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                                <value name="PARAM-2">
+                                                  <block type="CreateVector">
+                                                    <value name="VALUE-0">
+                                                      <block type="Number">
+                                                        <field name="NUM">-71</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">27.2</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="Number">
+                                                        <field name="NUM">495</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="subroutineInstanceBlock">
+                                                    <mutation>
+                                                      <parameter types="TeamId">team</parameter>
+                                                      <parameter types="Number">CPIndex</parameter>
+                                                      <parameter types="Vector">spawn</parameter>
+                                                    </mutation>
+                                                    <field name="SUBROUTINE_NAME">addSpawn</field>
+                                                    <value name="PARAM-0">
+                                                      <block type="GetTeamId">
+                                                        <value name="VALUE-0">
+                                                          <block type="Number">
+                                                            <field name="NUM">2</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">3</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM-2">
+                                                      <block type="CreateVector">
+                                                        <value name="VALUE-0">
+                                                          <block type="Number">
+                                                            <field name="NUM">-109.5</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">68.7</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-2">
+                                                          <block type="Number">
+                                                            <field name="NUM">364.6</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <mutation>
+                                                          <parameter types="TeamId">team</parameter>
+                                                          <parameter types="Number">CPIndex</parameter>
+                                                          <parameter types="Vector">spawn</parameter>
+                                                        </mutation>
+                                                        <field name="SUBROUTINE_NAME">addSpawn</field>
+                                                        <value name="PARAM-0">
+                                                          <block type="GetTeamId">
+                                                            <value name="VALUE-0">
+                                                              <block type="Number">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="PARAM-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">4</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="PARAM-2">
+                                                          <block type="CreateVector">
+                                                            <value name="VALUE-0">
+                                                              <block type="Number">
+                                                                <field name="NUM">-51.5</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">65.1</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-2">
+                                                              <block type="Number">
+                                                                <field name="NUM">380</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="subroutineInstanceBlock">
+                                                            <mutation>
+                                                              <parameter types="TeamId">team</parameter>
+                                                              <parameter types="Number">CPIndex</parameter>
+                                                              <parameter types="Vector">spawn</parameter>
+                                                            </mutation>
+                                                            <field name="SUBROUTINE_NAME">addSpawn</field>
+                                                            <value name="PARAM-0">
+                                                              <block type="GetTeamId">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">2</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="PARAM-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">4</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="PARAM-2">
+                                                              <block type="CreateVector">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">-45.8</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">71.3</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-2">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">241.1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
                                                           </block>
                                                         </next>
                                                       </block>
