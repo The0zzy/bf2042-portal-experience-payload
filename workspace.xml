@@ -2683,6 +2683,35 @@
                                                 </next>
                                               </block>
                                             </statement>
+                                            <next>
+                                              <block type="If">
+                                                <value name="VALUE-0">
+                                                  <block type="IsCurrentMap">
+                                                    <value name="VALUE-0">
+                                                      <block type="MapsItem">
+                                                        <field name="VALUE-0">Maps</field>
+                                                        <field name="VALUE-1">LongHaul</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO">
+                                                  <block type="subroutineInstanceBlock">
+                                                    <field name="SUBROUTINE_NAME">initTrackManifest</field>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <field name="SUBROUTINE_NAME">initCheckpointsManifest</field>
+                                                        <next>
+                                                          <block type="subroutineInstanceBlock">
+                                                            <field name="SUBROUTINE_NAME">initSpawnpointsManifest</field>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
@@ -2704,7 +2733,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13751">
+  <block type="subroutineBlock" deletable="false" x="0" y="13992">
     <mutation>
       <parameter types="Number">checkpoint</parameter>
     </mutation>
@@ -2741,7 +2770,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14033">
+  <block type="subroutineBlock" deletable="false" x="0" y="14274">
     <mutation>
       <parameter types="Vector">waypoint</parameter>
     </mutation>
@@ -2778,7 +2807,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14315">
+  <block type="subroutineBlock" deletable="false" x="0" y="14556">
     <mutation>
       <parameter types="TeamId">team</parameter>
       <parameter types="Number">CPIndex</parameter>
@@ -2841,7 +2870,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14613">
+  <block type="subroutineBlock" deletable="false" x="0" y="14854">
     <field name="SUBROUTINE_NAME">aiBalancing</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -3071,7 +3100,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="15438">
+  <block type="subroutineBlock" deletable="false" x="0" y="15679">
     <mutation>
       <parameter types="Vector">position</parameter>
       <parameter types="Vector">objectPosition</parameter>
@@ -3274,7 +3303,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="16073">
+  <block type="subroutineBlock" deletable="false" x="0" y="16314">
     <field name="SUBROUTINE_NAME">initPayloadYaw</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -3425,7 +3454,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="16526">
+  <block type="subroutineBlock" deletable="false" x="0" y="16767">
     <field name="SUBROUTINE_NAME">displayRemainingTime</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -3945,7 +3974,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="17722">
+  <block type="subroutineBlock" deletable="false" x="0" y="17963">
     <field name="SUBROUTINE_NAME">playPayloadSound</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -4016,7 +4045,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="18186">
+  <block type="subroutineBlock" deletable="false" x="0" y="18427">
     <field name="SUBROUTINE_NAME">initPayloadObjects</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -4216,7 +4245,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="18918">
+  <block type="subroutineBlock" deletable="false" x="0" y="19159">
     <field name="SUBROUTINE_NAME">initSpawnpointList</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -4313,7 +4342,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="19347">
+  <block type="subroutineBlock" deletable="false" x="0" y="19588">
     <field name="SUBROUTINE_NAME">initIcons</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconImage">
@@ -4697,7 +4726,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20678">
+  <block type="subroutineBlock" deletable="false" x="0" y="20919">
     <field name="SUBROUTINE_NAME">calculatePayloadPos</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -5257,7 +5286,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="21781">
+  <block type="subroutineBlock" deletable="false" x="0" y="22022">
     <mutation>
       <parameter types="TeamId">pushingTeam</parameter>
     </mutation>
@@ -6417,7 +6446,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22868">
+  <block type="subroutineBlock" deletable="false" x="0" y="23109">
     <field name="SUBROUTINE_NAME">teamTwoIsPushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -6954,7 +6983,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="24151">
+  <block type="subroutineBlock" deletable="false" x="0" y="24392">
     <field name="SUBROUTINE_NAME">payloadIsBlocked</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -6997,7 +7026,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="24476">
+  <block type="subroutineBlock" deletable="false" x="0" y="24717">
     <field name="SUBROUTINE_NAME">teamOneIsPushing</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -7656,7 +7685,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26292">
+  <block type="subroutineBlock" deletable="false" x="0" y="26533">
     <field name="SUBROUTINE_NAME">updateCheckpointTime</field>
     <statement name="ACTIONS">
       <block type="SetRoundTimeLimit">
@@ -7677,7 +7706,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26617">
+  <block type="subroutineBlock" deletable="false" x="0" y="26858">
     <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconPosition">
@@ -7717,7 +7746,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26899">
+  <block type="subroutineBlock" deletable="false" x="0" y="27140">
     <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconPosition">
@@ -8140,7 +8169,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="28019">
+  <block type="subroutineBlock" deletable="false" x="0" y="28260">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8714,7 +8743,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29177">
+  <block type="subroutineBlock" deletable="false" x="0" y="29418">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -8896,7 +8925,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29753">
+  <block type="subroutineBlock" deletable="false" x="0" y="29994">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="ACTIONS">
       <block type="SetPlayerMaxHealth">
@@ -9088,7 +9117,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30448">
+  <block type="subroutineBlock" deletable="false" x="0" y="30689">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -9415,7 +9444,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31371">
+  <block type="subroutineBlock" deletable="false" x="0" y="31612">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -9742,7 +9771,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32294">
+  <block type="subroutineBlock" deletable="false" x="0" y="32535">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -10069,7 +10098,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33217">
+  <block type="subroutineBlock" deletable="false" x="0" y="33458">
     <field name="SUBROUTINE_NAME">initializeSpawnsCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -10416,7 +10445,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33904">
+  <block type="subroutineBlock" deletable="false" x="0" y="34145">
     <field name="SUBROUTINE_NAME">initializeCheckpointsCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -10484,7 +10513,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34374">
+  <block type="subroutineBlock" deletable="false" x="0" y="34615">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -10757,7 +10786,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35179">
+  <block type="subroutineBlock" deletable="false" x="0" y="35420">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -11057,7 +11086,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36043">
+  <block type="subroutineBlock" deletable="false" x="0" y="36284">
     <field name="SUBROUTINE_NAME">initializePayloadTrackBOTB3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -11357,7 +11386,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36907">
+  <block type="subroutineBlock" deletable="false" x="0" y="37148">
     <field name="SUBROUTINE_NAME">initializeSpawnsBOTB</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -11962,7 +11991,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37948">
+  <block type="subroutineBlock" deletable="false" x="0" y="38189">
     <field name="SUBROUTINE_NAME">initializeCheckpointsBOTB</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12069,7 +12098,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38571">
+  <block type="subroutineBlock" deletable="false" x="0" y="38812">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12342,7 +12371,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39376">
+  <block type="subroutineBlock" deletable="false" x="0" y="39617">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12642,7 +12671,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40240">
+  <block type="subroutineBlock" deletable="false" x="0" y="40481">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12942,7 +12971,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41104">
+  <block type="subroutineBlock" deletable="false" x="0" y="41345">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -13242,7 +13271,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41968">
+  <block type="subroutineBlock" deletable="false" x="0" y="42209">
     <field name="SUBROUTINE_NAME">initializePayloadTrackSpearhead5</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -13515,7 +13544,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42773">
+  <block type="subroutineBlock" deletable="false" x="0" y="43014">
     <field name="SUBROUTINE_NAME">initSpawnpointsSpearhead</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -13948,7 +13977,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43578">
+  <block type="subroutineBlock" deletable="false" x="0" y="43819">
     <field name="SUBROUTINE_NAME">initCheckpointsSpearhead</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -14029,7 +14058,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44099">
+  <block type="subroutineBlock" deletable="false" x="0" y="44340">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -14302,7 +14331,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44904">
+  <block type="subroutineBlock" deletable="false" x="0" y="45145">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -14575,7 +14604,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45709">
+  <block type="subroutineBlock" deletable="false" x="0" y="45950">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -14848,7 +14877,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46514">
+  <block type="subroutineBlock" deletable="false" x="0" y="46755">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -15121,7 +15150,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47319">
+  <block type="subroutineBlock" deletable="false" x="0" y="47560">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso5</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -15421,7 +15450,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48183">
+  <block type="subroutineBlock" deletable="false" x="0" y="48424">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso6</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -15748,7 +15777,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="49106">
+  <block type="subroutineBlock" deletable="false" x="0" y="49347">
     <field name="SUBROUTINE_NAME">initializePayloadTrackValparaiso7</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -15967,7 +15996,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="49793">
+  <block type="subroutineBlock" deletable="false" x="0" y="50034">
     <field name="SUBROUTINE_NAME">initializeSpawnsValparaiso</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -16916,7 +16945,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51306">
+  <block type="subroutineBlock" deletable="false" x="0" y="51547">
     <field name="SUBROUTINE_NAME">initializeCheckpointsValparaiso</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -17075,7 +17104,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="52133">
+  <block type="subroutineBlock" deletable="false" x="0" y="52374">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -17348,7 +17377,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="52938">
+  <block type="subroutineBlock" deletable="false" x="0" y="53179">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -17621,7 +17650,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="53743">
+  <block type="subroutineBlock" deletable="false" x="0" y="53984">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -17894,7 +17923,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="54548">
+  <block type="subroutineBlock" deletable="false" x="0" y="54789">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -18167,7 +18196,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="55353">
+  <block type="subroutineBlock" deletable="false" x="0" y="55594">
     <field name="SUBROUTINE_NAME">initializePayloadTrackAricaHarbor5</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -18440,7 +18469,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="56158">
+  <block type="subroutineBlock" deletable="false" x="0" y="56399">
     <field name="SUBROUTINE_NAME">initCheckpointsAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -18547,7 +18576,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="56781">
+  <block type="subroutineBlock" deletable="false" x="0" y="57022">
     <field name="SUBROUTINE_NAME">initSpawnPointsAricaHarbor</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -19152,7 +19181,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="57822">
+  <block type="subroutineBlock" deletable="false" x="0" y="58063">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -19425,7 +19454,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="58627">
+  <block type="subroutineBlock" deletable="false" x="0" y="58868">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -19698,7 +19727,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="59432">
+  <block type="subroutineBlock" deletable="false" x="0" y="59673">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -19971,7 +20000,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="60237">
+  <block type="subroutineBlock" deletable="false" x="0" y="60478">
     <field name="SUBROUTINE_NAME">initPayloadTrackExposure4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -20271,7 +20300,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="61101">
+  <block type="subroutineBlock" deletable="false" x="0" y="61342">
     <field name="SUBROUTINE_NAME">initSpawnsExposure</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -20532,7 +20561,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="61670">
+  <block type="subroutineBlock" deletable="false" x="0" y="61911">
     <field name="SUBROUTINE_NAME">initCheckpointExposure</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -20587,7 +20616,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="62089">
+  <block type="subroutineBlock" deletable="false" x="0" y="62330">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -20860,7 +20889,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="62894">
+  <block type="subroutineBlock" deletable="false" x="0" y="63135">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -21133,7 +21162,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="63699">
+  <block type="subroutineBlock" deletable="false" x="0" y="63940">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -21433,7 +21462,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="64563">
+  <block type="subroutineBlock" deletable="false" x="0" y="64804">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -21760,7 +21789,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="65486">
+  <block type="subroutineBlock" deletable="false" x="0" y="65727">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein5</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -22087,7 +22116,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="66409">
+  <block type="subroutineBlock" deletable="false" x="0" y="66650">
     <field name="SUBROUTINE_NAME">initPayloadEl_Alamein6</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -22441,7 +22470,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="67391">
+  <block type="subroutineBlock" deletable="false" x="0" y="67632">
     <field name="SUBROUTINE_NAME">initSpawnsEl_Alamein</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -22788,7 +22817,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="68078">
+  <block type="subroutineBlock" deletable="false" x="0" y="68319">
     <field name="SUBROUTINE_NAME">initCheckpointEl_Alamein</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -22856,7 +22885,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="68548">
+  <block type="subroutineBlock" deletable="false" x="0" y="68789">
     <field name="SUBROUTINE_NAME">initializeSpawnpointsRenewal</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -23375,7 +23404,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="69471">
+  <block type="subroutineBlock" deletable="false" x="0" y="69712">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -23648,7 +23677,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="70276">
+  <block type="subroutineBlock" deletable="false" x="0" y="70517">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -23948,7 +23977,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="71140">
+  <block type="subroutineBlock" deletable="false" x="0" y="71381">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -24275,7 +24304,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="72063">
+  <block type="subroutineBlock" deletable="false" x="0" y="72304">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -24629,7 +24658,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="73045">
+  <block type="subroutineBlock" deletable="false" x="0" y="73286">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal5</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -24956,7 +24985,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="73968">
+  <block type="subroutineBlock" deletable="false" x="0" y="74209">
     <field name="SUBROUTINE_NAME">initializePayloadRenewal6</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -25418,7 +25447,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="75186">
+  <block type="subroutineBlock" deletable="false" x="0" y="75427">
     <field name="SUBROUTINE_NAME">initializeCheckpointsRenewal</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -25512,7 +25541,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="75758">
+  <block type="subroutineBlock" deletable="false" x="0" y="75999">
     <field name="SUBROUTINE_NAME">initializeSpawnpointsRenewal</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -26031,7 +26060,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="76681">
+  <block type="subroutineBlock" deletable="false" x="0" y="76922">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -26304,7 +26333,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="77486">
+  <block type="subroutineBlock" deletable="false" x="0" y="77727">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -26577,7 +26606,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="78291">
+  <block type="subroutineBlock" deletable="false" x="0" y="78532">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -26850,7 +26879,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="79096">
+  <block type="subroutineBlock" deletable="false" x="0" y="79337">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -27123,7 +27152,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="79901">
+  <block type="subroutineBlock" deletable="false" x="0" y="80142">
     <field name="SUBROUTINE_NAME">initializePayloadTrackStranded5</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -27450,7 +27479,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="80824">
+  <block type="subroutineBlock" deletable="false" x="0" y="81065">
     <field name="SUBROUTINE_NAME">initCheckpointsStranded</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -27570,7 +27599,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="81498">
+  <block type="subroutineBlock" deletable="false" x="0" y="81739">
     <field name="SUBROUTINE_NAME">initSpawnpointsStranded1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -28003,7 +28032,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="82303">
+  <block type="subroutineBlock" deletable="false" x="0" y="82544">
     <field name="SUBROUTINE_NAME">initSpawnpointsStranded2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -28436,7 +28465,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="83108">
+  <block type="subroutineBlock" deletable="false" x="0" y="83349">
     <field name="SUBROUTINE_NAME">initSpawnpointsStranded3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -28869,7 +28898,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="83913">
+  <block type="subroutineBlock" deletable="false" x="0" y="84154">
     <field name="SUBROUTINE_NAME">initSpawnpointsStranded4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -29560,7 +29589,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="85072">
+  <block type="subroutineBlock" deletable="false" x="0" y="85313">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -29833,7 +29862,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="85877">
+  <block type="subroutineBlock" deletable="false" x="0" y="86118">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -30106,7 +30135,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="86682">
+  <block type="subroutineBlock" deletable="false" x="0" y="86923">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -30379,7 +30408,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="87487">
+  <block type="subroutineBlock" deletable="false" x="0" y="87728">
     <field name="SUBROUTINE_NAME">initPayloadTrackNoshahr4</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -30571,7 +30600,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="88115">
+  <block type="subroutineBlock" deletable="false" x="0" y="88356">
     <field name="SUBROUTINE_NAME">initCheckpointsNoshahr</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -30665,7 +30694,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="88687">
+  <block type="subroutineBlock" deletable="false" x="0" y="88928">
     <field name="SUBROUTINE_NAME">initSpawnsNoshahr</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -31159,6 +31188,1532 @@
                                                         </value>
                                                       </block>
                                                     </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="89851">
+    <field name="SUBROUTINE_NAME">initTrackManifest</field>
+    <statement name="ACTIONS">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Vector">waypoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addWaypoint</field>
+        <value name="PARAM-0">
+          <block type="CreateVector">
+            <value name="VALUE-0">
+              <block type="Number">
+                <field name="NUM">-106.5</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">12.5</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">666.9</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Vector">waypoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addWaypoint</field>
+            <value name="PARAM-0">
+              <block type="CreateVector">
+                <value name="VALUE-0">
+                  <block type="Number">
+                    <field name="NUM">-94.3</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">12.3</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="Number">
+                    <field name="NUM">660.2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Vector">waypoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                <value name="PARAM-0">
+                  <block type="CreateVector">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">-77.1</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">12.5</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-2">
+                      <block type="Number">
+                        <field name="NUM">665.5</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Vector">waypoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                    <value name="PARAM-0">
+                      <block type="CreateVector">
+                        <value name="VALUE-0">
+                          <block type="Number">
+                            <field name="NUM">-70.6</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">12.4</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-2">
+                          <block type="Number">
+                            <field name="NUM">662.2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Vector">waypoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                        <value name="PARAM-0">
+                          <block type="CreateVector">
+                            <value name="VALUE-0">
+                              <block type="Number">
+                                <field name="NUM">-68.7</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">12.3</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-2">
+                              <block type="Number">
+                                <field name="NUM">649.4</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Vector">waypoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                            <value name="PARAM-0">
+                              <block type="CreateVector">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">-45.8</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">12.3</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
+                                  <block type="Number">
+                                    <field name="NUM">633.9</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="Vector">waypoint</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                <value name="PARAM-0">
+                                  <block type="CreateVector">
+                                    <value name="VALUE-0">
+                                      <block type="Number">
+                                        <field name="NUM">-39.8</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">12.3</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
+                                      <block type="Number">
+                                        <field name="NUM">625.8</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <mutation>
+                                      <parameter types="Vector">waypoint</parameter>
+                                    </mutation>
+                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                    <value name="PARAM-0">
+                                      <block type="CreateVector">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">-7.2</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">12.3</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Number">
+                                            <field name="NUM">608.5</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="Vector">waypoint</parameter>
+                                        </mutation>
+                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                        <value name="PARAM-0">
+                                          <block type="CreateVector">
+                                            <value name="VALUE-0">
+                                              <block type="Number">
+                                                <field name="NUM">-31.45</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">12.3</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Number">
+                                                <field name="NUM">568.2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <mutation>
+                                              <parameter types="Vector">waypoint</parameter>
+                                            </mutation>
+                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                            <value name="PARAM-0">
+                                              <block type="CreateVector">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">-27</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">12.3</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">558.9</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <mutation>
+                                                  <parameter types="Vector">waypoint</parameter>
+                                                </mutation>
+                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                <value name="PARAM-0">
+                                                  <block type="CreateVector">
+                                                    <value name="VALUE-0">
+                                                      <block type="Number">
+                                                        <field name="NUM">-8.1</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">12.3</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="Number">
+                                                        <field name="NUM">551.2</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="subroutineInstanceBlock">
+                                                    <mutation>
+                                                      <parameter types="Vector">waypoint</parameter>
+                                                    </mutation>
+                                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                    <value name="PARAM-0">
+                                                      <block type="CreateVector">
+                                                        <value name="VALUE-0">
+                                                          <block type="Number">
+                                                            <field name="NUM">2.6</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">12.3</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-2">
+                                                          <block type="Number">
+                                                            <field name="NUM">545</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <mutation>
+                                                          <parameter types="Vector">waypoint</parameter>
+                                                        </mutation>
+                                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                        <value name="PARAM-0">
+                                                          <block type="CreateVector">
+                                                            <value name="VALUE-0">
+                                                              <block type="Number">
+                                                                <field name="NUM">4.2</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">12.3</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-2">
+                                                              <block type="Number">
+                                                                <field name="NUM">536.9</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="subroutineInstanceBlock">
+                                                            <mutation>
+                                                              <parameter types="Vector">waypoint</parameter>
+                                                            </mutation>
+                                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                            <value name="PARAM-0">
+                                                              <block type="CreateVector">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">-7.2</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">12.3</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-2">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">491.4</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="subroutineInstanceBlock">
+                                                                <mutation>
+                                                                  <parameter types="Vector">waypoint</parameter>
+                                                                </mutation>
+                                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                <value name="PARAM-0">
+                                                                  <block type="CreateVector">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">-18.6</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">16.2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-2">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">481</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="subroutineInstanceBlock">
+                                                                    <mutation>
+                                                                      <parameter types="Vector">waypoint</parameter>
+                                                                    </mutation>
+                                                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                    <value name="PARAM-0">
+                                                                      <block type="CreateVector">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">-36.8</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">21.3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-2">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">478.4</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="subroutineInstanceBlock">
+                                                                        <mutation>
+                                                                          <parameter types="Vector">waypoint</parameter>
+                                                                        </mutation>
+                                                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                        <value name="PARAM-0">
+                                                                          <block type="CreateVector">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">-61.1</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">30.1</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-2">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">478.7</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="subroutineInstanceBlock">
+                                                                            <mutation>
+                                                                              <parameter types="Vector">waypoint</parameter>
+                                                                            </mutation>
+                                                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                            <value name="PARAM-0">
+                                                                              <block type="CreateVector">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="Number">
+                                                                                    <field name="NUM">-70.3</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="Number">
+                                                                                    <field name="NUM">34.8</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-2">
+                                                                                  <block type="Number">
+                                                                                    <field name="NUM">470.9</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="subroutineInstanceBlock">
+                                                                                <mutation>
+                                                                                  <parameter types="Vector">waypoint</parameter>
+                                                                                </mutation>
+                                                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                <value name="PARAM-0">
+                                                                                  <block type="CreateVector">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">-71</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">36.5</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-2">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">466.1</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="subroutineInstanceBlock">
+                                                                                    <mutation>
+                                                                                      <parameter types="Vector">waypoint</parameter>
+                                                                                    </mutation>
+                                                                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                    <value name="PARAM-0">
+                                                                                      <block type="CreateVector">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">-31.8</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-1">
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">35.3</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-2">
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">437</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="subroutineInstanceBlock">
+                                                                                        <mutation>
+                                                                                          <parameter types="Vector">waypoint</parameter>
+                                                                                        </mutation>
+                                                                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                        <value name="PARAM-0">
+                                                                                          <block type="CreateVector">
+                                                                                            <value name="VALUE-0">
+                                                                                              <block type="Number">
+                                                                                                <field name="NUM">-36.3</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="VALUE-1">
+                                                                                              <block type="Number">
+                                                                                                <field name="NUM">39.7</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="VALUE-2">
+                                                                                              <block type="Number">
+                                                                                                <field name="NUM">421.6</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                          <block type="subroutineInstanceBlock">
+                                                                                            <mutation>
+                                                                                              <parameter types="Vector">waypoint</parameter>
+                                                                                            </mutation>
+                                                                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                            <value name="PARAM-0">
+                                                                                              <block type="CreateVector">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">-46.1</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">45.7</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-2">
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">405.9</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="subroutineInstanceBlock">
+                                                                                                <mutation>
+                                                                                                  <parameter types="Vector">waypoint</parameter>
+                                                                                                </mutation>
+                                                                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                <value name="PARAM-0">
+                                                                                                  <block type="CreateVector">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">-57.5</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">54.3</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-2">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">395.9</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                    <mutation>
+                                                                                                      <parameter types="Vector">waypoint</parameter>
+                                                                                                    </mutation>
+                                                                                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                    <value name="PARAM-0">
+                                                                                                      <block type="CreateVector">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">-74</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <value name="VALUE-1">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">59.7</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <value name="VALUE-2">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">394.5</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="subroutineInstanceBlock">
+                                                                                                        <mutation>
+                                                                                                          <parameter types="Vector">waypoint</parameter>
+                                                                                                        </mutation>
+                                                                                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                        <value name="PARAM-0">
+                                                                                                          <block type="CreateVector">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="Number">
+                                                                                                                <field name="NUM">-79.3</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="VALUE-1">
+                                                                                                              <block type="Number">
+                                                                                                                <field name="NUM">66.9</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="VALUE-2">
+                                                                                                              <block type="Number">
+                                                                                                                <field name="NUM">380.4</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="subroutineInstanceBlock">
+                                                                                                            <mutation>
+                                                                                                              <parameter types="Vector">waypoint</parameter>
+                                                                                                            </mutation>
+                                                                                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                            <value name="PARAM-0">
+                                                                                                              <block type="CreateVector">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="Number">
+                                                                                                                    <field name="NUM">-82.6</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <value name="VALUE-1">
+                                                                                                                  <block type="Number">
+                                                                                                                    <field name="NUM">71.3</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <value name="VALUE-2">
+                                                                                                                  <block type="Number">
+                                                                                                                    <field name="NUM">365.3</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <next>
+                                                                                                              <block type="subroutineInstanceBlock">
+                                                                                                                <mutation>
+                                                                                                                  <parameter types="Vector">waypoint</parameter>
+                                                                                                                </mutation>
+                                                                                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                                <value name="PARAM-0">
+                                                                                                                  <block type="CreateVector">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="Number">
+                                                                                                                        <field name="NUM">-88.5</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-1">
+                                                                                                                      <block type="Number">
+                                                                                                                        <field name="NUM">71.5</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-2">
+                                                                                                                      <block type="Number">
+                                                                                                                        <field name="NUM">358.5</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <next>
+                                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                                    <mutation>
+                                                                                                                      <parameter types="Vector">waypoint</parameter>
+                                                                                                                    </mutation>
+                                                                                                                    <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                                    <value name="PARAM-0">
+                                                                                                                      <block type="CreateVector">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">-100.4</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-1">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">71.3</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-2">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">333</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <next>
+                                                                                                                      <block type="subroutineInstanceBlock">
+                                                                                                                        <mutation>
+                                                                                                                          <parameter types="Vector">waypoint</parameter>
+                                                                                                                        </mutation>
+                                                                                                                        <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                                        <value name="PARAM-0">
+                                                                                                                          <block type="CreateVector">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="Number">
+                                                                                                                                <field name="NUM">-89.1</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <value name="VALUE-1">
+                                                                                                                              <block type="Number">
+                                                                                                                                <field name="NUM">71.3</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <value name="VALUE-2">
+                                                                                                                              <block type="Number">
+                                                                                                                                <field name="NUM">312.2</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <next>
+                                                                                                                          <block type="subroutineInstanceBlock">
+                                                                                                                            <mutation>
+                                                                                                                              <parameter types="Vector">waypoint</parameter>
+                                                                                                                            </mutation>
+                                                                                                                            <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                                            <value name="PARAM-0">
+                                                                                                                              <block type="CreateVector">
+                                                                                                                                <value name="VALUE-0">
+                                                                                                                                  <block type="Number">
+                                                                                                                                    <field name="NUM">-77.1</field>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                                <value name="VALUE-1">
+                                                                                                                                  <block type="Number">
+                                                                                                                                    <field name="NUM">71.3</field>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                                <value name="VALUE-2">
+                                                                                                                                  <block type="Number">
+                                                                                                                                    <field name="NUM">305.5</field>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <next>
+                                                                                                                              <block type="subroutineInstanceBlock">
+                                                                                                                                <mutation>
+                                                                                                                                  <parameter types="Vector">waypoint</parameter>
+                                                                                                                                </mutation>
+                                                                                                                                <field name="SUBROUTINE_NAME">addWaypoint</field>
+                                                                                                                                <value name="PARAM-0">
+                                                                                                                                  <block type="CreateVector">
+                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                      <block type="Number">
+                                                                                                                                        <field name="NUM">-78.3</field>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                      <block type="Number">
+                                                                                                                                        <field name="NUM">71.3</field>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                      <block type="Number">
+                                                                                                                                        <field name="NUM">296.3</field>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                              </block>
+                                                                                                                            </next>
+                                                                                                                          </block>
+                                                                                                                        </next>
+                                                                                                                      </block>
+                                                                                                                    </next>
+                                                                                                                  </block>
+                                                                                                                </next>
+                                                                                                              </block>
+                                                                                                            </next>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="91895">
+    <field name="SUBROUTINE_NAME">initCheckpointsManifest</field>
+    <statement name="ACTIONS">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="Number">checkpoint</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addCheckpoint</field>
+        <value name="PARAM-0">
+          <block type="Number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="Number">checkpoint</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addCheckpoint</field>
+            <value name="PARAM-0">
+              <block type="Number">
+                <field name="NUM">7</field>
+              </block>
+            </value>
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="Number">checkpoint</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                <value name="PARAM-0">
+                  <block type="Number">
+                    <field name="NUM">13</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="Number">checkpoint</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                    <value name="PARAM-0">
+                      <block type="Number">
+                        <field name="NUM">20</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="Number">checkpoint</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                        <value name="PARAM-0">
+                          <block type="Number">
+                            <field name="NUM">24</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="Number">checkpoint</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addCheckpoint</field>
+                            <value name="PARAM-0">
+                              <block type="Number">
+                                <field name="NUM">30</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="92416">
+    <field name="SUBROUTINE_NAME">initSpawnpointsManifest</field>
+    <statement name="ACTIONS">
+      <block type="subroutineInstanceBlock">
+        <mutation>
+          <parameter types="TeamId">team</parameter>
+          <parameter types="Number">CPIndex</parameter>
+          <parameter types="Vector">spawn</parameter>
+        </mutation>
+        <field name="SUBROUTINE_NAME">addSpawn</field>
+        <value name="PARAM-0">
+          <block type="GetTeamId">
+            <value name="VALUE-0">
+              <block type="Number">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="PARAM-1">
+          <block type="Number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="PARAM-2">
+          <block type="CreateVector">
+            <value name="VALUE-0">
+              <block type="Number">
+                <field name="NUM">-107.3</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">2.3</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">692.7</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <mutation>
+              <parameter types="TeamId">team</parameter>
+              <parameter types="Number">CPIndex</parameter>
+              <parameter types="Vector">spawn</parameter>
+            </mutation>
+            <field name="SUBROUTINE_NAME">addSpawn</field>
+            <value name="PARAM-0">
+              <block type="GetTeamId">
+                <value name="VALUE-0">
+                  <block type="Number">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="PARAM-1">
+              <block type="Number">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="PARAM-2">
+              <block type="CreateVector">
+                <value name="VALUE-0">
+                  <block type="Number">
+                    <field name="NUM">-128.7</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">2.3</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="Number">
+                    <field name="NUM">686.9</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="subroutineInstanceBlock">
+                <mutation>
+                  <parameter types="TeamId">team</parameter>
+                  <parameter types="Number">CPIndex</parameter>
+                  <parameter types="Vector">spawn</parameter>
+                </mutation>
+                <field name="SUBROUTINE_NAME">addSpawn</field>
+                <value name="PARAM-0">
+                  <block type="GetTeamId">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="PARAM-1">
+                  <block type="Number">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="PARAM-2">
+                  <block type="CreateVector">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">-112.9</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">2.3</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-2">
+                      <block type="Number">
+                        <field name="NUM">659.5</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="TeamId">team</parameter>
+                      <parameter types="Number">CPIndex</parameter>
+                      <parameter types="Vector">spawn</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">addSpawn</field>
+                    <value name="PARAM-0">
+                      <block type="GetTeamId">
+                        <value name="VALUE-0">
+                          <block type="Number">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="PARAM-1">
+                      <block type="Number">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="PARAM-2">
+                      <block type="CreateVector">
+                        <value name="VALUE-0">
+                          <block type="Number">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">2.3</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-2">
+                          <block type="Number">
+                            <field name="NUM">591</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="TeamId">team</parameter>
+                          <parameter types="Number">CPIndex</parameter>
+                          <parameter types="Vector">spawn</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">addSpawn</field>
+                        <value name="PARAM-0">
+                          <block type="GetTeamId">
+                            <value name="VALUE-0">
+                              <block type="Number">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="PARAM-1">
+                          <block type="Number">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="PARAM-2">
+                          <block type="CreateVector">
+                            <value name="VALUE-0">
+                              <block type="Number">
+                                <field name="NUM">-6.7</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">2.3</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-2">
+                              <block type="Number">
+                                <field name="NUM">584.7</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <mutation>
+                              <parameter types="TeamId">team</parameter>
+                              <parameter types="Number">CPIndex</parameter>
+                              <parameter types="Vector">spawn</parameter>
+                            </mutation>
+                            <field name="SUBROUTINE_NAME">addSpawn</field>
+                            <value name="PARAM-0">
+                              <block type="GetTeamId">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="PARAM-1">
+                              <block type="Number">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="PARAM-2">
+                              <block type="CreateVector">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">-25.6</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">2.3</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
+                                  <block type="Number">
+                                    <field name="NUM">565.6</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="TeamId">team</parameter>
+                                  <parameter types="Number">CPIndex</parameter>
+                                  <parameter types="Vector">spawn</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">addSpawn</field>
+                                <value name="PARAM-0">
+                                  <block type="GetTeamId">
+                                    <value name="VALUE-0">
+                                      <block type="Number">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="PARAM-1">
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <value name="PARAM-2">
+                                  <block type="CreateVector">
+                                    <value name="VALUE-0">
+                                      <block type="Number">
+                                        <field name="NUM">-32</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">2.3</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
+                                      <block type="Number">
+                                        <field name="NUM">630</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <mutation>
+                                      <parameter types="TeamId">team</parameter>
+                                      <parameter types="Number">CPIndex</parameter>
+                                      <parameter types="Vector">spawn</parameter>
+                                    </mutation>
+                                    <field name="SUBROUTINE_NAME">addSpawn</field>
+                                    <value name="PARAM-0">
+                                      <block type="GetTeamId">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="PARAM-1">
+                                      <block type="Number">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                    <value name="PARAM-2">
+                                      <block type="CreateVector">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">-32.1</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">23.9</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Number">
+                                            <field name="NUM">434.2</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="subroutineInstanceBlock">
+                                        <mutation>
+                                          <parameter types="TeamId">team</parameter>
+                                          <parameter types="Number">CPIndex</parameter>
+                                          <parameter types="Vector">spawn</parameter>
+                                        </mutation>
+                                        <field name="SUBROUTINE_NAME">addSpawn</field>
+                                        <value name="PARAM-0">
+                                          <block type="GetTeamId">
+                                            <value name="VALUE-0">
+                                              <block type="Number">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="PARAM-1">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                        <value name="PARAM-2">
+                                          <block type="CreateVector">
+                                            <value name="VALUE-0">
+                                              <block type="Number">
+                                                <field name="NUM">22.8</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">2.3</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Number">
+                                                <field name="NUM">515.8</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="subroutineInstanceBlock">
+                                            <mutation>
+                                              <parameter types="TeamId">team</parameter>
+                                              <parameter types="Number">CPIndex</parameter>
+                                              <parameter types="Vector">spawn</parameter>
+                                            </mutation>
+                                            <field name="SUBROUTINE_NAME">addSpawn</field>
+                                            <value name="PARAM-0">
+                                              <block type="GetTeamId">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="PARAM-1">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                            <value name="PARAM-2">
+                                              <block type="CreateVector">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">-28.5</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">53.4</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">369</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="subroutineInstanceBlock">
+                                                <mutation>
+                                                  <parameter types="TeamId">team</parameter>
+                                                  <parameter types="Number">CPIndex</parameter>
+                                                  <parameter types="Vector">spawn</parameter>
+                                                </mutation>
+                                                <field name="SUBROUTINE_NAME">addSpawn</field>
+                                                <value name="PARAM-0">
+                                                  <block type="GetTeamId">
+                                                    <value name="VALUE-0">
+                                                      <block type="Number">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="PARAM-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                                <value name="PARAM-2">
+                                                  <block type="CreateVector">
+                                                    <value name="VALUE-0">
+                                                      <block type="Number">
+                                                        <field name="NUM">-71</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">17.2</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="Number">
+                                                        <field name="NUM">495</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="subroutineInstanceBlock">
+                                                    <mutation>
+                                                      <parameter types="TeamId">team</parameter>
+                                                      <parameter types="Number">CPIndex</parameter>
+                                                      <parameter types="Vector">spawn</parameter>
+                                                    </mutation>
+                                                    <field name="SUBROUTINE_NAME">addSpawn</field>
+                                                    <value name="PARAM-0">
+                                                      <block type="GetTeamId">
+                                                        <value name="VALUE-0">
+                                                          <block type="Number">
+                                                            <field name="NUM">2</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">3</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM-2">
+                                                      <block type="CreateVector">
+                                                        <value name="VALUE-0">
+                                                          <block type="Number">
+                                                            <field name="NUM">-109.5</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">58.7</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-2">
+                                                          <block type="Number">
+                                                            <field name="NUM">364.6</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="subroutineInstanceBlock">
+                                                        <mutation>
+                                                          <parameter types="TeamId">team</parameter>
+                                                          <parameter types="Number">CPIndex</parameter>
+                                                          <parameter types="Vector">spawn</parameter>
+                                                        </mutation>
+                                                        <field name="SUBROUTINE_NAME">addSpawn</field>
+                                                        <value name="PARAM-0">
+                                                          <block type="GetTeamId">
+                                                            <value name="VALUE-0">
+                                                              <block type="Number">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="PARAM-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">4</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="PARAM-2">
+                                                          <block type="CreateVector">
+                                                            <value name="VALUE-0">
+                                                              <block type="Number">
+                                                                <field name="NUM">-51.5</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">55.1</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-2">
+                                                              <block type="Number">
+                                                                <field name="NUM">380</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="subroutineInstanceBlock">
+                                                            <mutation>
+                                                              <parameter types="TeamId">team</parameter>
+                                                              <parameter types="Number">CPIndex</parameter>
+                                                              <parameter types="Vector">spawn</parameter>
+                                                            </mutation>
+                                                            <field name="SUBROUTINE_NAME">addSpawn</field>
+                                                            <value name="PARAM-0">
+                                                              <block type="GetTeamId">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">2</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="PARAM-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">4</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="PARAM-2">
+                                                              <block type="CreateVector">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">-45.8</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">61.3</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-2">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">241.1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
