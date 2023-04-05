@@ -2278,10 +2278,20 @@
             <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder1</field>
             <next>
               <block type="subroutineInstanceBlock">
-                <field name="SUBROUTINE_NAME">initializeCheckpointsCaspianBorder</field>
+                <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder2</field>
                 <next>
                   <block type="subroutineInstanceBlock">
-                    <field name="SUBROUTINE_NAME">initializeSpawnsCaspianBorder</field>
+                    <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder3</field>
+                    <next>
+                      <block type="subroutineInstanceBlock">
+                        <field name="SUBROUTINE_NAME">initializeCheckpointsCaspianBorder</field>
+                        <next>
+                          <block type="subroutineInstanceBlock">
+                            <field name="SUBROUTINE_NAME">initializeSpawnsCaspianBorder</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -2291,7 +2301,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="9574">
+  <block type="subroutineBlock" deletable="false" x="0" y="9676">
     <mutation>
       <parameter types="Number">checkpoint</parameter>
     </mutation>
@@ -2328,7 +2338,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="9856">
+  <block type="subroutineBlock" deletable="false" x="0" y="9958">
     <mutation>
       <parameter types="Vector">waypoint</parameter>
     </mutation>
@@ -2365,7 +2375,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="10138">
+  <block type="subroutineBlock" deletable="false" x="0" y="10240">
     <mutation>
       <parameter types="TeamId">team</parameter>
       <parameter types="Number">CPIndex</parameter>
@@ -2428,7 +2438,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="10436">
+  <block type="subroutineBlock" deletable="false" x="0" y="10538">
     <field name="SUBROUTINE_NAME">aiBalancing</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -2481,7 +2491,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="10785">
+  <block type="subroutineBlock" deletable="false" x="0" y="10887">
     <mutation>
       <parameter types="Vector">position</parameter>
       <parameter types="Vector">objectPosition</parameter>
@@ -2684,7 +2694,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="11420">
+  <block type="subroutineBlock" deletable="false" x="0" y="11522">
     <field name="SUBROUTINE_NAME">initPayloadYaw</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -2835,7 +2845,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="11873">
+  <block type="subroutineBlock" deletable="false" x="0" y="11975">
     <field name="SUBROUTINE_NAME">displayRemainingTime</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -3355,7 +3365,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13069">
+  <block type="subroutineBlock" deletable="false" x="0" y="13171">
     <field name="SUBROUTINE_NAME">playPayloadSound</field>
     <statement name="CONDITIONS">
       <block type="conditionBlock">
@@ -3426,7 +3436,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13533">
+  <block type="subroutineBlock" deletable="false" x="0" y="13635">
     <field name="SUBROUTINE_NAME">initPayloadObjects</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -3626,7 +3636,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14265">
+  <block type="subroutineBlock" deletable="false" x="0" y="14367">
     <field name="SUBROUTINE_NAME">initSpawnpointList</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -3723,7 +3733,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14694">
+  <block type="subroutineBlock" deletable="false" x="0" y="14796">
     <field name="SUBROUTINE_NAME">initIcons</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconImage">
@@ -4107,7 +4117,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="16025">
+  <block type="subroutineBlock" deletable="false" x="0" y="16127">
     <field name="SUBROUTINE_NAME">calculatePayloadPos</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -4667,7 +4677,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="17128">
+  <block type="subroutineBlock" deletable="false" x="0" y="17230">
     <mutation>
       <parameter types="TeamId">pushingTeam</parameter>
     </mutation>
@@ -5827,7 +5837,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="18215">
+  <block type="subroutineBlock" deletable="false" x="0" y="18317">
     <field name="SUBROUTINE_NAME">teamTwoIsPushing</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -6486,7 +6496,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20031">
+  <block type="subroutineBlock" deletable="false" x="0" y="20133">
     <field name="SUBROUTINE_NAME">payloadIsBlocked</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -6529,7 +6539,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20356">
+  <block type="subroutineBlock" deletable="false" x="0" y="20458">
     <field name="SUBROUTINE_NAME">teamOneIsPushing</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -7188,7 +7198,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22172">
+  <block type="subroutineBlock" deletable="false" x="0" y="22274">
     <field name="SUBROUTINE_NAME">updateCheckpointTime</field>
     <statement name="ACTIONS">
       <block type="SetRoundTimeLimit">
@@ -7209,7 +7219,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22497">
+  <block type="subroutineBlock" deletable="false" x="0" y="22599">
     <field name="SUBROUTINE_NAME">updatePayloadIcon</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconPosition">
@@ -7249,7 +7259,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22779">
+  <block type="subroutineBlock" deletable="false" x="0" y="22881">
     <field name="SUBROUTINE_NAME">updateCheckpointIcons</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconPosition">
@@ -7672,7 +7682,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23899">
+  <block type="subroutineBlock" deletable="false" x="0" y="24001">
     <field name="SUBROUTINE_NAME">calcPayloadProgress</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8246,7 +8256,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25057">
+  <block type="subroutineBlock" deletable="false" x="0" y="25159">
     <field name="SUBROUTINE_NAME">displayGameMessages</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -8428,7 +8438,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25633">
+  <block type="subroutineBlock" deletable="false" x="0" y="25735">
     <field name="SUBROUTINE_NAME">spawnPlayer</field>
     <statement name="ACTIONS">
       <block type="SetPlayerMaxHealth">
@@ -8620,7 +8630,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26328">
+  <block type="subroutineBlock" deletable="false" x="0" y="26430">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder1</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -8947,7 +8957,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27251">
+  <block type="subroutineBlock" deletable="false" x="0" y="27353">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder2</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -9274,7 +9284,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="28174">
+  <block type="subroutineBlock" deletable="false" x="0" y="28276">
     <field name="SUBROUTINE_NAME">initializePayloadTrackCaspianBorder3</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -9601,7 +9611,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29097">
+  <block type="subroutineBlock" deletable="false" x="0" y="29199">
     <field name="SUBROUTINE_NAME">initializeSpawnsCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -9948,7 +9958,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29784">
+  <block type="subroutineBlock" deletable="false" x="0" y="29886">
     <field name="SUBROUTINE_NAME">initializeCheckpointsCaspianBorder</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
