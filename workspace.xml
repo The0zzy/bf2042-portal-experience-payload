@@ -2431,131 +2431,29 @@
   <block type="subroutineBlock" deletable="false" x="0" y="10985">
     <field name="SUBROUTINE_NAME">aiBalancing</field>
     <statement name="ACTIONS">
-      <block type="If">
-        <mutation elseif="1" else="1"></mutation>
+      <block type="SetVariable">
         <value name="VALUE-0">
-          <block type="And">
-            <value name="VALUE-0">
-              <block type="LessThan">
+          <block type="variableReferenceBlock">
+            <mutation isObjectVar="true"></mutation>
+            <field name="OBJECTTYPE">TeamId</field>
+            <field name="VAR" id="N@xzRqWzdC})J[kMyeG$" variabletype="TeamId">bleedoutTime</field>
+            <value name="OBJECT">
+              <block type="GetTeamId">
                 <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">progress</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
                   <block type="Number">
-                    <field name="NUM">50</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="LessThan">
-                <value name="VALUE-0">
-                  <block type="GetMatchTimeElapsed"></block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">180</field>
+                    <field name="NUM">1</field>
                   </block>
                 </value>
               </block>
             </value>
           </block>
         </value>
-        <statement name="DO">
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="true"></mutation>
-                <field name="OBJECTTYPE">TeamId</field>
-                <field name="VAR" id="N@xzRqWzdC})J[kMyeG$" variabletype="TeamId">bleedoutTime</field>
-                <value name="OBJECT">
-                  <block type="GetTeamId">
-                    <value name="VALUE-0">
-                      <block type="Number">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">4</field>
-              </block>
-            </value>
-            <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="true"></mutation>
-                    <field name="OBJECTTYPE">TeamId</field>
-                    <field name="VAR" id="N@xzRqWzdC})J[kMyeG$" variabletype="TeamId">bleedoutTime</field>
-                    <value name="OBJECT">
-                      <block type="GetTeamId">
-                        <value name="VALUE-0">
-                          <block type="Number">
-                            <field name="NUM">2</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">12</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </statement>
-        <value name="IF1">
-          <block type="And">
-            <value name="VALUE-0">
-              <block type="GreaterThan">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="ZS=;:2rUc}`(`6T2]SA." variabletype="Global">progress</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">70</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="GreaterThan">
-                <value name="VALUE-0">
-                  <block type="GetMatchTimeElapsed"></block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">300</field>
-                  </block>
-                </value>
-              </block>
-            </value>
+        <value name="VALUE-1">
+          <block type="Number">
+            <field name="NUM">6</field>
           </block>
         </value>
-        <statement name="DO1">
+        <next>
           <block type="SetVariable">
             <value name="VALUE-0">
               <block type="variableReferenceBlock">
@@ -2575,86 +2473,11 @@
             </value>
             <value name="VALUE-1">
               <block type="Number">
-                <field name="NUM">4</field>
-              </block>
-            </value>
-            <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="true"></mutation>
-                    <field name="OBJECTTYPE">TeamId</field>
-                    <field name="VAR" id="N@xzRqWzdC})J[kMyeG$" variabletype="TeamId">bleedoutTime</field>
-                    <value name="OBJECT">
-                      <block type="GetTeamId">
-                        <value name="VALUE-0">
-                          <block type="Number">
-                            <field name="NUM">1</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">12</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </statement>
-        <statement name="ELSE">
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="true"></mutation>
-                <field name="OBJECTTYPE">TeamId</field>
-                <field name="VAR" id="N@xzRqWzdC})J[kMyeG$" variabletype="TeamId">bleedoutTime</field>
-                <value name="OBJECT">
-                  <block type="GetTeamId">
-                    <value name="VALUE-0">
-                      <block type="Number">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
                 <field name="NUM">6</field>
               </block>
             </value>
-            <next>
-              <block type="SetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="true"></mutation>
-                    <field name="OBJECTTYPE">TeamId</field>
-                    <field name="VAR" id="N@xzRqWzdC})J[kMyeG$" variabletype="TeamId">bleedoutTime</field>
-                    <value name="OBJECT">
-                      <block type="GetTeamId">
-                        <value name="VALUE-0">
-                          <block type="Number">
-                            <field name="NUM">2</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">6</field>
-                  </block>
-                </value>
-              </block>
-            </next>
           </block>
-        </statement>
+        </next>
       </block>
     </statement>
   </block>
