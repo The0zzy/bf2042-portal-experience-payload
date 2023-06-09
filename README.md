@@ -24,6 +24,7 @@ Fight across multiple maps and all the eras of Battlefield, from the WW2 deserts
       - Spearhead (BF 2042)
       - El Alamein (BF 1942)
       - Arica Harbor (BC2)
+      - Noshahr Canals (BF3)
       - Exposure (BF 2042)
 
 # Trailer #
