@@ -26,6 +26,9 @@ Fight across multiple maps and all the eras of Battlefield, from the WW2 deserts
       - Spearhead (2042)
       - Manifest (2042)
 
+**Experience URL**  
+`https://portal.battlefield.com/experience/rules?playgroundId=31916c00-7be3-11ed-9186-4d1ccabe96aa`
+
 # Trailer #
 https://www.youtube.com/watch?v=HNWBBw-PT6E
 [![PAYLOAD TRAILER](/resources/trailer.png "PAYLOAD CLASSIC TRAILER")](https://www.youtube.com/watch?v=HNWBBw-PT6E)
