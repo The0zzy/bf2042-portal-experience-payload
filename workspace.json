@@ -7196,8 +7196,7 @@
         "type": "subroutineBlock",
         "id": "6$BZ=apjP^4+ce_GM2p4",
         "x": 0,
-        "y": 2120,
-        "collapsed": true,
+        "y": 2402,
         "extraState": {
           "subroutineName": "pl_addWaypoint",
           "parameters": [
@@ -7280,7 +7279,7 @@
         "type": "subroutineBlock",
         "id": "AqJCB*vo$FSQJ*0ubIaD",
         "x": 0,
-        "y": 2222,
+        "y": 2684,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_addSpawn",
@@ -7470,7 +7469,7 @@
         "type": "subroutineBlock",
         "id": "5|gTmKSO6M%u)n50lB5F",
         "x": 0,
-        "y": 2324,
+        "y": 2786,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_aiBalancing",
@@ -7946,7 +7945,7 @@
         "type": "subroutineBlock",
         "id": "F5`e.yp8NzjFzFSUdF()",
         "x": 0,
-        "y": 2426,
+        "y": 2888,
         "collapsed": true,
         "extraState": {
           "subroutineName": "comn_yawToObjectGlobal",
@@ -8317,7 +8316,7 @@
         "type": "subroutineBlock",
         "id": "cV;Og?.q!kXxM[H/+9vu",
         "x": 0,
-        "y": 2528,
+        "y": 2990,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_initPayloadYaw",
@@ -8640,7 +8639,7 @@
         "type": "subroutineBlock",
         "id": "r^4$jl@RDEl7E(OlE[XK",
         "x": 0,
-        "y": 2630,
+        "y": 3092,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_displayRemainingTime",
@@ -10961,7 +10960,7 @@
         "type": "subroutineBlock",
         "id": "T0~~BbrOsJps0wj.88Pa",
         "x": 0,
-        "y": 2732,
+        "y": 3194,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_playPayloadSound",
@@ -11222,7 +11221,7 @@
         "type": "subroutineBlock",
         "id": "Nq]X1o`#I.z(s]M1mgVB",
         "x": 0,
-        "y": 2834,
+        "y": 3296,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_initPayloadObjects",
@@ -11573,7 +11572,7 @@
         "type": "subroutineBlock",
         "id": "SMcZ_3wjNZn2*B~ECMaI",
         "x": 0,
-        "y": 2936,
+        "y": 3398,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_initSpawnpointList",
@@ -11781,7 +11780,7 @@
         "type": "subroutineBlock",
         "id": "9]|{]JHYZ+=S]L4IG)@#",
         "x": 0,
-        "y": 3038,
+        "y": 3500,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_initIcons",
@@ -12502,7 +12501,7 @@
         "type": "subroutineBlock",
         "id": "l!K~#6u44BeNV=3wu$4}",
         "x": 0,
-        "y": 3242,
+        "y": 3704,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_calculatePayloadPos",
@@ -13593,7 +13592,7 @@
         "type": "subroutineBlock",
         "id": "0f/n@.couay,IOFY9Ef*",
         "x": 0,
-        "y": 3854,
+        "y": 4316,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_updatePayloadTower",
@@ -15782,7 +15781,7 @@
         "type": "subroutineBlock",
         "id": "|GB/XW{;x9cekblics{2",
         "x": 0,
-        "y": 3446,
+        "y": 3908,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_teamTwoIsPushing",
@@ -16875,7 +16874,7 @@
         "type": "subroutineBlock",
         "id": "Rvc|d![x:?H*V0rs+E0I",
         "x": 0,
-        "y": 3548,
+        "y": 4010,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_payloadIsBlocked",
@@ -16937,7 +16936,7 @@
         "type": "subroutineBlock",
         "id": "BHA85h2RFK+6K%[:wKAm",
         "x": 0,
-        "y": 3650,
+        "y": 4112,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_teamOneIsPushing",
@@ -18338,7 +18337,7 @@
         "type": "subroutineBlock",
         "id": "wuo$QE5B^s!n@R?BFlD}",
         "x": 0,
-        "y": 3956,
+        "y": 4418,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_updateCheckpointTime",
@@ -18377,7 +18376,7 @@
         "type": "subroutineBlock",
         "id": "$DD[{s9eyo6zM;i*J[QC",
         "x": 0,
-        "y": 4058,
+        "y": 4520,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_updatePayloadIcon",
@@ -18465,7 +18464,7 @@
         "type": "subroutineBlock",
         "id": "t9Z3Do{IoWuM4lWaf6Zm",
         "x": 0,
-        "y": 4160,
+        "y": 4622,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_updateCheckpointIcons",
@@ -19414,7 +19413,7 @@
         "type": "subroutineBlock",
         "id": "Xb}X3^:#epBd65*=S9r,",
         "x": 0,
-        "y": 4262,
+        "y": 4724,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_calcPayloadProgress",
@@ -20607,7 +20606,7 @@
         "type": "subroutineBlock",
         "id": "J9-SiSUx$fFfMQSQ}]7y",
         "x": 0,
-        "y": 4364,
+        "y": 4826,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_displayGameMessages",
@@ -21432,7 +21431,7 @@
         "type": "subroutineBlock",
         "id": "o!%CSJTGgG==zc]*]yLF",
         "x": 0,
-        "y": 4466,
+        "y": 4928,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_spawnPlayer",
@@ -21868,8 +21867,7 @@
         "type": "subroutineBlock",
         "id": "jfFHAn1OCjK5r})ekF!M",
         "x": 0,
-        "y": 4568,
-        "collapsed": true,
+        "y": 5030,
         "extraState": {
           "subroutineName": "pl_initTrackAricaHarbor",
           "parameters": []
@@ -24634,7 +24632,7 @@
         "type": "subroutineBlock",
         "id": "0!?B-LgS+wNoG|m0;b:8",
         "x": 0,
-        "y": 4670,
+        "y": 8195,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_initCheckpointsAricaHarbor",
@@ -24882,7 +24880,7 @@
         "type": "subroutineBlock",
         "id": "-U-o^$crPccG6;vJ)%TI",
         "x": 0,
-        "y": 4772,
+        "y": 8297,
         "extraState": {
           "subroutineName": "pl_initSpawnsAricaHarbor",
           "parameters": []
@@ -27651,7 +27649,7 @@
         "type": "subroutineBlock",
         "id": "f((J=S5Ua:Y,Ri:f:(Mc",
         "x": 0,
-        "y": 3140,
+        "y": 3602,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_iconRefresh",
@@ -28059,7 +28057,7 @@
         "type": "subroutineBlock",
         "id": "5FD~6/yKqC(odEqj4!h~",
         "x": 0,
-        "y": 3344,
+        "y": 3806,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_payloadIsIdle",
@@ -28134,7 +28132,7 @@
         "type": "subroutineBlock",
         "id": "ys-ZJVbdjEU0t`*od_ER",
         "x": 0,
-        "y": 3752,
+        "y": 4214,
         "collapsed": true,
         "extraState": {
           "subroutineName": "pl_checkOvertimeEnd",
@@ -30627,6 +30625,123 @@
                                   "fields": {
                                     "NUM": 2
                                   }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "subroutineBlock",
+        "id": ".!AAc%Gx1)3{|$#XX[c/",
+        "x": 0,
+        "y": 2120,
+        "extraState": {
+          "subroutineName": "pl_addWP",
+          "parameters": [
+            {
+              "types": "Number",
+              "name": "x"
+            },
+            {
+              "types": "Number",
+              "name": "y"
+            },
+            {
+              "types": "Number",
+              "name": "z"
+            }
+          ]
+        },
+        "fields": {
+          "SUBROUTINE_NAME": "pl_addWP"
+        },
+        "inputs": {
+          "ACTIONS": {
+            "block": {
+              "type": "SetVariable",
+              "id": "{B=_1Tgtd,$8LgYbtTNU",
+              "inputs": {
+                "VALUE-0": {
+                  "block": {
+                    "type": "variableReferenceBlock",
+                    "id": "u5aYy4=mEiHMLJuvG9[7",
+                    "extraState": {
+                      "isObjectVar": false
+                    },
+                    "fields": {
+                      "OBJECTTYPE": "Global",
+                      "VAR": {
+                        "id": "s@wSeJO1atU~bJr@pBax"
+                      }
+                    }
+                  }
+                },
+                "VALUE-1": {
+                  "block": {
+                    "type": "AppendToArray",
+                    "id": "!O1rtY=bP.cG(nz-`t~K",
+                    "inputs": {
+                      "VALUE-0": {
+                        "block": {
+                          "type": "GetVariable",
+                          "id": "}41n:90M0.BfK=[_L:Uu",
+                          "inputs": {
+                            "VALUE-0": {
+                              "block": {
+                                "type": "variableReferenceBlock",
+                                "id": "4,t#NYtm(Rr:wRWB3Elp",
+                                "extraState": {
+                                  "isObjectVar": false
+                                },
+                                "fields": {
+                                  "OBJECTTYPE": "Global",
+                                  "VAR": {
+                                    "id": "s@wSeJO1atU~bJr@pBax"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "VALUE-1": {
+                        "block": {
+                          "type": "CreateVector",
+                          "id": "(C~[hii/w(^YMFLWuB%+",
+                          "inputs": {
+                            "VALUE-0": {
+                              "block": {
+                                "type": "subroutineArgumentBlock",
+                                "id": "l-W$v!_|e`vyNkLQ*AgS",
+                                "fields": {
+                                  "ARGUMENT_INDEX": "0"
+                                }
+                              }
+                            },
+                            "VALUE-1": {
+                              "block": {
+                                "type": "subroutineArgumentBlock",
+                                "id": "2iL:TyMeV^vVz*Cul=0P",
+                                "fields": {
+                                  "ARGUMENT_INDEX": "1"
+                                }
+                              }
+                            },
+                            "VALUE-2": {
+                              "block": {
+                                "type": "subroutineArgumentBlock",
+                                "id": "C3_J;?tR0W6^g;sW(GFt",
+                                "fields": {
+                                  "ARGUMENT_INDEX": "2"
                                 }
                               }
                             }
