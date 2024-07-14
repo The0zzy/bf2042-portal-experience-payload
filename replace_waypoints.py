@@ -8,12 +8,11 @@ else:
     sys.exit()
 
 
-def replace_blocks(data, found_blocks):
+def replace_blocks(data):
     """
     Recursively search for blocks of a specific type in a nested JSON structure.
 
     :param data: The current level of the JSON structure being searched.
-    :param found_blocks: A list to accumulate the found blocks.
     """
     if isinstance(data, dict):
         # If the current level is a dictionary and matches the block type, add it to the list
@@ -21,8 +20,6 @@ def replace_blocks(data, found_blocks):
             data.get("type") == "subroutineInstanceBlock"
             and data["extraState"].get("subroutineName") == "pl_addWaypoint"
         ):
-            if len(found_blocks) == 0:
-                found_blocks.append(data)
             new_wp_block_parameters = {
                 "parameters": [
                     {"types": "Number", "name": "x"},
@@ -72,20 +69,17 @@ def replace_blocks(data, found_blocks):
                 },
             }
             data["extraState"]["subroutineName"] = "pl_addWP"
-            data["extraState"]["parameters"] = new_wp_block_parameters
+            data["extraState"]["parameters"] = new_wp_block_parameters["parameters"]
             data["fields"]["SUBROUTINE_NAME"] = "pl_addWP"
             data["inputs"] = new_wp_block_inputs
         # Recursively search in each value of the dictionary
         for value in data.values():
-            replace_blocks(value, found_blocks)
+            replace_blocks(value)
     elif isinstance(data, list):
         # If the current level is a list, recursively search in each item
         for item in data:
-            replace_blocks(item, found_blocks)
+            replace_blocks(item)
 
-
-# List to hold the found blocks
-found_blocks = []
 
 new_wp_block_parameters = {
     "parameters": [
@@ -105,11 +99,8 @@ with open(file_path, "r") as file:
     json_data = json.load(file)
 
 # Replace 'pl_addWaypoint' with the specific block type you're searching for
-replace_blocks(json_data, found_blocks)
-
-# Specify the file name
-output_file = "output.json"
+replace_blocks(json_data)
 
 # Writing JSON data to a file
-with open(output_file, "w") as file:
+with open(file_path, "w") as file:
     json.dump(json_data, file, indent=2)
